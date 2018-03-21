@@ -86,381 +86,6 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-begin{titlepage}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-HRule}{
-\backslash
-rule{
-\backslash
-linewidth}{0.5mm}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-center
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textsc{
-\backslash
-LARGE Instituto Tecnológico de Buenos Aires}
-\backslash
-
-\backslash
-[1.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textsc{
-\backslash
-Large 20.02 Electrotecnia I}
-\backslash
-
-\backslash
-[0.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textsc{
-\backslash
-large Trabajo Práctico 1}
-\backslash
-
-\backslash
-[0.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-HRule 
-\backslash
-
-\backslash
-[0.4cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-{ 
-\backslash
-huge 
-\backslash
-bfseries VERIFICACIÓN DE LOS TEOREMAS DE THÉVENIN Y NORTON}
-\backslash
-
-\backslash
-[0.4cm] % Title of your document
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-HRule 
-\backslash
-
-\backslash
-[1.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{minipage}{0.4
-\backslash
-textwidth}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{flushleft} 
-\backslash
-large
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-emph{Grupo 2:}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Marcelo  
-\backslash
-textsc{Regueira} 00000
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Joaquin  
-\backslash
-textsc{Mestanza} 00000
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Ariel  
-\backslash
-textsc{Nowik} 00000
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushleft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{minipage}
-\end_layout
-
-\begin_layout Plain Layout
-
-~
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{minipage}{0.4
-\backslash
-textwidth}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{flushright} 
-\backslash
-large
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-emph{Profesores:} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Claudio 
-\backslash
-textsc{Muñoz}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Gustavo 
-\backslash
-textsc{Ayub}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushright}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{minipage}
-\backslash
-
-\backslash
-[4cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-% If you don't want a supervisor, uncomment the two lines below and remove
- the section above %
-\backslash
-Large 
-\backslash
-emph{Author:}
-\backslash
-
-\backslash
- %John 
-\backslash
-textsc{Smith}
-\backslash
-
-\backslash
-[3cm] % Your name
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-%{
-\backslash
-large 
-\backslash
-today}
-\backslash
-
-\backslash
-[3cm] % Date, change the 
-\backslash
-today to a set date if you want to be precise
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{minipage}{0.4
-\backslash
-textwidth}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{flushleft} 
-\backslash
-large
-\end_layout
-
-\begin_layout Plain Layout
-
-Realizado: 16/3/2018
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Presentado: 27/3/2018
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Corrección:
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushleft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{minipage}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-vfill % Fill the rest of the page with whitespace
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{titlepage}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -651,7 +276,7 @@ Mediciones
 \end_layout
 
 \begin_layout Subsubsection
-Parte 1A
+Thevenin y Norton
 \end_layout
 
 \begin_layout Standard
@@ -730,7 +355,7 @@ status open
 
 $12V 
 \backslash
-pm 0.05V$
+pm 0.1V$
 \end_layout
 
 \end_inset
@@ -858,7 +483,7 @@ status open
 
 $199.6 
 \backslash
-pm 0.2 
+pm 0.1 
 \backslash
 Omega$
 \end_layout
@@ -923,7 +548,7 @@ status open
 
 $100.4 
 \backslash
-pm 0.2 
+pm 0.1 
 \backslash
 Omega$
 \end_layout
@@ -988,7 +613,7 @@ status open
 
 $161.8 
 \backslash
-pm 0.2 
+pm 0.1 
 \backslash
 Omega$
 \end_layout
@@ -1111,12 +736,12 @@ pm 1mA$
 \end_layout
 
 \begin_layout Subsubsection
-Parte 1B
+Tensiones y corrientes de los resistores
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1155,6 +780,16 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{R1}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1173,6 +808,18 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5.6 
+\backslash
+pm 0.1V$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1184,6 +831,16 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{R2}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1202,6 +859,18 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5.9 
+\backslash
+pm 0.1V$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1213,6 +882,16 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{R3}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1231,6 +910,120 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5.8 
+\backslash
+pm 0.1V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$I_{R1}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$80 
+\backslash
+pm 5mA$ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$I_{R2}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$25 
+\backslash
+pm 5mA$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1242,6 +1035,16 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$I_{R3}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1260,6 +1063,18 @@ Práctico
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$55 
+\backslash
+pm 5mA$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1267,6 +1082,46 @@ Práctico
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Variacion de R para buscar maxima transferencia de potencia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename grafico_transferencia.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Curva Resistencia-Potencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
