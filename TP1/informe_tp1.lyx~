@@ -504,15 +504,15 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename WhatsApp Image 2018-03-21 at 3.59.01 PM.jpeg
+	filename /home/newtonis/LyxProjects/WhatsApp Image 2018-03-21 at 3.59.01 PM.jpeg
 	scale 20
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename WhatsApp Image 2018-03-21 at 3.59.01 PM (1).jpeg
-	scale 30
+	filename /home/newtonis/LyxProjects/WhatsApp Image 2018-03-21 at 3.59.01 PM (1).jpeg
+	scale 25
 
 \end_inset
 
@@ -1125,7 +1125,7 @@ pm 1mA$
 \end_layout
 
 \begin_layout Section
-Conclusión
+Conclusion
 \end_layout
 
 \end_body
