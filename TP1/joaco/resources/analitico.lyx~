@@ -1,0 +1,259 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Método analítico:
+\end_layout
+
+\begin_layout Standard
+Se utilizó el método de Thévenin para la parte analítica.
+\end_layout
+
+\begin_layout Standard
+Como el circuito está abierto entre los nodos A y B, no circular corriente
+ por la resistencia R3.
+\end_layout
+
+\begin_layout Standard
+Por este motivo, el circuito equivalente queda reducido a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/User/Desktop/vth.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+ab
+\end_layout
+
+\end_inset
+
+ coincide con el valor de V
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando divisor de tensión se obtiene que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vth=\frac{VR2.R2}{R1+R2}=\frac{80}{9}V\thickapprox8,88V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para averiguar cual es la R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ se procede a pasivar las fuentes del circuito por ende, para nuestro análisis,
+ el circuito equivalente quedaría de la siguiente forma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename C:/Users/User/Desktop/rth.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ es la resistencia medida entre los puntos A y B, ergo se procede a la asociació
+n de resistencias para obtener una R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+eq
+\end_layout
+
+\end_inset
+
+, que claramente es la R
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Req=Rth=\frac{R1.R2}{R1+R2}+R3=\frac{4100}{27}\varOmega\thickapprox151,85\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora solo resta calcular la I
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+n
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename in.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In se define como la corriente que circula entre A y B.
+\end_layout
+
+\begin_layout Standard
+Para poder saber cuanto vale esa corriente calcularemos la tensión que cae
+ sobre R3, para después aplicar ley de ohm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Rp=R2//R3=\frac{R2.R3}{R2+R3}=\frac{200}{3}\Omega\thickapprox66,67\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando divisor de tensión:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $VR3=\frac{V1.Rp}{Rp+R1}=\frac{240}{41}V\thickapprox5,85V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $In=\frac{VR3}{R3}=\frac{12}{205}A\thickapprox58,53mA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además, se verifica que 
+\begin_inset Formula $\frac{Vth}{In}=\frac{4100}{27}\varOmega=Rth$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
