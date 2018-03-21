@@ -86,6 +86,381 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+HRule}{
+\backslash
+rule{
+\backslash
+linewidth}{0.5mm}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+LARGE Instituto Tecnológico de Buenos Aires}
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+Large 20.02 Electrotecnia I}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textsc{
+\backslash
+large Trabajo Práctico 1}
+\backslash
+
+\backslash
+[0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule 
+\backslash
+
+\backslash
+[0.4cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\backslash
+huge 
+\backslash
+bfseries VERIFICACIÓN DE LOS TEOREMAS DE THÉVENIN Y NORTON}
+\backslash
+
+\backslash
+[0.4cm] % Title of your document
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+HRule 
+\backslash
+
+\backslash
+[1.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushleft} 
+\backslash
+large
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Grupo 2:}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Marcelo  
+\backslash
+textsc{Regueira} 00000
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Joaquin  
+\backslash
+textsc{Mestanza} 00000
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ariel  
+\backslash
+textsc{Nowik} 00000
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+~
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushright} 
+\backslash
+large
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Profesores:} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Claudio 
+\backslash
+textsc{Muñoz}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Gustavo 
+\backslash
+textsc{Ayub}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushright}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\backslash
+
+\backslash
+[4cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+% If you don't want a supervisor, uncomment the two lines below and remove
+ the section above %
+\backslash
+Large 
+\backslash
+emph{Author:}
+\backslash
+
+\backslash
+ %John 
+\backslash
+textsc{Smith}
+\backslash
+
+\backslash
+[3cm] % Your name
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%{
+\backslash
+large 
+\backslash
+today}
+\backslash
+
+\backslash
+[3cm] % Date, change the 
+\backslash
+today to a set date if you want to be precise
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}{0.4
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{flushleft} 
+\backslash
+large
+\end_layout
+
+\begin_layout Plain Layout
+
+Realizado: 16/3/2018
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Presentado: 27/3/2018
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Corrección:
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{flushleft}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill % Fill the rest of the page with whitespace
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
