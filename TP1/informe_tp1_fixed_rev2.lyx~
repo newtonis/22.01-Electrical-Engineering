@@ -26,7 +26,9 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement h
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -225,6 +227,84 @@ Variacion de R para buscar maxima transferencia de potencia
 
 \begin_layout Standard
 Curva Resistencia-Potencia
+\end_layout
+
+\begin_layout Subsection
+Variación de la resistencia en función de la temperatura
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename joaco/graficos punto 2/R(T).png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Resistencia de la lámpara en función de la temperatura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Variación de la corriente en función de la tensión
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename joaco/graficos punto 2/I(V).png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Corriente que atraviesa la lámpara en función de la tensión entre sus extremos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Variación de la corriente en función de la temperatura
 \end_layout
 
 \begin_layout Section

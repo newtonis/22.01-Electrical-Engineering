@@ -26,7 +26,9 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement h
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -227,12 +229,8 @@ Variacion de R para buscar maxima transferencia de potencia
 Curva Resistencia-Potencia
 \end_layout
 
-\begin_layout Section
-4 Conclusión 
-\end_layout
-
-\begin_layout Section
-Anexo
+\begin_layout Subsection
+Variación de la resistencia en función de la temperatura
 \end_layout
 
 \begin_layout Standard
@@ -244,7 +242,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename grafico_transferencia.png
+	filename joaco/graficos punto 2/R(T).png
+	scale 50
 
 \end_inset
 
@@ -252,7 +251,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Resistencia en 
 \end_layout
 
 \end_inset
@@ -267,6 +266,22 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Variación de la corriente en función de la tensión
+\end_layout
+
+\begin_layout Subsection
+Variación de la corriente en función de la temperatura
+\end_layout
+
+\begin_layout Section
+4 Conclusión 
+\end_layout
+
+\begin_layout Section
+Anexo
 \end_layout
 
 \begin_layout Subsection
