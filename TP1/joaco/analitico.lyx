@@ -75,10 +75,6 @@ Método analítico:
 \end_layout
 
 \begin_layout Standard
-Se utilizó el método de Thévenin y de Norton para la parte analítica.
-\end_layout
-
-\begin_layout Standard
 Como el circuito está abierto entre los nodos A y B, no circular corriente
  por la resistencia R3.
 \end_layout

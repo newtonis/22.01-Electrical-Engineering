@@ -89,7 +89,7 @@ Por este motivo, el circuito equivalente queda reducido a:
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/User/Desktop/vth.png
+	filename resources/vth.png
 
 \end_inset
 
@@ -145,7 +145,7 @@ th
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename C:/Users/User/Desktop/rth.png
+	filename resources/rth.png
 
 \end_inset
 
@@ -206,7 +206,7 @@ n
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename in.png
+	filename resources/in.png
 
 \end_inset
 

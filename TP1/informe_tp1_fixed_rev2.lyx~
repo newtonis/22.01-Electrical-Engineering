@@ -70,8 +70,115 @@
 
 \begin_body
 
+\begin_layout Section
+Introduccion 
+\end_layout
+
+\begin_layout Standard
+En este trabajo consistió en dos partes
+\end_layout
+
+\begin_layout Standard
+• Verificar los teoremas de Thevenin y Norton (1)
+\end_layout
+
+\begin_layout Standard
+• Estudiar la variación de la resistencia de una lámpara segun su temperatura
+ (2)
+\end_layout
+
+\begin_layout Standard
+Para llevar a cabo los objetivos, se procedió al armado, la puesta en marcha,
+ la medición y el análisis de dos circuitos.
+\end_layout
+
 \begin_layout Standard
 
+\end_layout
+
+\begin_layout Section
+Metodo operativo 
+\end_layout
+
+\begin_layout Subsection
+Circuito 1
+\end_layout
+
+\begin_layout Standard
+En total se realizaron tres procedimientos
+\end_layout
+
+\begin_layout Standard
+• Se midieron los valores de $R_{1} , R_{2} , R_{3}$(con ellos se dedujó
+ $R_{th}$).
+ A continuación se conecto la fuente y se midió, por un lado la tensión
+ entre A y B sin carga ($V_{th}$), y por el otro la corriente entre A y
+ B a circuito cerrado ($I_{n}$).
+\end_layout
+
+\begin_layout Standard
+• Se procedió a medir, también por separado, todas las tensiones y corrientes
+ de las tres resistencias a circuito cerrado entre A y B.
+ En total con este procedimiento se realizaron entonces 6 mediciones, las
+ de $I_{R1,R2,R3}V_{R1,R2,R3}$
+\end_layout
+
+\begin_layout Standard
+• Por ultimo, se coloco una resistencia variable entre los nodos A y B,
+ y se midió V e I simultaneamente en sucesivas oportunidades alterando la
+ magnitud de R, con el objetivo de establecer cual valor de R provocaba
+ la maxima transferencia de potencia.
+\end_layout
+
+\begin_layout Subsection
+Circuito 2
+\end_layout
+
+\begin_layout Standard
+• Se procedió a conectar una lámpara a la fuente y medir en sucesivas oportunida
+des,simultaneamente, separadas por un lapso de 20 segundos, la tensión,
+ la corriente, y temperatura de la lámpara.
+\end_layout
+
+\begin_layout Subsubsection
+Detalles de las mediciones
+\end_layout
+
+\begin_layout Standard
+Para medir la magnitud de los resistores, y la temperatura de la lámpra
+ se utilizó un multimetro digital, mientras que para medir las tensiones
+ y corrientes del circuito se utilizaron voltimetros y amperimetros de aguja,
+ conectados en paralelo y serie respectivamente.
+ En los casos donde se necesito medir corriente y tensión a la vez se empleo
+ el formato de conexión conocido como conexionado corto.
+\end_layout
+
+\begin_layout Section
+Analisis de resultados 
+\end_layout
+
+\begin_layout Subsection
+Mediciones
+\end_layout
+
+\begin_layout Subsection
+Thevenin y Norton
+\end_layout
+
+\begin_layout Subsection
+Tensiones y corrientes de los resistores
+\end_layout
+
+\begin_layout Subsubsection
+Variacion de R para buscar maxima transferencia de potencia
+\end_layout
+
+\begin_layout Standard
+Curva Resistencia-Potencia
+\end_layout
+
+\begin_layout Section
+4 Conclusión 
 \end_layout
 
 \end_body
