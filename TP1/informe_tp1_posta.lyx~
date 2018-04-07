@@ -26,7 +26,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -72,397 +72,17 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{titlepage}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-HRule}{
-\backslash
-rule{
-\backslash
-linewidth}{0.5mm}}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-center
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textsc{
-\backslash
-LARGE Instituto Tecnológico de Buenos Aires}
-\backslash
-
-\backslash
-[1.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textsc{
-\backslash
-Large 20.02 Electrotecnia I}
-\backslash
-
-\backslash
-[0.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-textsc{
-\backslash
-large Trabajo Práctico 1}
-\backslash
-
-\backslash
-[0.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-HRule 
-\backslash
-
-\backslash
-[0.4cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-{ 
-\backslash
-huge 
-\backslash
-bfseries VERIFICACIÓN DE LOS TEOREMAS DE THÉVENIN Y NORTON}
-\backslash
-
-\backslash
-[0.4cm] % Title of your document
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-HRule 
-\backslash
-
-\backslash
-[1.5cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{minipage}{0.4
-\backslash
-textwidth}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{flushleft} 
-\backslash
-large
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-emph{Grupo 2:}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Marcelo 
-\backslash
-textsc{Regueira} 58300
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Ariel 
-\backslash
-textsc{Nowik} 58309
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Joaquin 
-\backslash
-textsc{Mestanza} 58288
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushleft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{minipage}
-\end_layout
-
-\begin_layout Plain Layout
-
-~
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{minipage}{0.4
-\backslash
-textwidth}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{flushright} 
-\backslash
-large
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-emph{Profesores:} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Claudio 
-\backslash
-textsc{Muñoz}
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Gustavo 
-\backslash
-textsc{Ayub}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushright}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{minipage}
-\backslash
-
-\backslash
-[4cm]
-\end_layout
-
-\begin_layout Plain Layout
-
-% If you don't want a supervisor, uncomment the two lines below and remove
- the section above %
-\backslash
-Large 
-\backslash
-emph{Author:}
-\backslash
-
-\backslash
- %John 
-\backslash
-textsc{Smith}
-\backslash
-
-\backslash
-[3cm] % Your name
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-%{
-\backslash
-large 
-\backslash
-today}
-\backslash
-
-\backslash
-[3cm] % Date, change the 
-\backslash
-today to a set date if you want to be precise
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{minipage}{0.4
-\backslash
-textwidth}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{flushleft} 
-\backslash
-large
-\end_layout
-
-\begin_layout Plain Layout
-
-Realizado: 14/3/2018
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Presentado: XX/3/2018
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Corrección:
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{flushleft}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{minipage}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-vfill % Fill the rest of the page with whitespace
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{titlepage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Introduccion 
+Introducción 
 \end_layout
 
 \begin_layout Standard
-Este trabajo consistió de dos partes
+En este trabajo consistió en dos partes
 \end_layout
 
 \begin_layout Standard
-• Verificar los teoremas de Thevenin y Norton, verificar el teorema de la
- maxima transferencia de potencia (1)
+• Verificar los teoremas de Thevenin y Norton y verificar el teorema de
+ la maxima transferencia de potencia (1)
 \end_layout
 
 \begin_layout Standard
@@ -590,7 +210,11 @@ Analisis de resultados
 \end_layout
 
 \begin_layout Subsection
-Valores de los resistores
+Mediciones
+\end_layout
+
+\begin_layout Subsubsection
+Valores de los Resistores
 \end_layout
 
 \begin_layout Standard
@@ -831,13 +455,13 @@ Omega$
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Thevenin y Norton
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
+<lyxtabular version="3" rows="5" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -881,7 +505,7 @@ status open
 
 \begin_layout Plain Layout
 
-$V_{TH}$
+$V_{fuente}$
 \end_layout
 
 \end_inset
@@ -895,17 +519,7 @@ $V_{TH}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$8.88 V$
-\end_layout
-
-\end_inset
-
-
+-
 \end_layout
 
 \end_inset
@@ -919,9 +533,9 @@ status open
 
 \begin_layout Plain Layout
 
-$8.9 
+$(12
 \backslash
-pm 0.1V$
+pm0.05)V$
 \end_layout
 
 \end_inset
@@ -942,7 +556,7 @@ status open
 
 \begin_layout Plain Layout
 
-$I_{N}$
+$R_{th}$
 \end_layout
 
 \end_inset
@@ -961,7 +575,9 @@ status open
 
 \begin_layout Plain Layout
 
-$58.53 mA$
+$ 151.8 
+\backslash
+Omega $
 \end_layout
 
 \end_inset
@@ -980,51 +596,112 @@ status open
 
 \begin_layout Plain Layout
 
-$55 
+$(161.8 
 \backslash
-pm 0.5mA$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$R_{TH}$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$151.85 
+pm 0.2) 
 \backslash
 Omega$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{th}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$ 8.88V $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(8.95
+\backslash
+pm0.05)V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$I_{n}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$58.53mA$
 \end_layout
 
 \end_inset
@@ -1043,9 +720,9 @@ status open
 
 \begin_layout Plain Layout
 
-$161.8 
+$(55 
 \backslash
-pm$ 
+pm1)mA$
 \end_layout
 
 \end_inset
@@ -1063,8 +740,8 @@ pm$
 
 \end_layout
 
-\begin_layout Subsection
-Tensiones y corrientes de los resistores
+\begin_layout Subsubsection
+Tensiones y corrientes en los resistores
 \end_layout
 
 \begin_layout Standard
@@ -1420,8 +1097,21 @@ pm 5mA$
 Variacion de R para buscar maxima transferencia de potencia
 \end_layout
 
+\begin_layout Subsubsection
+Variación de la resistencia en función de la temperatura y corriente en
+ función de la temperatura
+\end_layout
+
 \begin_layout Subsection
-Circuito 2
+Gráficos
+\end_layout
+
+\begin_layout Subsubsection
+Variación de R para buscar máxima transferencia de potencia
+\end_layout
+
+\begin_layout Standard
+Curva Resistencia-Potencia
 \end_layout
 
 \begin_layout Subsubsection
@@ -1451,45 +1141,6 @@ Resistencia de la lámpara en función de la temperatura
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Variación de la corriente en función de la tensión
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename joaco/graficos punto 2/I(V).png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Corriente de la lámpara en función de la tensión entre sus extremos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1531,8 +1182,83 @@ Corriente de la lámpara en función de la temperatura
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusión 
+\end_layout
+
+\begin_layout Subsection
+Conclusiones del grafico 3.2.1
+\end_layout
+
+\begin_layout Standard
+Las mediciones del grafico 3.2.1.
+ se tomaron de forma tal que se observe pueda observar si el valor medido
+ se acerca o no al hipotético, siendo éste: 
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
 
+$Rth 
+\backslash
+approx 151,85$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como consecuencia, se pudo apreciar, a pesar de que los instrumentos no
+ son óptimos para las mediciones, que esta realmente próximo a Rth.
+\end_layout
+
+\begin_layout Subsection
+Conclusiones de los graficos en los puntos 3.2.1 y 3.2.2
+\end_layout
+
+\begin_layout Standard
+La resistencia en función de la temperatura (Ver Figure 1) tiende al principio
+ actuar en la 
+\begin_inset Quotes eld
+\end_inset
+
+zona en frío
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+zona lineal
+\begin_inset Quotes erd
+\end_inset
+
+ donde vale la ley de ohm, luego, con el paso del tiempo y el aumento de
+ la temperatura, se puede observar que la función deja de ser lineal.
+\end_layout
+
+\begin_layout Standard
+Se observa que se verifica que al aumentar la temperatura, la resistencia
+ aumenta tal como lo predecía la formula:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R = R_{0} (1 + 
+\backslash
+alpha T) $
 \end_layout
 
 \end_inset
@@ -1540,8 +1266,58 @@ Corriente de la lámpara en función de la temperatura
 
 \end_layout
 
-\begin_layout Section
-4 Conclusión 
+\begin_layout Standard
+El valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_{0}$
+\end_layout
+
+\end_inset
+
+ es superfluo, ya que como el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+ del tungsteno es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.0045$
+\end_layout
+
+\end_inset
+
+ a 20°C (temperatura ambiente), lo que al fin y al cabo nos interesa es
+ que sea mayor que 0 para poder afirmar que el valor de la resistencia aumentará
+ conforme lo haga la temperatura.
+\end_layout
+
+\begin_layout Standard
+Como aumenta la resistencia, la corriente debe disminuir su valor ya que
+ es el único dispositivo conectado al circuito bajo una tensión 
+\begin_inset Quotes eld
+\end_inset
+
+constante
+\begin_inset Quotes erd
+\end_inset
+
+ (Ver Figure 2).
 \end_layout
 
 \begin_layout Section
@@ -1597,20 +1373,7 @@ Aplicando divisor de tensión se obtiene que:
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$V_{TH} = 
-\backslash
-frac{V_{R2}R_{2}}{R_1+R_2}=
-\backslash
-frac{8}{9}V 
-\backslash
-approx 8.88v $$
-\end_layout
-
+\begin_inset Formula $Vth=\frac{VR2.R2}{R1+R2}=\frac{80}{9}V\thickapprox8,88V$
 \end_inset
 
 
@@ -1672,24 +1435,7 @@ th
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$ R_{EQ}=R_{TH}=
-\backslash
-frac{R_1R_2}{R_1+R_2}+R3=
-\backslash
-frac{4100}{27}
-\backslash
-Omega 
-\backslash
-approx 151.85 
-\backslash
-Omega$$
-\end_layout
-
+\begin_inset Formula $Req=Rth=\frac{R1.R2}{R1+R2}+R3=\frac{4100}{27}\varOmega\thickapprox151,85\varOmega$
 \end_inset
 
 
@@ -1728,24 +1474,7 @@ Para poder saber cuanto vale esa corriente calcularemos la tensión que cae
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$R_{p} = R_2 // R_3 = 
-\backslash
-frac{R_2R_3}{R_2+R_3}=
-\backslash
-frac{200}{3}
-\backslash
-Omega 
-\backslash
-approx 66.67 
-\backslash
-Omega $$
-\end_layout
-
+\begin_inset Formula $Rp=R2//R3=\frac{R2.R3}{R2+R3}=\frac{200}{3}\Omega\thickapprox66,67\varOmega$
 \end_inset
 
 
@@ -1756,40 +1485,14 @@ Aplicando divisor de tensión:
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$V_{R3}=
-\backslash
-frac{V_1R_p}{R_p+R_1}=
-\backslash
-frac{240}{41}V 
-\backslash
-approx 5.85V$$
-\end_layout
-
+\begin_inset Formula $VR3=\frac{V1.Rp}{Rp+R1}=\frac{240}{41}V\thickapprox5,85V$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$I_N=
-\backslash
-frac{V_{R3}}{R3}=
-\backslash
-frac{12}{205}A 
-\backslash
-approx 58.53 mA$$
-\end_layout
-
+\begin_inset Formula $In=\frac{VR3}{R3}=\frac{12}{205}A\thickapprox58,53mA$
 \end_inset
 
 
@@ -1797,54 +1500,7 @@ approx 58.53 mA$$
 
 \begin_layout Standard
 Además, se verifica que 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$ 
-\backslash
-frac{V_{TH}}{I_N}=
-\backslash
-frac{4100}{27} 
-\backslash
-Omega = R_{TH}$$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Formula de errores
-\end_layout
-
-\begin_layout Standard
-Se utilizo para la propagacion de errores la formula 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$
-\backslash
-triangle y^2 = 
-\backslash
-sum_{i=1}^{n} (
-\backslash
-frac{
-\backslash
-partial y}{
-\backslash
-partial x_{i} })^2 
-\backslash
-triangle x_{i}^2 $$
-\end_layout
-
+\begin_inset Formula $\frac{Vth}{In}=\frac{4100}{27}\varOmega=Rth$
 \end_inset
 
 
