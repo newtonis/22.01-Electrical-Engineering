@@ -31,7 +31,7 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -55,6 +55,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -72,17 +76,35 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+baselinestretch}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introducción 
 \end_layout
 
 \begin_layout Standard
-En este trabajo consistió en dos partes
+El presente trabajo consistió en dos experiencias:
 \end_layout
 
 \begin_layout Standard
 • Verificar los teoremas de Thevenin y Norton y verificar el teorema de
- la maxima transferencia de potencia (1)
+ la máxima transferencia de potencia (1)
 \end_layout
 
 \begin_layout Standard
@@ -92,11 +114,11 @@ En este trabajo consistió en dos partes
 
 \begin_layout Standard
 Para llevar a cabo los objetivos, se procedió al armado, la puesta en marcha,
- la medición y el análisis de dos circuitos.
+ la medición y el análisis teórico de dos circuitos.
 \end_layout
 
 \begin_layout Section
-Metodo operativo 
+Método operativo 
 \end_layout
 
 \begin_layout Subsection
@@ -104,7 +126,7 @@ Circuito 1
 \end_layout
 
 \begin_layout Standard
-En total se realizaron tres procedimientos
+En total se realizaron tres procedimientos:
 \end_layout
 
 \begin_layout Standard
@@ -119,7 +141,7 @@ $R_{1} , R_{2} , R_{3}$
 
 \end_inset
 
- (con ellos se dedujó 
+ (con ellos se dedujo 
 \begin_inset ERT
 status open
 
@@ -154,20 +176,30 @@ $I_{n}$
 
 \end_inset
 
-).
+), es decir con ambos terminales en cortocircuito.
 \end_layout
 
 \begin_layout Standard
 • Se procedió a medir, también por separado, todas las tensiones y corrientes
  de las tres resistencias a circuito cerrado entre A y B.
- En total con este procedimiento se realizaron entonces 6 mediciones, las
- de 
+ En total con este procedimiento se realizaron 6 mediciones, las de 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$I_{R1,R2,R3}V_{R1,R2,R3}$
+$I_{R1,R2,R3}$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{R1,R2,R3}$
 \end_layout
 
 \end_inset
@@ -176,10 +208,10 @@ $I_{R1,R2,R3}V_{R1,R2,R3}$
 \end_layout
 
 \begin_layout Standard
-• Por ultimo, se coloco una resistencia variable entre los nodos A y B,
+• Por ultimo, se colocó una resistencia variable entre los nodos A y B,
  y se midió V e I simultaneamente en sucesivas oportunidades alterando la
- magnitud de R, con el objetivo de establecer cual valor de R provocaba
- la maxima transferencia de potencia.
+ magnitud de R, con el objetivo de establecer con cuál valor de R se daba
+ la máxima transferencia de potencia.
 \end_layout
 
 \begin_layout Subsection
@@ -188,8 +220,10 @@ Circuito 2
 
 \begin_layout Standard
 • Se procedió a conectar una lámpara a la fuente y medir en sucesivas oportunida
-des,simultaneamente, separadas por un lapso de 20 segundos, la tensión,
- la corriente, y temperatura de la lámpara.
+des, simultaneamente, la tensión, la corriente, y temperatura de la lámpara,
+ separadas por un lapso de 20 segundos, dado que la hipótesis es que la
+ resistencia variará en función de la temperatura a lo largo del tiempo
+ (y por ende la corriente).
 \end_layout
 
 \begin_layout Subsubsection
@@ -197,16 +231,16 @@ Detalles de las mediciones
 \end_layout
 
 \begin_layout Standard
-Para medir la magnitud de los resistores, y la temperatura de la lámpra
- se utilizó un multimetro digital, mientras que para medir las tensiones
- y corrientes del circuito se utilizaron voltimetros y amperimetros de aguja,
+Para medir la magnitud de los resistores, y la temperatura de la lámpara
+ se utilizó un multímetro digital, mientras que para medir las tensiones
+ y corrientes del circuito se utilizaron voltímetros y amperímetros de aguja,
  conectados en paralelo y serie respectivamente.
- En los casos donde se necesito medir corriente y tensión a la vez se empleo
+ En los casos donde se necesitó medir corriente y tensión a la vez se empleó
  el formato de conexión conocido como conexionado corto.
 \end_layout
 
 \begin_layout Section
-Analisis de resultados 
+Análisis de resultados 
 \end_layout
 
 \begin_layout Subsection
@@ -218,6 +252,7 @@ Valores de los Resistores
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
@@ -460,6 +495,7 @@ Thevenin y Norton
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
 <features tabularvalignment="middle">
@@ -745,6 +781,7 @@ Tensiones y corrientes en los resistores
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
@@ -804,7 +841,7 @@ $V_{R1}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.14V
 \end_layout
 
 \end_inset
@@ -855,7 +892,7 @@ $V_{R2}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5.85V
 \end_layout
 
 \end_inset
@@ -906,7 +943,7 @@ $V_{R3}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5.85V
 \end_layout
 
 \end_inset
@@ -957,7 +994,7 @@ $I_{R1}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+87.78mA
 \end_layout
 
 \end_inset
@@ -1008,7 +1045,7 @@ $I_{R2}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+29.25mA
 \end_layout
 
 \end_inset
@@ -1045,7 +1082,7 @@ status open
 
 \begin_layout Plain Layout
 
-$_{R3}$
+$I_{R3}$
 \end_layout
 
 \end_inset
@@ -1059,7 +1096,7 @@ $_{R3}$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+58.53mA
 \end_layout
 
 \end_inset
@@ -1094,10 +1131,11 @@ pm 5mA$
 \end_layout
 
 \begin_layout Subsubsection
-Variacion de R para buscar maxima transferencia de potencia
+Variación de R para buscar máxima transferencia de potencia
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="2">
 <features tabularvalignment="middle">
@@ -1356,6 +1394,7 @@ Variación de la resistencia en función de la temperatura y corriente en
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="3">
 <features tabularvalignment="middle">
@@ -1552,8 +1591,26 @@ Variación de R para buscar máxima transferencia de potencia
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename maximatransf.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1643,8 +1700,8 @@ Conclusiones del grafico 3.2.1
 
 \begin_layout Standard
 Las mediciones del grafico 3.2.1.
- se tomaron de forma tal que se observe pueda observar si el valor medido
- se acerca o no al hipotético, siendo éste: 
+ se tomaron de forma tal que se pueda observar si el valor medido se acerca
+ o no al teórico, siendo éste: 
 \begin_inset ERT
 status open
 
@@ -1662,11 +1719,22 @@ approx 151,85$
 
 \begin_layout Standard
 Como consecuencia, se pudo apreciar, a pesar de que los instrumentos no
- son óptimos para las mediciones, que esta realmente próximo a Rth.
+ son óptimos para las mediciones, que esta realmente próximo a Rth, por
+ una diferencia de aproximadamente 10 ohms.
+ Las diferencias resultantes se deben a las consideraciones realizadas en
+ la resolución teórica de los circuitos, donde no se tiene en cuenta la
+ tolerancia de las resistencias utilizadas en la práctica, que en este caso
+ no juega un papel importante dado que no se trabajó con tensiones altas
+ (del orden de los 100V), donde la variación que se produciría es más considerab
+le en ese caso.
+ Tampoco se tiene en cuenta la resistencia interna que posee la fuente de
+ tensión ni los instrumentos de medición empleados.
+ Se verifica, por otra parte, el comportamiento lineal de la corriente por
+ las resistencias respecto a la tensión.
 \end_layout
 
 \begin_layout Subsection
-Conclusiones de los graficos en los puntos 3.2.1 y 3.2.2
+Conclusiones de los graficos en los puntos 3.2.2 y 3.2.3
 \end_layout
 
 \begin_layout Standard
@@ -1687,13 +1755,15 @@ zona lineal
 \begin_inset Quotes erd
 \end_inset
 
- donde vale la ley de ohm, luego, con el paso del tiempo y el aumento de
- la temperatura, se puede observar que la función deja de ser lineal.
+ donde vale la ley de ohm.
+ Luego, con el paso del tiempo y el aumento de la temperatura, se puede
+ observar que la función deja de ser lineal y, por lo tanto, la lámpara
+ deja de tener un comportamiento óhmico.
 \end_layout
 
 \begin_layout Standard
-Se observa que se verifica que al aumentar la temperatura, la resistencia
- aumenta tal como lo predecía la formula:
+Se observa que, al aumentar la temperatura de la lámpara, la resistencia
+ aumenta tal como lo predice la ecuación:
 \end_layout
 
 \begin_layout Standard
@@ -1724,7 +1794,7 @@ $R_{0}$
 
 \end_inset
 
- es superfluo, ya que como el 
+ es supérfluo, ya que como el 
 \begin_inset ERT
 status open
 
@@ -1748,9 +1818,9 @@ $0.0045$
 
 \end_inset
 
- a 20°C (temperatura ambiente), lo que al fin y al cabo nos interesa es
- que sea mayor que 0 para poder afirmar que el valor de la resistencia aumentará
- conforme lo haga la temperatura.
+ a 20°C (temperatura ambiente), lo que al fin y al cabo lo que resulta important
+e es que sea mayor que 0 para poder afirmar que el valor de la resistencia
+ aumentará conforme lo haga la temperatura.
 \end_layout
 
 \begin_layout Standard
@@ -1763,7 +1833,7 @@ constante
 \begin_inset Quotes erd
 \end_inset
 
- (Ver Figure 2).
+ (Ver Figure 2), verificando la hipótesis planteada en el inciso 2.2.
 \end_layout
 
 \begin_layout Section
@@ -1771,7 +1841,7 @@ Anexo
 \end_layout
 
 \begin_layout Subsection
-Resolucion analitica del circuito 1
+Resolucion análitica del circuito 1
 \end_layout
 
 \begin_layout Standard
@@ -1784,8 +1854,10 @@ Por este motivo, el circuito equivalente queda reducido a:
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename joaco/resources/vth.png
+	rotateOrigin center
 
 \end_inset
 
@@ -1840,8 +1912,10 @@ th
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename joaco/resources/rth.png
+	rotateOrigin center
 
 \end_inset
 
@@ -1901,8 +1975,10 @@ n
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename joaco/resources/in.png
+	rotateOrigin center
 
 \end_inset
 
@@ -1931,14 +2007,14 @@ Aplicando divisor de tensión:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $VR3=\frac{V1.Rp}{Rp+R1}=\frac{240}{41}V\thickapprox5,85V$
+\begin_inset Formula $VR2=VR3=\frac{V1.Rp}{Rp+R1}=\frac{240}{41}V\thickapprox5,85V$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $In=\frac{VR3}{R3}=\frac{12}{205}A\thickapprox58,53mA$
+\begin_inset Formula $In=IR3=\frac{VR3}{R3}=\frac{12}{205}A\thickapprox58,53mA$
 \end_inset
 
 
@@ -1947,6 +2023,35 @@ Aplicando divisor de tensión:
 \begin_layout Standard
 Además, se verifica que 
 \begin_inset Formula $\frac{Vth}{In}=\frac{4100}{27}\varOmega=Rth$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para calcular las demás corrientes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $IR2=\frac{VR2}{R2}=\frac{5.85}{200}A\thickapprox29,25mA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $IR1=IR2+IR3=(58,53+29,25)mA=87,78mA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalmente tenemos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $VR1=IR1*R1=6,14V$
 \end_inset
 
 
