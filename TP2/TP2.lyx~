@@ -1,0 +1,218 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introducción teórica
+\end_layout
+
+\begin_layout Standard
+El trabajo práctico realizado en laboratorio sobre transitorios de primer
+ y segundo orden fue dividido en dos etapas.
+\end_layout
+
+\begin_layout Standard
+La primer etapa consistió en un alimentar un cuadripolo y de alguna manera
+ determinar si el circuito interno era un RC serie o RC paralelo.
+\end_layout
+
+\begin_layout Standard
+Para ello, conectamos el circuito a 5V, y, en caso de ser un RC paralelo,
+ la tensión que se mide a la salida tiene que ser 5V.
+\end_layout
+
+\begin_layout Standard
+Luego se pidió medir la respuesta transitoria del circuito para poder sacar
+ información de los gráficos.
+\end_layout
+
+\begin_layout Standard
+Una de las tareas que se pide es obtener el tau o tiempo característico
+ del circuito.
+ Teniendo el gráfico de la descarga del circuito y utilizando el osciloscopio
+ lo 
+\end_layout
+
+\begin_layout Standard
+ajustamos de manera tal que se mida el 63% de la tensión total y así obtener
+ el tau.
+\end_layout
+
+\begin_layout Standard
+Como tau = RC entonces solo queda determinar R o C.
+\end_layout
+
+\begin_layout Standard
+Para poder obtener el valor de R se optó por alimentar el circuito y dejar
+ que llegue al estacionario con el fin de medir la corriente que pasa por
+ la fuente,que al fin y al cabo, es la que atraviesa la R una vez que el
+ circuito se encuentra en estado estacionario (i en el capacitor 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+approx$
+\end_layout
+
+\end_inset
+
+0).
+\end_layout
+
+\begin_layout Standard
+La segunda etapa consistió
+\end_layout
+
+\begin_layout Section
+Mediciones
+\end_layout
+
+\begin_layout Section
+Análisis de los datos
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Section
+Anexo
+\end_layout
+
+\begin_layout Standard
+Resolución analítica del circuito de la segunda etapa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-V+L\frac{di}{dt}+iR=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i=c\frac{dV_{c}}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{di}{dt}=C\frac{d^{2}V_{c}}{dt^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-V+LC\frac{d^{2}V_{c}}{dt^{2}}+V_{c}+RC\frac{dV_{c}}{dt}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{d^{2}V_{c}}{dt^{2}}+\frac{dV_{c}}{dt}\left(\frac{R}{L}\right)+V_{c}\left(\frac{1}{LC}\right)=V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ecuación característica del circuito:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{d^{2}V_{c}}{dt^{2}}+\frac{dV_{c}}{dt}\left(\frac{R}{L}\right)+V_{c}\left(\frac{1}{LC}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha=\frac{R}{2L}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{LC}}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
