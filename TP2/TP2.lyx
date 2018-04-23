@@ -131,7 +131,7 @@ approx$
 \end_layout
 
 \begin_layout Standard
-La segunda etapa consistió
+La segunda etapa consistió 
 \end_layout
 
 \begin_layout Section
@@ -155,9 +155,13 @@ Resolución analítica del circuito de la segunda etapa:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename analitico.png
+	scale 50
 
-\color red
-ACA VA UNA IMAGEN DEL CIRCUITO
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
