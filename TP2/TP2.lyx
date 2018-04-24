@@ -85,57 +85,60 @@ La primer etapa consistió en un alimentar un cuadripolo y de alguna manera
 \end_layout
 
 \begin_layout Standard
-Para ello, conectamos el circuito a 5V, y, en caso de ser un RC paralelo,
- la tensión que se mide a la salida tiene que ser 5V.
-\end_layout
-
-\begin_layout Standard
 Luego se pidió medir la respuesta transitoria del circuito para poder sacar
  información de los gráficos.
 \end_layout
 
 \begin_layout Standard
-Una de las tareas que se pide es obtener el tau o tiempo característico
- del circuito.
- Teniendo el gráfico de la descarga del circuito y utilizando el osciloscopio
- lo 
-\end_layout
-
-\begin_layout Standard
-ajustamos de manera tal que se mida el 63% de la tensión total y así obtener
- el tau.
-\end_layout
-
-\begin_layout Standard
-Como tau = RC entonces solo queda determinar R o C.
-\end_layout
-
-\begin_layout Standard
-Para poder obtener el valor de R se optó por alimentar el circuito y dejar
- que llegue al estacionario con el fin de medir la corriente que pasa por
- la fuente,que al fin y al cabo, es la que atraviesa la R una vez que el
- circuito se encuentra en estado estacionario (i en el capacitor 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-approx$
-\end_layout
-
+A partir de los gráficos obtenidos, se pide obtener el 
+\begin_inset Formula $\tau$
 \end_inset
 
-0).
+ del circuito, también conocido como constante de tiempo del circuito, a
+ fin de medir indirectamente R o C.
 \end_layout
 
 \begin_layout Standard
-La segunda etapa consistió 
+La segunda etapa consistió en
 \end_layout
 
 \begin_layout Section
-Mediciones
+Método experimental
+\end_layout
+
+\begin_layout Standard
+Para poder determinar si se trata de un RC serie o RC paralelo conectamos
+ el circuito a 5V, y, en caso de ser un RC paralelo, la tensión que se mide
+ a la salida tiene que ser 5V (sin transitorio).
+\end_layout
+
+\begin_layout Standard
+Experimentalmente se obtuvo que efectivamente se trataba de un RC paralelo.
+\end_layout
+
+\begin_layout Standard
+Teniendo el gráfico de la descarga del circuito y utilizando el osciloscopio
+ lo ajustamos de manera tal que se mida el 63% de la tensión total y así
+ obtener el tau.
+\end_layout
+
+\begin_layout Standard
+Con el gráfico se obtiene que 
+\begin_inset Formula $\tau=COMPLETARms=RC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta manera, lo único que queda para saber el valor de C es determinar
+ R.
+ Para ello, se optó por alimentar el circuito y dejar que llegue al estacionario
+ con el fin de medir la corriente que pasa por la fuente (con un amperímetro
+ conectado en serie con la fuente y a la entrada del cuadripolo), que al
+ fin y al cabo, es la que atraviesa la R una vez que el circuito se encuentra
+ en estado estacionario (la corriente en el capacitor es aproximadamente
+ 0).
 \end_layout
 
 \begin_layout Section
