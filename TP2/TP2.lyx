@@ -950,10 +950,86 @@ Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Vc(t)=e^{(-\alpha t)}*(A\cos(\omega't)+B\sin(\omega't))+10V$
+\begin_inset Formula $V_{c}(t)=Ae^{-\alpha t}cos(\omega't+\varphi)$
 \end_inset
 
-, donde A y B son constantes que se obtienen de los valores iniciales.
+ donde A y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ son constantes que se obtienen de los valores iniciales 
+\begin_inset Formula $V_{c}(0)$
+\end_inset
+
+ y 
+\begin_inset Formula $\frac{dV_{c}}{dt}(0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i(t)=c\frac{dV_{c}}{dt}(t)\rightarrow\left[\frac{dV_{c}}{dt}(0)=\frac{i(0)}{C}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{c}(0)=Acos(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dV_{c}}{dt}(t)=A\left[-\alpha e^{-\alpha t}cos(\omega't+\varphi)+e^{-\alpha t}(-sen(\omega't+\varphi)\omega'))\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dV_{c}}{dt}(0)=A\left[-\alpha cos(\varphi)-sen(\varphi)(\omega')\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dV_{c}}{dt}(0)=-A\alpha cos(\varphi)-Asen(\varphi)(\omega')=-\alpha V_{c}(0)-Asen(\varphi)(\omega')$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\frac{\frac{dV_{c}}{dt}(0)+\alpha V_{c}(0)}{\omega'}=Asen(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\sqrt{\left[V_{c}(0)\right]^{2}+\left[\frac{\frac{dV_{c}}{dt}(0)+\alpha V_{c}(0)}{\omega'}\right]^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+con el valor de A calculado es sencillo obtener 
+\begin_inset Formula $\varphi$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{V_{c}(0)}{A}=cos(\varphi)\rightarrow\varphi=arccos(\frac{V_{c}(0)}{A})$
+\end_inset
+
+
 \end_layout
 
 \end_body
