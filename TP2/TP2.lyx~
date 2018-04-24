@@ -136,7 +136,7 @@ Como
 \begin_inset Formula $\tau=RC$
 \end_inset
 
- lo único que queda para saber el valor de C es determinar R.
+ , lo único que queda para saber el valor de C es determinar R.
  Para ello, se optó por alimentar el circuito y dejar que llegue al estacionario
  con el fin de medir la corriente que pasa por la fuente (con un amperímetro
  conectado en serie con la fuente y a la entrada del cuadripolo), que al
