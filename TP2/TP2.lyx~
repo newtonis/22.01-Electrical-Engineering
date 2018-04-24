@@ -95,7 +95,7 @@ A partir de los gráficos obtenidos, se pide obtener el
 \end_inset
 
  del circuito, también conocido como constante de tiempo del circuito, a
- fin de medir indirectamente R o C.
+ fin de medir indirectamente R y C.
 \end_layout
 
 \begin_layout Standard
@@ -118,7 +118,15 @@ Experimentalmente se obtuvo que efectivamente se trataba de un RC paralelo.
 
 \begin_layout Standard
 Se procedió a desconectar la fuente de alimentación de modo que el capacitor
- comience a descargarse.
+ comience a descargarse según 
+\size large
+
+\begin_inset Formula $V_{c}=V_{(0)}e^{-\frac{t}{\tau}}$
+\end_inset
+
+.
+
+\size default
  
 \end_layout
 

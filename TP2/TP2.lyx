@@ -118,8 +118,21 @@ Experimentalmente se obtuvo que efectivamente se trataba de un RC paralelo.
 
 \begin_layout Standard
 Se procedió a desconectar la fuente de alimentación de modo que el capacitor
- comience a descargarse.
- 
+ comience a descargarse según 
+\size large
+
+\begin_inset Formula $V_{c}=V_{(0)}e^{-\frac{t}{\tau}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $V_{(0)}=5V$
+\end_inset
+
+ ya que estaba conectado en paralelo el capacitor.
 \end_layout
 
 \begin_layout Standard
