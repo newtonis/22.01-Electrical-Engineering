@@ -26,10 +26,12 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,6 +55,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -82,15 +88,9 @@ El trabajo práctico realizado en laboratorio sobre transitorios de primer
 \begin_layout Standard
 La primer etapa consistió en un alimentar un cuadripolo y de alguna manera
  determinar si el circuito interno era un RC serie o RC paralelo.
-\end_layout
-
-\begin_layout Standard
-Luego se pidió medir la respuesta transitoria del circuito para poder sacar
- información de los gráficos.
-\end_layout
-
-\begin_layout Standard
-A partir de los gráficos obtenidos, se pide obtener el 
+ Luego se procedió a medir la respuesta transitoria del circuito para poder
+ obtener información de los gráficos.
+ A partir de los gráficos obtenidos, se buscó obtener el 
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -99,45 +99,51 @@ A partir de los gráficos obtenidos, se pide obtener el
 \end_layout
 
 \begin_layout Standard
-La segunda etapa consistió en
+La segunda etapa consistió en un circuito RLC serie, donde se midió la tensión
+ resultante sobre el capacitor para analizar el régimen de comportamiento.
+ Se analizaron 3 casos: los tres componentes juntos, cortocircuitando la
+ resistencia (resultando LC idealmente), y cortocircuitando la bobina.
+ Finalmente se realiza un contraste con el modelo teórico.
 \end_layout
 
 \begin_layout Section
 Método experimental
 \end_layout
 
-\begin_layout Standard
-Para poder determinar si se trata de un RC serie o RC paralelo conectamos
- el circuito a 5V, y, en caso de ser un RC paralelo, la tensión que se mide
- a la salida tiene que ser 5V (sin transitorio).
+\begin_layout Subsection*
+2.1 Cuadripolo RC
 \end_layout
 
 \begin_layout Standard
-Experimentalmente se obtuvo que efectivamente se trataba de un RC paralelo.
+Para poder determinar si se trata de un RC serie o RC paralelo se conectó
+ el circuito a una fuente de 5V, y, en caso de ser un RC paralelo, la tensión
+ que se mide a la salida tiene que ser 5V dado que al cargarse el capacitor
+ se comporta como un circuito abierto, por lo que al medir sobre la resistencia
+ a la salida del cuadripolo se mide la tensión de la fuente.
+ Experimentalmente se obtuvo que efectivamente se trataba de un RC paralelo.
 \end_layout
 
 \begin_layout Standard
 Se procedió a desconectar la fuente de alimentación de modo que el capacitor
- comience a descargarse según 
+ comience a descargarse según la ecuación 
 \size large
 
 \begin_inset Formula $V_{c}=V_{(0)}e^{-\frac{t}{\tau}}$
 \end_inset
 
-.
-\end_layout
 
-\begin_layout Standard
-Donde 
+\size default
+, donde 
 \begin_inset Formula $V_{(0)}=5V$
 \end_inset
 
- ya que estaba conectado en paralelo el capacitor.
+ ya que el capacitor estaba cargado completamente.
 \end_layout
 
 \begin_layout Standard
-Teniendo el gráfico de la descarga del circuito, se midió el 63% de la tensión
- total con el osciloscopio y de esa forma se obtuvo el 
+Teniendo la señal de la descarga del circuito en el osciloscopio, con ayuda
+ de los cursores se midió el 63% de la tensión total para obtener el tiempo
+ al que le correspondía, el cual es 
 \begin_inset Formula $\tau$
 \end_inset
 
@@ -151,15 +157,702 @@ Como
 
  , lo único que queda para saber el valor de C es determinar R.
  Para ello, se optó por alimentar el circuito y dejar que llegue al estacionario
- con el fin de medir la corriente que pasa por la fuente (con un amperímetro
- conectado en serie con la fuente y a la entrada del cuadripolo), que al
- fin y al cabo, es la que atraviesa la R una vez que el circuito se encuentra
- en estado estacionario (la corriente en el capacitor es aproximadamente
- 0).
+ (lo cual es casi instantáneo dado que el capacitor se encuentra en paralelo
+ a la fuente) con el fin de medir la corriente que pasa por la fuente (con
+ un amperímetro conectado en serie con la fuente y a la entrada del cuadripolo),
+ que al fin y al cabo, es la que atraviesa la R una vez que el circuito
+ se encuentra en estado estacionario (la corriente en el capacitor es prácticame
+nte 0, dado que se comporta como circuito abierto).
+\end_layout
+
+\begin_layout Standard
+Haciendo el cociente de 
+\begin_inset Formula $R=\frac{V}{I}$
+\end_inset
+
+ medidos, se obtiene el valor de R, por lo que para luego hallar C solo
+ resta despejar de la ecuación de la constante de tiempo.
+\end_layout
+
+\begin_layout Subsection*
+2.2 Circuito RLC Serie
+\end_layout
+
+\begin_layout Standard
+Para el circuito RLC, se toman en cuenta para los cálculos parámetros adicionale
+s, que son la resistencia interna de la fuente (
+\begin_inset Formula $50\varOmega$
+\end_inset
+
+), y la resistencia de la bobina utilizada (
+\begin_inset Formula $12.8\varOmega$
+\end_inset
+
+).
+ Del banco de capacitores provisto, se configuraron las llaves para obtener
+ una capacidad de 
+\begin_inset Formula $4\mu F$
+\end_inset
+
+.
+ Para obtener el valor de la inductancia L, se utilizó la medición de la
+ señal de tensión sobre el capacitor con osciloscopio del segundo caso,
+ donde se cortocircuita a la resistencia de 
+\begin_inset Formula $200\varOmega$
+\end_inset
+
+, midiendo el pseudoperíodo de la señal dado que se observa un régimen sobreamor
+tiguado (dado que están presentes aún la resistencia de la fuente y la de
+ la bobina, no resulta un LC puro).
+ Sabiendo que la pseudo frecuencia angular está dada por 
+\begin_inset Formula $\omega'=\frac{2\pi}{T\text{'}}=\sqrt{\frac{R^{2}}{4L^{2}}-\frac{1}{LC}}$
+\end_inset
+
+, se despeja el valor de la inductancia L, para luego poder realizar la
+ simulación del circuito en LTSpice.
+ 
 \end_layout
 
 \begin_layout Section
 Análisis de los datos
+\end_layout
+
+\begin_layout Standard
+En la primera etapa, a partir de las mediciones realizadas, se obtuvo la
+ siguiente señal para la descarga del capacitor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim1Descarga.jpeg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descarga del capacitor, con los cursores midiendo el 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mediante los cursores se determinó que la constante de tiempo del circuito
+ es 
+\begin_inset Formula $\tau=4.360seg$
+\end_inset
+
+.
+ Conectando el amperímetro y el voltímetro al circuito, se determinó el
+ valor de la tensión de la fuente (5.08V) y la corriente que pasa por la
+ misma (6.3mA).
+\end_layout
+
+\begin_layout Standard
+Mediante la ley de Ohm se obtiene el valor de R:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=\frac{V}{I}=806\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego, para determinar C, se despeja de la ecuación de la constante de tiempo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau=R*C$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $C=\frac{\tau}{R}=5.4mF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con estos valores se procedió a realizar las simualciones en LTSpice, obteniendo
+ la gráfica siguiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim1.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulacion de descarga del capacitor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Junto con esta gráfica, se compara con el valor anterior:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simulado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,36 seg.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,5 seg.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la segunda etapa, analizamos primero el caso con R cortocircuitada, donde
+ la R total en este caso resulta ser la de la fuente más la de la bobina,
+ obteniendo así que 
+\begin_inset Formula $R=62.8\varOmega$
+\end_inset
+
+, y utilizando el capacitor de 
+\begin_inset Formula $4\mu F$
+\end_inset
+
+ se obtuvo la siguiente señal de tensión sobre el capacitor en el osciloscopio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim2Sub.jpeg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta transitoria para el caso con 
+\begin_inset Formula $R=62.8\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+De esta señal, mediante los cursores se obtiene el valor del pseudo período
+ para el régimen subamortiguado 
+\begin_inset Formula $T'=4ms$
+\end_inset
+
+.
+ Con este valor se calcula la pseudo frecuencia angular 
+\begin_inset Formula $\omega'=\frac{2\pi}{T'}=1570,8$
+\end_inset
+
+
+\begin_inset Formula $\frac{rad}{seg}$
+\end_inset
+
+.
+ Sabiendo que 
+\begin_inset Formula $\omega'=\sqrt{\frac{R^{2}}{4L^{2}}-\frac{1}{LC}}$
+\end_inset
+
+, se despeja para obtener el valor de L: 
+\begin_inset Formula $\omega'^{2}L^{2}-\frac{L}{C}+\frac{R^{2}}{4}=0$
+\end_inset
+
+.
+ De la ecuación surgen dos valores: 
+\begin_inset Formula $\begin{cases}
+4.11mH & 0.1H\end{cases}\}$
+\end_inset
+
+.
+ Se descarta el primer valor dado que al evaluar en el caso de no cortocircuitar
+ la 
+\begin_inset Formula $R=200\varOmega$
+\end_inset
+
+ se obtendría una respuesta sobreamortiguada, pero en la práctica se observó
+ que resultó también subamortiguada como en el caso de R cortocircuitada.
+ Con estos valores se realizó la simulación en LTSpice obteniendo la siguiente
+ respuesta.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim2Rcorto.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta transitoria simulada para el caso 
+\begin_inset Formula $R=62.8\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La tensión medida es la tensión sobre el capacitor que surge de la diferencia
+ 
+\begin_inset Formula $VC+VR-VR=VC$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para el caso donde no se cortocircuita la R, no se incluyó la señal del
+ osciloscopio dado que no se podía medir el pseudoperído porque la respuesta
+ tendía al régimen estacionario muy rápidamente, lo cual se puede observar
+ en el factor 
+\begin_inset Formula $\alpha=\frac{R}{2L}$
+\end_inset
+
+ del circuito, ya que para el valor de 
+\begin_inset Formula $R=262.8\varOmega$
+\end_inset
+
+ se obtiene que el 
+\begin_inset Formula $\alpha=2628$
+\end_inset
+
+.
+ Como la respuesta para dicho régimen es de la forma 
+\begin_inset Formula $Vc(t)=e^{(-\alpha t)}*(A\cos(\omega\text{'t})+B\sin(\omega\text{'t}))+10V$
+\end_inset
+
+, se observa entonces que la exponencial decrece muy rápido.
+ Se puede apreciar esto mejor en la simulación realizada en LTSpice.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim2Rgrande.pdf
+	scale 50
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\backslash
+exp(-
+\backslash
+alpha t)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta simulada para el caso 
+\begin_inset Formula $R=262.8\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el último caso, se cortocircuita la bobina, eliminano la inductancia
+ y su resistencia del circuito, quedando el capacitor y una resistencia
+ 
+\begin_inset Formula $R=250\varOmega$
+\end_inset
+
+ (incluyendo la de la fuente).
+ Midiendo con el osciloscopio, se obtuvo la señal de respuesta transitoria
+ de carga y descarga en los siguientes graficos.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim2Carga.jpeg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal de carga del capactior con L cortocircuitada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim2Descarga.jpeg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal de descarga del capacitor con L cortocircuitada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con dichos valore de R y C, se realizó la simlación correspondiente, obteniendo
+ las respuestas siguientes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sim2Lcorto.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal de carga y descarga del capacitor simuladas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el caso de que la Rtotal fuera 0, es decir, sin tener la 
+\begin_inset Formula $R=200\varOmega$
+\end_inset
+
+, ni la de la fuente ni la de la bobina, correspondería a un circuito LC
+ puro, donde la energía entregada por la fuente 
+\begin_inset Quotes eld
+\end_inset
+
+va y vuelve
+\begin_inset Quotes erd
+\end_inset
+
+ a la misma en forma periódica, dado que no hay pérdidas resistivas.
+\end_layout
+
+\begin_layout Standard
+Partiendo de la ecuación característica homogénea: 
+\begin_inset Formula $\frac{d^{2}V_{c}}{dt^{2}}+\frac{dV_{c}}{dt}\left(\frac{R}{L}\right)+V_{c}\left(\frac{1}{LC}\right)=0$
+\end_inset
+
+, se deducen los tres casos posibles según la relación entre la frencuencia
+ de amortiguamiento 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ y la frecuencia de resonancia 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+(ver en Anexo):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\alpha>\omega_{0} & Sobreamortiguado\\
+\alpha=\omega_{0} & Crítico\\
+\alpha<\omega_{0} & Subamortiguado
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Despejando de los casos anteriores para la R se obtiene que 
+\begin_inset Formula $\frac{2L}{\sqrt{LC}}=316,22\varOmega$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+R>316,22 & Sobreamortiguado\\
+R=316,22 & Crítico\\
+R<316,22 & Subamortiguado
+\end{cases}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -175,6 +868,7 @@ Resolución analítica del circuito de la segunda etapa:
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename analitico.png
 	scale 30
@@ -231,6 +925,7 @@ Ecuación característica del circuito:
 \end_layout
 
 \begin_layout Standard
+Frecuencia de Amortiguamiento:
 \begin_inset Formula $\alpha=\frac{R}{2L}$
 \end_inset
 
@@ -238,10 +933,27 @@ Ecuación característica del circuito:
 \end_layout
 
 \begin_layout Standard
+Frecuencia de Resonancia:
 \begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{LC}}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
+ 
+\begin_inset Formula $\alpha<\omega_{0}$
+\end_inset
+
+), la solución a la ecuación no homogénea es de la forma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vc(t)=e^{(-\alpha t)}*(A\cos(\omega't)+B\sin(\omega't))+10V$
+\end_inset
+
+, donde A y B son constantes que se obtienen de los valores iniciales.
 \end_layout
 
 \end_body
