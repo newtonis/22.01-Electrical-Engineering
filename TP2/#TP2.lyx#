@@ -117,26 +117,23 @@ Experimentalmente se obtuvo que efectivamente se trataba de un RC paralelo.
 \end_layout
 
 \begin_layout Standard
-Se procedió a desconectar la fuente de alimentación de modo que el capacitor
- comience a descargarse.
- 
+Se procede a desconectar la fuente de alimentación de modo que el capacitTeniend
+o el gráfico de la descarga del circuito y utilizando el osciloscopio lo
+ ajustamos de manera tal que se mida el 63% de la tensión total y así obtener
+ el tau.
 \end_layout
 
 \begin_layout Standard
-Teniendo el gráfico de la descarga del circuito, se midió el 63% de la tensión
- total con el osciloscopio y de esa forma se obtuvo el 
-\begin_inset Formula $\tau$
+Con el gráfico se obtiene que 
+\begin_inset Formula $\tau=COMPLETARms=RC$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
-Como 
-\begin_inset Formula $\tau=RC$
-\end_inset
-
- , lo único que queda para saber el valor de C es determinar R.
+De esta manera, lo único que queda para saber el valor de C es determinar
+ R.
  Para ello, se optó por alimentar el circuito y dejar que llegue al estacionario
  con el fin de medir la corriente que pasa por la fuente (con un amperímetro
  conectado en serie con la fuente y a la entrada del cuadripolo), que al
