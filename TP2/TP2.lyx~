@@ -77,12 +77,22 @@
 \begin_body
 
 \begin_layout Section
-Introducción teórica
+Introducción 
+\lang spanish
+teórica
 \end_layout
 
 \begin_layout Standard
-El trabajo práctico realizado en laboratorio sobre transitorios de primer
- y segundo orden fue dividido en dos etapas.
+
+\lang spanish
+El
+\lang english
+ 
+\lang spanish
+trabajo
+\lang english
+ práctico realizado en laboratorio sobre transitorios de primer y segundo
+ orden fue dividido en dos etapas.
 \end_layout
 
 \begin_layout Standard
@@ -116,10 +126,11 @@ Método experimental
 
 \begin_layout Standard
 Para poder determinar si se trata de un RC serie o RC paralelo se conectó
- el circuito a una fuente de 5V, y, en caso de ser un RC paralelo, la tensión
- que se mide a la salida tiene que ser 5V dado que al cargarse el capacitor
- se comporta como un circuito abierto, por lo que al medir sobre la resistencia
- a la salida del cuadripolo se mide la tensión de la fuente.
+ el circuito a una fuente de 5V.
+ En caso de ser un RC paralelo, la tensión que se mide a la salida tiene
+ que ser 5V, ya que al cargarse, el capacitor se comporta como un circuito
+ abierto, por lo que al medir sobre la resistencia a la salida del cuadripolo
+ se mide la tensión de la fuente.
  Experimentalmente se obtuvo que efectivamente se trataba de un RC paralelo.
 \end_layout
 
@@ -179,8 +190,8 @@ Haciendo el cociente de
 \end_layout
 
 \begin_layout Standard
-Para el circuito RLC, se toman en cuenta para los cálculos parámetros adicionale
-s, que son la resistencia interna de la fuente (
+Para el circuito RLC, se toman en cuenta para los cálculos de parámetros
+ adicionales, que son la resistencia interna de la fuente (
 \begin_inset Formula $50\varOmega$
 \end_inset
 
@@ -821,7 +832,7 @@ Señal de descarga del capacitor con L cortocircuitada
 \end_layout
 
 \begin_layout Standard
-Con dichos valore de R y C, se realizó la simlación correspondiente, obteniendo
+Con dichos valore de R y C, se realizó la simulación correspondiente, obteniendo
  la respuesta siguiente.
 \end_layout
 
