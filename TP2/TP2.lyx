@@ -77,12 +77,22 @@
 \begin_body
 
 \begin_layout Section
-Introducción teórica
+Introducción 
+\lang spanish
+teórica
 \end_layout
 
 \begin_layout Standard
-El trabajo práctico realizado en laboratorio sobre transitorios de primer
- y segundo orden fue dividido en dos etapas.
+
+\lang spanish
+El
+\lang english
+ 
+\lang spanish
+trabajo
+\lang english
+ práctico realizado en laboratorio sobre transitorios de primer y segundo
+ orden fue dividido en dos etapas.
 \end_layout
 
 \begin_layout Standard
@@ -278,6 +288,21 @@ Mediante los cursores se determinó que la constante de tiempo del circuito
 
 \begin_layout Standard
 Mediante la ley de Ohm se obtiene el valor de R:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -285,10 +310,40 @@ Mediante la ley de Ohm se obtiene el valor de R:
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Luego, para determinar C, se despeja de la ecuación de la constante de tiempo:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -301,6 +356,21 @@ Luego, para determinar C, se despeja de la ecuación de la constante de tiempo:
 
 
 \begin_inset Formula $C=\frac{\tau}{R}=5.4mF$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -520,7 +590,11 @@ De esta señal, mediante los cursores se obtiene el valor del pseudo período
 \end_inset
 
 .
- Se descarta el primer valor dado que al evaluar en el caso de no cortocircuitar
+ 
+\end_layout
+
+\begin_layout Standard
+Se descarta el primer valor dado que al evaluar en el caso de no cortocircuitar
  la 
 \begin_inset Formula $R=200\varOmega$
 \end_inset
@@ -601,9 +675,33 @@ Para el caso donde no se cortocircuita la R, no se incluyó la señal del
 
 .
  Como la respuesta para dicho régimen es de la forma 
-\begin_inset Formula $Vc(t)=e^{(-\alpha t)}*(A\cos(\omega\text{'t})+B\sin(\omega\text{'t}))+10V$
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $Vc(t)=Ae^{-\alpha t}cos(\omega't+\varphi)+10V$
 \end_inset
 
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
 , se observa entonces que la exponencial decrece muy rápido.
  Se puede apreciar esto mejor en la simulación realizada en LTSpice.
 \end_layout
@@ -624,22 +722,6 @@ status open
 \end_inset
 
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\backslash
-exp(-
-\backslash
-alpha t)
 \end_layout
 
 \begin_layout Plain Layout
@@ -750,7 +832,7 @@ Señal de descarga del capacitor con L cortocircuitada
 
 \begin_layout Standard
 Con dichos valore de R y C, se realizó la simlación correspondiente, obteniendo
- las respuestas siguientes.
+ la respuesta siguiente.
 \end_layout
 
 \begin_layout Standard
@@ -792,20 +874,12 @@ Señal de carga y descarga del capacitor simuladas
 \end_layout
 
 \begin_layout Standard
-En el caso de que la Rtotal fuera 0, es decir, sin tener la 
-\begin_inset Formula $R=200\varOmega$
+Con los valores de R y C, se obtiene que la constate de tiempo en este caso
+ es 
+\begin_inset Formula $\tau=R*C=62,8*4\mu F=251,2\mu seg.$
 \end_inset
 
-, ni la de la fuente ni la de la bobina, correspondería a un circuito LC
- puro, donde la energía entregada por la fuente 
-\begin_inset Quotes eld
-\end_inset
 
-va y vuelve
-\begin_inset Quotes erd
-\end_inset
-
- a la misma en forma periódica, dado que no hay pérdidas resistivas.
 \end_layout
 
 \begin_layout Standard
@@ -859,12 +933,263 @@ R<316,22 & Subamortiguado
 Conclusiones
 \end_layout
 
+\begin_layout Standard
+En la primera experiencia con el circuito RC paralelo, comparando los resultados
+ de la simualción con los obtenidos con el osciloscopio, no se notaron diferenci
+as apreciables en las mediciones de tensión de capacitor y constantes de
+ tiempo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ obtenidas, por lo que no fue necesario realizar alguna consideración adicional
+ en los cálculos.
+ La señal medida sólo es la de la descarga, debido a que al ser un circuto
+ RC paralelo, desde el instante t = 0 la fuente está conectada en paralelo
+ al capacitor (y a la resistencia), por lo que en forma práctica el mismo
+ se carga casi instantáneamente, dado que la resistencia que pudiera haber
+ entre ambos (fuente y patas del capacitor) es despreciable.
+\end_layout
+
+\begin_layout Standard
+En la segunda experiencia con el circuito RLC serie, para ajustar las mediciones
+ a las simulaciones realizadas, se tuvo en cuenta la resistencia interna
+ de la fuente y la de la bobina.
+ En el primer caso con la resistencia física de 
+\begin_inset Formula $200\varOmega$
+\end_inset
+
+ conectada se obtiene en forma teórica que la respuesta transitoria es subamorti
+guado, lo cual es levemente apreciable en el gráfico de respuesta obtenido
+ con la simulación, observándose el efecto del alto valor que adquiere en
+ este caso la frecuencia de amortiguamiento 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ al ser directamente proporcional al valor de la R total del circuito.
+ Debido a la gran atenuación que provoca en la tensión sobre el capacitor
+ en muy poco tiempo de transitorio, no logra apreciar en la señal medida
+ con el osciloscopio (confundiéndolo con un sobreamortiguado, por lo que
+ no es posible medir el pseudoperíodo de dicha señal) y por ello no se la
+ incluyó en el informe de resultados.
+\end_layout
+
+\begin_layout Standard
+En el segundo caso de RLC, con la resistencia R cortocircuitada, en forma
+ teórica se obtiene un circuito LC puro, cuya respuesta es una señal oscilante
+ periódica que se modeliza como una senoidal cuyo período es 
+\begin_inset Formula $T=2\pi\sqrt{LC}$
+\end_inset
+
+, debido a que al no haber efectos resistivos en el circuito, el factor
+ atenuante 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ vale 0.
+ Quiere decir que la energía que entrega la fuente es almacenada en los
+ componentes reactivos (L y C) y devuelta a la misma en forma periódica.
+ En el circuito práctico al cortocircuitar R, aún están presentes la resistencia
+ del bobinado y la de la fuente, por lo que la respuesta obtenida corresponde
+ a un régimen subamortiguado, donde la frecuencia de amortiguamiento 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ toma un valor menor que en el primer caso, pero sigue siendo distinto de
+ 0.
+ En este caso si es posible medir el pseudoperíodo de la señal con el osciloscop
+io, dato que luego se utilizó para determinar el valor de la inductacia
+ de la bobina como se mencionó en Método Experimental, teniendo en cuenta
+ como datos el resto de los elementos.
+ Con estos valores se volcó el circuito en el simulador donde, como se pudo
+ observar en Análisis de resultados, se obtuvo una respuesta equivalente
+ a la señal medida gracias a tener en cuenta los factores mencionados de
+ impedancias de la fuente y la bobina, por lo que no se observan diferencias
+ de importancia para mencionar.
+\end_layout
+
+\begin_layout Standard
+En el tercer caso de RLC, con la inductancia cortocircuitada, se elmina
+ así del circuito la parte inductiva junto con la resistencia de la bobina,
+ obteniendo un circuito RC serie.
+ Como en este caso la constante de tiempo es muy pequeña en comparación
+ con el primer circuito, se puede observar en este caso una pequeña desviación
+ en la señal medida, la cual es un pulso de ruido resultante del rebote
+ al presionar el interruptor que conecta la fuente al circuito, que ocurrió
+ tanto para la carga como para la descarga.
+ Esto en la simulación no ocurre ya que el cambio de conexión y desconexión
+ de la fuente es ideal.
+ 
+\end_layout
+
 \begin_layout Section
 Anexo
 \end_layout
 
 \begin_layout Standard
-Resolución analítica del circuito de la segunda etapa:
+En este apartado se incluyen las ecuaciones y expresiones características
+ de los casos analizados.
+\end_layout
+
+\begin_layout Standard
+Resolución analítica del circuito de la primera etapa (no se dibuja la referenci
+a GND que usa el simulador):
+\end_layout
+
+\begin_layout Standard
+Se analiza la descarga, considerando como 
+\begin_inset Formula $Vc(0)=5V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename analitico1.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $VR+Vc=0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ic*R+Vc=0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C\frac{dVc}{dt}*R+Vc=0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dVc}{dt}+\frac{Vc}{RC}=0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resolviendo la ecuación diferencial de primer orden se obtiene que:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Vc(t)=5*e^{-\frac{t}{RC}}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resolución analítica del circuito de la segunda etapa (no se dibuja la referenci
+a GND que usa el simulador):
 \end_layout
 
 \begin_layout Standard
@@ -883,10 +1208,40 @@ Resolución analítica del circuito de la segunda etapa:
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $i=c\frac{dV_{c}}{dt}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -897,10 +1252,40 @@ Resolución analítica del circuito de la segunda etapa:
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $-V+LC\frac{d^{2}V_{c}}{dt^{2}}+V_{c}+RC\frac{dV_{c}}{dt}=0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -911,14 +1296,59 @@ Resolución analítica del circuito de la segunda etapa:
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Ecuación característica del circuito:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\frac{d^{2}V_{c}}{dt^{2}}+\frac{dV_{c}}{dt}\left(\frac{R}{L}\right)+V_{c}\left(\frac{1}{LC}\right)=0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -929,12 +1359,42 @@ Frecuencia de Amortiguamiento:
 \begin_inset Formula $\alpha=\frac{R}{2L}$
 \end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Standard
 Frecuencia de Resonancia:
 \begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{LC}}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -947,13 +1407,47 @@ Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
 \end_inset
 
 ), la solución a la ecuación no homogénea es de la forma:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V_{c}(t)=Ae^{-\alpha t}cos(\omega't+\varphi)$
+\begin_inset Formula $V_{c}(t)=Ae^{-\alpha t}cos(\omega't+\varphi)+10V$
 \end_inset
 
- donde A y 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde A y 
 \begin_inset Formula $\varphi$
 \end_inset
 
@@ -966,6 +1460,21 @@ Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -973,10 +1482,40 @@ Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V_{c}(0)=Acos(\varphi)$
+\begin_inset Formula $V_{c}(0)=Acos(\varphi)+10V$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -987,10 +1526,40 @@ Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\frac{dV_{c}}{dt}(0)=A\left[-\alpha cos(\varphi)-sen(\varphi)(\omega')\right]$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -1001,6 +1570,21 @@ Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1008,10 +1592,40 @@ Dado que el caso que se presentó en la práctica es el subamortiguado (cuando
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $A=\sqrt{\left[V_{c}(0)\right]^{2}+\left[\frac{\frac{dV_{c}}{dt}(0)+\alpha V_{c}(0)}{\omega'}\right]^{2}}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
 \end_inset
 
 
@@ -1023,10 +1637,25 @@ con el valor de A calculado es sencillo obtener
 \end_inset
 
 :
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\frac{V_{c}(0)}{A}=cos(\varphi)\rightarrow\varphi=arccos(\frac{V_{c}(0)}{A})$
+\begin_inset Formula $\frac{V_{c}(0)-10V}{A}=cos(\varphi)\rightarrow\varphi=arccos(\frac{V_{c}(0)-10V}{A})$
 \end_inset
 
 
