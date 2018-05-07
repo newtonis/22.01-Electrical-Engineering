@@ -105,33 +105,23 @@ Caso/Grupo 1 :
 \end_layout
 
 \begin_layout Itemize
-R1 = Resistencia de las lámparas incandescentes
+R1 = Resistencia de la lámpara incandescente (se usaron 2 lámparas)
 \end_layout
 
 \begin_layout Itemize
-L = Bobina con núcleo de aire 
+L = Bobina con núcleo de aire
 \end_layout
 
 \begin_layout Itemize
-R2 = Resistencia de la bobina 
+R2 = Resistencia de la bobina
 \end_layout
 
 \begin_layout Itemize
-C = Banco de capacitores 
+C = Banco de capacitores
 \end_layout
 
 \begin_layout Standard
-Como R1, se utilizaron dos lámparas.
- Luego, la resistencia de la bobina medida con un multímetro resultó de
- 
-\begin_inset Formula $21\varOmega$
-\end_inset
 
-, y la capacidad utilizada fue de 
-\begin_inset Formula $20\mu F$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Section

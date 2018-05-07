@@ -78,12 +78,58 @@ Introdución Teórica
 Método Experimental
 \end_layout
 
+\begin_layout Subsection
+Influencia del Instrumental en las mediciones
+\end_layout
+
+\begin_layout Standard
+Con el fin de considerar en la comparación de las mediciones con los valores
+ calculados la potencia consumida por el vatímetro, se realizó la conexión
+ especificada en el trabajo práctico para obtener dichos valores.
+ Con la indicación del voltímetro y teniendo el valor de la Rint del vatímetro,
+ se calculó la potencia consumida mediante la expresión 
+\begin_inset Formula $P_{vatimetro}=\frac{V^{2}}{Rint}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Circuito R-L-C Paralelo
+\end_layout
+
+\begin_layout Standard
+En el análisis del circuito, se utilizaron los indicados en el 
+\series bold
+Caso/Grupo 1 :
+\end_layout
+
+\begin_layout Itemize
+R1 = Resistencia de la lámpara incandescente (se usaron 2 lámparas)
+\end_layout
+
+\begin_layout Itemize
+L = Bobina con núcleo de aire 
+\end_layout
+
+\begin_layout Itemize
+R2 = Resistencia de la bobina (medida con un óhmetro)
+\end_layout
+
+\begin_layout Itemize
+C = Banco de capacitores
+\end_layout
+
 \begin_layout Section
 Analisis de Datos
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+Conclusiones
+\end_layout
 
+\begin_layout Section
+Anexo
 \end_layout
 
 \end_body
