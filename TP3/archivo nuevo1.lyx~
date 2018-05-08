@@ -180,10 +180,10 @@ Para la consideración de la potencia consumida por el vatímetro, sabiendo
 \end_inset
 
 , se obtiene que la potencia consumida es de 
-\begin_inset Formula $P_{vatímtero}=\frac{V^{2}}{Rint}=0.44W.$
+\begin_inset Formula $P_{vatímtero}=\frac{V^{2}}{Rint}=0.44W$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
