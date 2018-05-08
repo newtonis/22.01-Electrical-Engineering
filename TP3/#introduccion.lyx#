@@ -259,7 +259,7 @@ R
 \begin_inset Formula $\varOmega$
 \end_inset
 
- (medida indirectamente).
+ medida indirectamente.
 \end_layout
 
 \begin_layout Standard
@@ -267,7 +267,7 @@ R
 \begin_inset Formula $_{2}$
 \end_inset
 
-=21 
+=27 
 \begin_inset Formula $\varOmega$
 \end_inset
 
@@ -275,7 +275,7 @@ R
 \end_layout
 
 \begin_layout Standard
-L=2,792 Hy
+L=2,792 / 2.972 Hy
 \end_layout
 
 \begin_layout Standard
@@ -299,10 +299,10 @@ X
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left[i_{2}=0.7154A/-81.445°\right]$
+\begin_inset Formula $\left[i_{2}=0.7736A/-79.05°\right]$
 \end_inset
 
-
+/0.7283
 \end_layout
 
 \begin_layout Standard
@@ -313,14 +313,14 @@ X
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left[P_{2}=10.74W\right]$
+\begin_inset Formula $\left[P_{2}=16.158W\right]$
 \end_inset
 
-
+/14.321
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left[Q_{L}=71.4468VAr\right]$
+\begin_inset Formula $\left[Q_{L}=83,544VAr\right]$
 \end_inset
 
 
