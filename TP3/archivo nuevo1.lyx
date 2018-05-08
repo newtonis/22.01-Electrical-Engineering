@@ -1400,7 +1400,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+0.5
 \end_layout
 
 \end_inset
@@ -1409,7 +1409,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-84
+42
 \end_layout
 
 \end_inset
@@ -1573,7 +1573,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+0.5
 \end_layout
 
 \end_inset
@@ -1582,7 +1582,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-63
+31.5
 \end_layout
 
 \end_inset
@@ -1746,7 +1746,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+0.5
 \end_layout
 
 \end_inset
@@ -1755,7 +1755,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-24
+12
 \end_layout
 
 \end_inset
@@ -1919,7 +1919,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+0.5
 \end_layout
 
 \end_inset
@@ -1928,7 +1928,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-84
+42
 \end_layout
 
 \end_inset
@@ -2118,7 +2118,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-84
+42
 \end_layout
 
 \end_inset
@@ -2136,7 +2136,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-93.06
+46.54
 \end_layout
 
 \end_inset
@@ -2145,7 +2145,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-125.34
+62.67
 \end_layout
 
 \end_inset
@@ -2243,7 +2243,7 @@ Ensayo
 \begin_inset Formula $\Delta Q_{C}$
 \end_inset
 
-
+[VAR]
 \end_layout
 
 \end_inset
@@ -2367,7 +2367,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-40.68
+20.34
 \end_layout
 
 \end_inset
@@ -2376,7 +2376,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-52.37
+26.2
 \end_layout
 
 \end_inset
@@ -2385,7 +2385,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-16.34
+8.17
 \begin_inset Formula $\mu F$
 \end_inset
 
@@ -2420,7 +2420,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.91
+0.92
 \end_layout
 
 \end_inset
