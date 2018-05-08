@@ -2028,7 +2028,7 @@ Para la compensación del circuito R-L a un
 \end_inset
 
 , se tomaron previamente las mediciones de potencia y 
-\begin_inset Formula $cos(\varphi_{I})$
+\begin_inset Formula $Cos(\varphi_{I})$
 \end_inset
 
  del circuito sin compensar.
@@ -2433,12 +2433,218 @@ R-L
 
 \end_layout
 
+\begin_layout Standard
+Considerando el valor experimental de C utilizado (debido a un error inicial
+ cometido en la escala de P, se modificó el 
+\begin_inset Formula $\Delta Q$
+\end_inset
+
+ necesario y por ende el valor de capacidad teórica), se recalcula el 
+\begin_inset Formula $Cos(\varphi_{F})$
+\end_inset
+
+ que se debería obtener, confeccionando la siguiente tabla.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ensayo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta Q_{C}$
+\end_inset
+
+[VAR]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{F}$
+\end_inset
+
+[VAR]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Cos(\varphi_{F})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R-L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-4.74
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9937
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Conclusiones
 \end_layout
 
 \begin_layout Standard
+Analizando en primera instancia el ensayo con R, se puede observar que la
+ corriente medida sobre la R resulta menor que la corriente total del circuito.
+ Esta diferencia es introducida por el consumo de potencia del vatímetro,
+ dado que la parte voltimétrica del mismo se conecta en paralelo, la corriente
+ total se bifurca, dando lugar a la diferencia mencionada.
+ Esta misma diferencia se ver reflejada en los ensayos posteriores, dado
+ que en todos los casos se utilizó el vatímetro.
+\end_layout
 
+\begin_layout Standard
+En el ensayo con L, aunque en forma teórica sólo se debería tener potencia
+ reactiva, se observa una parte de potencia activa.
+ Esto se debe a que la bobina posee una resistencia entre sus terminales
+ debido al devanado (que como se mencionó es de aproximadamente 
+\begin_inset Formula $21\varOmega$
+\end_inset
+
+), la cual se suma al error cometido por la potencia activa consumida por
+ el vatímetro.
+\end_layout
+
+\begin_layout Standard
+En el ensayo con C, al igual que en el caso anterior, se debería observar
+ que la potencia activa es 0 en forma teórica, dado que se tiene solo parte
+ capacitiva en el circuito, por lo que toda la potencia debería ser reactiva.
+ En este caso, el error de potencia activa no nula introducido por el vatímetro
+ es más notorio, dado que no ocurre como el caso anterior que se debía incluir
+ la resistencia de la bobina, sino que en este caso sólo se tiene como parte
+ resistiva a la introducida por el instrumental.
+\end_layout
+
+\begin_layout Standard
+En el ensayo con R-L, combinando los análisis de R y L por separado, resulta
+ coherente observar que la suma de las potencias activas obtenidas en cada
+ caso es aproximadamente igual a la resultante medida en este ensayo.
+ No es exactamente igual dado que en ambos casos por separado se tiene presente
+ al vatímetro, por lo que sumarlas directamente implicaría sumar dos veces
+ la potencia que este consume.
+ Se tendría un valor más cercano a la suma directa si, visto desde lo práctico,
+ se suman las potencias de los dos casos por separado y restando una vez
+ la potencia del vatímetro.
+\end_layout
+
+\begin_layout Standard
+En el ensayo con R-C, se observa que la potencia activa medida resulta prácticam
+ente igual a la obtenida en el ensayo con R (despreciando el error introducido
+ por el cambio de escala en el vatímetro).
+ Esto es consistente con el hecho de que la parte capacitiva introducida
+ en paralelo no modifica la parte activa del circuito R original (no así
+ como ocurrió en el ensayo R-L en comparación con el ensayo con R).
+ Por otra parte, las corrientes obtenidas para cada rama en este ensayo
+ son las mismas con las obtenidas para cada uno en los ensayos de R y C
+ por separado.
+\end_layout
+
+\begin_layout Standard
+En el ensayo con L-C, aunque visto desde lo teórico la potencia activa debería
+ ser nula, no ocurre en el ensayo experimental dado que se introduce la
+ resistencia de la bobina (como ocurre en el caso de L), además de la potencia
+ consumida por el vatímetro.
+ Si se suman las potencias activas de los ensayos L y C por separado, da
+ aproximadamente igual a la obtenida en este ensayo conjunto.
+ La diferencia observada, así como en el ensayo R-L, se puede mejorar al
+ restar una vez la potencia del instrumento, dado que la suma directa de
+ los ensayos por separado implica sumar dos veces el aporte activo del vatímetro.
+\end_layout
+
+\begin_layout Standard
+En el ensayo con R-L-C, similar a lo ocurrido en los casos combinados de
+ dos elementos, se observa que la suma de las potencias activas obtenidas
+ en los casos analizados para cada uno es similar a la medida en este caso.
+ Para aproximar mejor el valor que resultaría de la suma directa, se debe
+ restar dos veces la potencia consumida por el instrumento, dado que al
+ sumar se la incluye tres veces (por estar presente en todos los casos).
+ Se puede observar además que la corriente de cada rama es la misma que
+ la medida en los casos de R, L y C por separado.
+\end_layout
+
+\begin_layout Standard
+En la compensación de 
+\begin_inset Formula $Cos(\varphi)$
+\end_inset
+
+ realizada para el circuito R-L, debido a un error cometido en la escala
+ de la potencia activa, se calculó erróneamente la potencia reactiva capacitiva
+ a proveer y por ende el valor de capacidad necesaria.
+ Como se observa en las tablas, al colocar una mayor capacidad que la requerida
+ realmente, se compensó en exceso al sistema, por lo que pasó a ser de reactivo
+ inductivo a reactivo capacitivo (por ello el 
+\begin_inset Formula $Q_{F}$
+\end_inset
+
+ teórico da negativo).
 \end_layout
 
 \begin_layout Section
