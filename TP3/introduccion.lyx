@@ -247,7 +247,11 @@ R, L y C) P = P
 \begin_inset Formula $\omega$
 \end_inset
 
-=50Hz
+=2
+\begin_inset Formula $\pi$
+\end_inset
+
+50Hz
 \end_layout
 
 \begin_layout Standard
@@ -275,19 +279,21 @@ R
 \end_layout
 
 \begin_layout Standard
-L=2,792 Hy // Eran 0.467 Hy
+L= 0.467 Hy
 \end_layout
 
 \begin_layout Standard
-C=20
+
+\series bold
+\bar under
+Con C=20
 \begin_inset Formula $\mu$
 \end_inset
 
-f / Eran 10 
-\begin_inset Formula $\mu$
-\end_inset
-
-f 
+f:
+\series default
+\bar default
+ 
 \end_layout
 
 \begin_layout Standard
@@ -304,14 +310,28 @@ X
 
 \begin_layout Standard
 X
-\begin_inset Formula $_{C}=318,309\varOmega$
+\begin_inset Formula $_{C}=159,155\varOmega$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left[i_{2}=0.742A/-81.85°\right]$
+\begin_inset Formula $\left[i_{1}=0,328A\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{2}=0.72A/-81.5°\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{3}=0.6346/90\right]$
 \end_inset
 
 
@@ -332,14 +352,87 @@ X
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left[Q_{L}=VAr\right]$
+\begin_inset Formula $\left[Q_{L}=72,73VAr\right]$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\left[Q_{C}=-VAr\right]$
+\begin_inset Formula $\left[Q_{C}=-64,094VAr\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Con 10 
+\begin_inset Formula $\mu$
+\end_inset
+
+f
+\series default
+\bar default
+ :
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{L}=140.3$
+\end_inset
+
+
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X
+\begin_inset Formula $_{C}=318,31$
+\end_inset
+
+
+\begin_inset Formula $\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{1}=0,328A\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{2}=0,72/-81,5\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{3}=0,3173/90\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[Q_{L}=72,73VAr\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[Q_{C}=-32,047VAr\right]$
 \end_inset
 
 
