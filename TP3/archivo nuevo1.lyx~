@@ -1191,7 +1191,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-19
+79
 \end_layout
 
 \end_inset
@@ -1200,7 +1200,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.02
+0.01
 \end_layout
 
 \end_inset
@@ -1209,7 +1209,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.38
+0.79
 \end_layout
 
 \end_inset
@@ -1710,7 +1710,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-55
+7
 \end_layout
 
 \end_inset
@@ -1728,7 +1728,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.1
+0.14
 \end_layout
 
 \end_inset
@@ -1892,7 +1892,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.05
+0.01
 \end_layout
 
 \end_inset
@@ -1901,7 +1901,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.55
+0.31
 \end_layout
 
 \end_inset
@@ -2645,6 +2645,12 @@ En la compensación de
 \end_inset
 
  teórico da negativo).
+ En cualquier caso, se observa de las mediciones con la cofimétrica que
+ se logró mejorar el 
+\begin_inset Formula $Cos(\varphi)$
+\end_inset
+
+ original a un valor similar al buscado.
 \end_layout
 
 \begin_layout Section
