@@ -3605,8 +3605,18 @@ Anexo
 \end_layout
 
 \begin_layout Standard
-Para tomar las mediciones tratamos de mantener V constante, por ende también
- lo es para los cálculos.
+Para tomar las mediciones se trató de mantener V constante, por ende, utilizamos
+ tensión constante para los cálculos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename anexo.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

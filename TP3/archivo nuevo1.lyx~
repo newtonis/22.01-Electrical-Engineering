@@ -2148,7 +2148,11 @@ Ensayo
 \begin_inset Formula $P'=P-\Delta P$
 \end_inset
 
+(
+\begin_inset Formula $\Delta P=0.44W$
+\end_inset
 
+)
 \end_layout
 
 \end_inset
@@ -2261,7 +2265,7 @@ VA
 \begin_inset Text
 
 \begin_layout Plain Layout
-S
+mS
 \end_layout
 
 \end_inset
@@ -2279,7 +2283,7 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
-S
+mS
 \end_layout
 
 \end_inset
@@ -2288,7 +2292,7 @@ S
 \begin_inset Text
 
 \begin_layout Plain Layout
-S
+mS
 \end_layout
 
 \end_inset
@@ -2308,7 +2312,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+32
 \end_layout
 
 \end_inset
@@ -2317,7 +2321,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+31.56
 \end_layout
 
 \end_inset
@@ -2326,7 +2330,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -2335,7 +2339,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+34.34
 \end_layout
 
 \end_inset
@@ -2344,7 +2348,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3.136/0°
 \end_layout
 
 \end_inset
@@ -2353,7 +2357,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1
 \end_layout
 
 \end_inset
@@ -2362,7 +2366,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3.136
 \end_layout
 
 \end_inset
@@ -2371,7 +2375,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0
 \end_layout
 
 \end_inset
@@ -2391,7 +2395,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12
 \end_layout
 
 \end_inset
@@ -2400,7 +2404,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+11.56
 \end_layout
 
 \end_inset
@@ -2409,7 +2413,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+73.74
 \end_layout
 
 \end_inset
@@ -2418,7 +2422,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+74.74
 \end_layout
 
 \end_inset
@@ -2427,7 +2431,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7.323/-80.76°
 \end_layout
 
 \end_inset
@@ -2436,7 +2440,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.16303
 \end_layout
 
 \end_inset
@@ -2445,7 +2449,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.176
 \end_layout
 
 \end_inset
@@ -2454,7 +2458,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-7.228
 \end_layout
 
 \end_inset
@@ -2474,7 +2478,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2
 \end_layout
 
 \end_inset
@@ -2483,7 +2487,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.56
 \end_layout
 
 \end_inset
@@ -2492,7 +2496,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-64.09
 \end_layout
 
 \end_inset
@@ -2501,7 +2505,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+79.79
 \end_layout
 
 \end_inset
@@ -2510,7 +2514,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.581/72.667°
 \end_layout
 
 \end_inset
@@ -2519,7 +2523,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.5956
 \end_layout
 
 \end_inset
@@ -2528,7 +2532,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.9606
 \end_layout
 
 \end_inset
@@ -2537,7 +2541,7 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.282
 \end_layout
 
 \end_inset
@@ -2557,7 +2561,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+42
 \end_layout
 
 \end_inset
@@ -2566,7 +2570,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+41.56
 \end_layout
 
 \end_inset
@@ -2575,7 +2579,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+73.74
 \end_layout
 
 \end_inset
@@ -2584,7 +2588,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+107.06
 \end_layout
 
 \end_inset
@@ -2593,7 +2597,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8.318/-60.33
 \end_layout
 
 \end_inset
@@ -2602,7 +2606,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.7249
 \end_layout
 
 \end_inset
@@ -2611,7 +2615,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4.1172
 \end_layout
 
 \end_inset
@@ -2620,7 +2624,7 @@ R-L
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-7.228
 \end_layout
 
 \end_inset
@@ -2640,7 +2644,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+31.5
 \end_layout
 
 \end_inset
@@ -2649,7 +2653,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+31.06
 \end_layout
 
 \end_inset
@@ -2658,7 +2662,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-64.09
 \end_layout
 
 \end_inset
@@ -2667,7 +2671,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+66.66
 \end_layout
 
 \end_inset
@@ -2676,7 +2680,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7/63.823°
 \end_layout
 
 \end_inset
@@ -2685,7 +2689,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.275
 \end_layout
 
 \end_inset
@@ -2694,7 +2698,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+3.088
 \end_layout
 
 \end_inset
@@ -2703,7 +2707,7 @@ R-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.282
 \end_layout
 
 \end_inset
@@ -2723,7 +2727,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+12
 \end_layout
 
 \end_inset
@@ -2732,7 +2736,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+11.56
 \end_layout
 
 \end_inset
@@ -2741,7 +2745,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.497
 \end_layout
 
 \end_inset
@@ -2750,7 +2754,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+14.14
 \end_layout
 
 \end_inset
@@ -2759,7 +2763,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.3374/28.443°
 \end_layout
 
 \end_inset
@@ -2768,7 +2772,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.89
 \end_layout
 
 \end_inset
@@ -2777,7 +2781,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.176
 \end_layout
 
 \end_inset
@@ -2786,7 +2790,7 @@ L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.637
 \end_layout
 
 \end_inset
@@ -2806,7 +2810,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+42
 \end_layout
 
 \end_inset
@@ -2815,7 +2819,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+41.56
 \end_layout
 
 \end_inset
@@ -2824,7 +2828,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6.497
 \end_layout
 
 \end_inset
@@ -2833,7 +2837,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+42.42
 \end_layout
 
 \end_inset
@@ -2842,7 +2846,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4.159/8.81°
 \end_layout
 
 \end_inset
@@ -2851,7 +2855,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.988
 \end_layout
 
 \end_inset
@@ -2860,7 +2864,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4.11
 \end_layout
 
 \end_inset
@@ -2869,7 +2873,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0.637
 \end_layout
 
 \end_inset
@@ -3601,8 +3605,18 @@ Anexo
 \end_layout
 
 \begin_layout Standard
-Para tomar las mediciones tratamos de mantener V constante, por ende también
+Para tomar las mediciones se trató de mantener V constante, por ende también
  lo es para los cálculos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename anexo.png
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
