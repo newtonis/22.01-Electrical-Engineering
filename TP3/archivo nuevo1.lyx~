@@ -2893,7 +2893,7 @@ Compensado
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+42
 \end_layout
 
 \end_inset
@@ -2903,6 +2903,18 @@ Compensado
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+41.56
 \end_layout
 
 \end_inset
@@ -2912,6 +2924,18 @@ Compensado
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+20.34
 \end_layout
 
 \end_inset
@@ -2921,6 +2945,18 @@ Compensado
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+46.67
 \end_layout
 
 \end_inset
@@ -2930,6 +2966,18 @@ Compensado
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+4.667/_-28.09	
 \end_layout
 
 \end_inset
@@ -2939,6 +2987,18 @@ Compensado
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+0.88
 \end_layout
 
 \end_inset
@@ -2948,6 +3008,18 @@ Compensado
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+4.1172
 \end_layout
 
 \end_inset
@@ -2957,6 +3029,18 @@ Compensado
 
 \begin_layout Plain Layout
 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+-2.198
 \end_layout
 
 \end_inset
@@ -3605,8 +3689,8 @@ Anexo
 \end_layout
 
 \begin_layout Standard
-Para tomar las mediciones se trató de mantener V constante, por ende también
- lo es para los cálculos.
+Para tomar las mediciones se trató de mantener V constante, por ende, utilizamos
+ tensión constante para los cálculos.
 \end_layout
 
 \begin_layout Standard
