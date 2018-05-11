@@ -1909,7 +1909,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-47
+42
 \end_layout
 
 \end_inset
@@ -1927,7 +1927,7 @@ R-L-C
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.47
+0.42
 \end_layout
 
 \end_inset
@@ -3638,6 +3638,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/R.png
+	scale 60
 
 \end_inset
 
@@ -3675,6 +3676,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/L.png
+	scale 60
 
 \end_inset
 
@@ -3716,6 +3718,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/C.png
+	scale 90
 
 \end_inset
 

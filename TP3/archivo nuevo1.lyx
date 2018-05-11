@@ -3638,6 +3638,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/R.png
+	scale 60
 
 \end_inset
 
@@ -3675,6 +3676,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/L.png
+	scale 60
 
 \end_inset
 
@@ -3716,6 +3718,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/C.png
+	scale 60
 
 \end_inset
 
@@ -3757,6 +3760,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/RL.png
+	scale 60
 
 \end_inset
 
@@ -3798,6 +3802,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/RC.png
+	scale 60
 
 \end_inset
 
@@ -3839,6 +3844,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/LC.png
+	scale 60
 
 \end_inset
 
@@ -3880,6 +3886,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename C:/Users/Marcelo/Desktop/Diagramas/RLC.png
+	scale 60
 
 \end_inset
 
