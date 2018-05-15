@@ -1,0 +1,655 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage[american]{circuitikz}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format pdf2
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introdución Teórica
+\end_layout
+
+\begin_layout Standard
+En este trabajo se procedió a medir las caracteristicas de un transformador,
+ en particular, la inductancia 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_1,L_2$
+\end_layout
+
+\end_inset
+
+de las bobinas que lo componian, el coeficiente de acomplamiento, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+, y el coeficiente de inductancia mutua, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$M$
+\end_layout
+
+\end_inset
+
+.
+ Se estudió, además la variacion de dichos parametros probando distintos
+ materias como nucleo del transformador.
+\end_layout
+
+\begin_layout Section
+Metodo experimental
+\end_layout
+
+\begin_layout Subsection
+Primera conexión
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=1]   
+\backslash
+draw[color=black, thick]
+\end_layout
+
+\begin_layout Plain Layout
+
+(0,0) to [V,l=U1,invert] (0,3) to [R,l=RL1] (2,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+(2,3) to [L,l=$L1$,invert] (2,0) to (0,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(4,0) to [L,l=$L2$] (4,3) to [R,l=RL2] (6,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+(6,3) to [voltmeter] (6,0) to (6,0) to (4,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+circuito con fuente de continua
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se procedió, en primer lugar a identificar el punto del trasnformador.
+ Para ello se alimentó al transformador a una corriente continua, y mediante
+ la medición en un breve lapso del sentido de la tensión del bobinado secundario
+ se pudo deducir el sentido de la bobina.
+ Además, se observo la diferencia de la magnitud de la tensión del bobinado
+ secundario con el transformador con y sin nucleo.
+\end_layout
+
+\begin_layout Subsection
+Obtención de la inductancia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=1]   
+\backslash
+draw[color=black, thick]
+\end_layout
+
+\begin_layout Plain Layout
+
+(0,0) to [vsourcesin,l=U1,invert] (0,3) to [ammeter,l=$I_1$] (2,3) to [R,l=RL1]
+ (4,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+(2,3) to [voltmeter,l=$V_1$] (2,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+(4,3) to [L,l=$L1$,invert] (4,0) to (0,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(8,0) to (6,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+(6,0) to [L,l=$L2$] (6,3) to [R,l=RL2] (8,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+(8,3) to [voltmeter,l=$V_2$] (8,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Circuito en vacio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se procedió a medir, en vacio la tensión y la corrientes del circuito de
+ la figura 2 con las dos bobinas, y luego invirtiendo sus roles.
+ Midiendo además 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$RL2$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$RL2$
+\end_layout
+
+\end_inset
+
+ se pudó despejar el valor de las inductancias.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$U_1^2=V_{L1}^2+V_{RL1}^2 
+\backslash
+Longrightarrow V_{L1} = 
+\backslash
+sqrt{U_1^2-V_{LR1}^2} $$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+$$V_{L1}=I_1wL 
+\backslash
+Longrightarrow L = 
+\backslash
+frac{ 
+\backslash
+sqrt{U_1^2 - (I_1R_1^2)} }{wI_1} $$ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mediciones con carga
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=1]   
+\backslash
+draw[color=black, thick]
+\end_layout
+
+\begin_layout Plain Layout
+
+(0,0) to [vsourcesin,l=U1,invert] (0,3) to [ammeter,l=$I_1$] (2,3) to [R,l=RL1]
+ (4,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+(2,3) to [voltmeter,l=$V_1$] (2,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+(4,3) to [L,l=$L1$,invert] (4,0) to (0,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+(8,0) to (6,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+(6,0) to [L,l=$L2$] (6,3) to [R,l=RL2] (8,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+(8,3) to [voltmeter,l=$V_2$] (8,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+(8,3) to [ammeter,l=$I_2$] (10,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+(10,3) to [R,l=$R_d$] (10,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+(10,0) to (6,0)
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Circuito con carga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se conectó una resistencia de carga al bobinado secundario, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_d=200
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+ y, con distintos nucleos mediante las mediciones de las tensiones y las
+ corrientes se pudo calcular el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$M$
+\end_layout
+
+\end_inset
+
+y el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ del transformador
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_{L1} = 
+\backslash
+sqrt{U_1^2-V_{LR1}^2} = I_1wL_1
+\backslash
+pm I_2wM 
+\backslash
+Longrightarrow M = 
+\backslash
+pm 
+\backslash
+frac{
+\backslash
+sqrt{U_1^2-V_{LR1}^2} - I_1wL_1}{wI_2}$$
+\end_layout
+
+\begin_layout Plain Layout
+
+$$k=
+\backslash
+frac{M}{
+\backslash
+sqrt{L1L2}}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segun el sentido de los puntos del transformador, se define el signo de
+ la primera ecuacion.
+ Siempre deberá ser el que vuelve M positivo
+\end_layout
+
+\begin_layout Section
+Análisis de resultados
+\end_layout
+
+\end_body
+\end_document
