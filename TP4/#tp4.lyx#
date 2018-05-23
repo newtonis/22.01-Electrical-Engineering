@@ -444,6 +444,45 @@ tiny{(1)}$$
 
 \end_layout
 
+\begin_layout Standard
+Además, con las mediciones de la tension en el bobinado secundario se pudo
+ determinar M
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_{L2}=wMI_1 
+\backslash
+Longrightarrow M=
+\backslash
+frac{V_{L2}}{wI_1}  
+\backslash
+; 
+\backslash
+; 
+\backslash
+; 
+\backslash
+; 
+\backslash
+; 
+\backslash
+; 
+\backslash
+;  
+\backslash
+tiny{(2)}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Mediciones con carga
 \end_layout
@@ -629,19 +668,30 @@ status open
 
 \begin_layout Plain Layout
 
-$$V_{L1} = 
+$$ 
 \backslash
-sqrt{U_1^2-V_{LR1}^2} = I_1wL_1
+pm jwM I_1= 
 \backslash
-pm I_2wM 
+underbrace{+I_2(R_{L2}+R_d)}_{
 \backslash
-Longrightarrow M = 
+angle 0}+
 \backslash
-pm 
+underbrace{ jw L_2 I_2 }_{
 \backslash
-frac{
+angle 90} 
 \backslash
-sqrt{U_1^2-V_{LR1}^2} - I_1wL_1}{wI_2} 
+Longrightarrow wMI_1=
+\backslash
+sqrt{(I_2R_{L2}+R_d)^2 + (wL_2I_2)^2} $$
+\end_layout
+
+\begin_layout Plain Layout
+
+$$ M = 
+\backslash
+frac{ 
+\backslash
+sqrt{(I_2R_{L2}+R_d)^2 + (wL_2I_2)^2} }{wI_1} 
 \backslash
 ; 
 \backslash
@@ -657,7 +707,7 @@ sqrt{U_1^2-V_{LR1}^2} - I_1wL_1}{wI_2}
 \backslash
 ; 
 \backslash
-tiny{(2)}$$
+tiny{(3)} $$
 \end_layout
 
 \begin_layout Plain Layout
@@ -682,18 +732,12 @@ sqrt{L1L2}}
 \backslash
 ;  
 \backslash
-tiny{(3)}$$
+tiny{(4)}$$
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Segun el sentido de los puntos del transformador, se define el signo de
- la primera ecuacion.
- Siempre deberá ser el que vuelve M positivo
 \end_layout
 
 \begin_layout Section
@@ -1630,7 +1674,7 @@ Cálculo de M y de k
 \end_layout
 
 \begin_layout Standard
-Utilizando las expresiones (2) y (3), con los resultados de todas las mediciones
+Utilizando las expresiones (3) y (4), con los resultados de todas las mediciones
 , excepto la primera, se pudo determinar M y k del transformador
 \end_layout
 
@@ -1710,7 +1754,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$
+$0.39$
 \end_layout
 
 \end_inset
@@ -1729,7 +1773,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$
+$0.18$
 \end_layout
 
 \end_inset
@@ -1759,7 +1803,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$
+$0.48$
 \end_layout
 
 \end_inset
@@ -1778,7 +1822,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$
+$0.22$
 \end_layout
 
 \end_inset
@@ -1808,7 +1852,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$
+$0.058$
 \end_layout
 
 \end_inset
@@ -1827,7 +1871,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$
+$0.026$
 \end_layout
 
 \end_inset
@@ -1857,7 +1901,7 @@ status open
 
 \begin_layout Plain Layout
 
-$54$
+$0.88$
 \end_layout
 
 \end_inset
