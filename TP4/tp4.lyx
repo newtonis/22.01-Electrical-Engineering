@@ -420,7 +420,7 @@ Longrightarrow L =
 \backslash
 frac{ 
 \backslash
-sqrt{U_1^2 - (I_1R_1^2)} }{wI_1} 
+sqrt{U_1^2 - (I_1^2R_{L1}^2)} }{wI_1} 
 \backslash
 ; 
 \backslash
@@ -1568,17 +1568,28 @@ $R_{L1},R_{L2}$
 
 \end_inset
 
-, se pudo calcular L1 y L2
+, se pudo calcular L1 y L2 en vacio.
+ Para conseguir L2 en los otros casos se uso una relacion lineal
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Caso
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1619,6 +1630,121 @@ $L_2 (H)$
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hierro solido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2.18 
+\backslash
+pm 0.08$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2.12 
+\backslash
+pm 0.07$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nucleo laminado
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2.35 
+\backslash
+pm 0.09$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2.28 
+\backslash
+pm 0.14$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sin nucleo
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1628,9 +1754,9 @@ status open
 
 \begin_layout Plain Layout
 
-$2.120 
+$1.11 
 \backslash
-pm 0.007$
+pm 0.023$
 \end_layout
 
 \end_inset
@@ -1649,9 +1775,9 @@ status open
 
 \begin_layout Plain Layout
 
-$2.185 
+$1.08 
 \backslash
-pm 0.007$
+pm 0.06$
 \end_layout
 
 \end_inset
@@ -1756,7 +1882,7 @@ status open
 
 $0.39 
 \backslash
-pm$
+pm 0.013$
 \end_layout
 
 \end_inset
@@ -1775,9 +1901,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.18 
+$0.181 
 \backslash
-pm$
+pm 0.008$
 \end_layout
 
 \end_inset
@@ -1807,9 +1933,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.48 
+$0.435 
 \backslash
-pm$
+pm 0.015$
 \end_layout
 
 \end_inset
@@ -1828,9 +1954,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.22 
+$0.187 
 \backslash
-pm$
+pm 0.011$
 \end_layout
 
 \end_inset
@@ -1860,9 +1986,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.058 
+$0.0581 
 \backslash
-pm$
+pm 0.0015$
 \end_layout
 
 \end_inset
@@ -1881,9 +2007,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.026 
+$0.0529 
 \backslash
-pm$
+pm 0.022$
 \end_layout
 
 \end_inset
@@ -1913,9 +2039,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.88 
+$0.87 
 \backslash
-pm$
+pm 0.04$
 \end_layout
 
 \end_inset
@@ -1934,9 +2060,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.409 
+$0.402 
 \backslash
-pm$
+pm 0.018$
 \end_layout
 
 \end_inset
@@ -1966,9 +2092,9 @@ status open
 
 \begin_layout Plain Layout
 
-$1.04 
+$1.09 
 \backslash
-pm$
+pm 0.07$
 \end_layout
 
 \end_inset
@@ -1987,9 +2113,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.485 
+$0.469 
 \backslash
-pm$
+pm 0.019$
 \end_layout
 
 \end_inset
@@ -2001,47 +2127,6 @@ pm$
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Anexo: Formulas para la propagaci de errores utilizadas
-\end_layout
-
-\begin_layout Standard
-Para conseguir el error de L
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$$ 
-\backslash
-Delta L ^2= 
-\backslash
-Delta U^2 
-\backslash
-frac{U^2}{w^2I_1^2(U^2+I_1^2R_1^2)} + 
-\backslash
-Delta I_1^2 
-\backslash
-frac{U^4}{w^2I_1^4(U^2+I_1^2R_1^2)} + 
-\backslash
-Delta R_1^2
-\backslash
-frac{I_1^2R_1^2}{w^2}$$
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \end_inset
 
