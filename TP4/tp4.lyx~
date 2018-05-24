@@ -35,7 +35,7 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -59,6 +59,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -82,18 +86,29 @@ Introdución Teórica
 
 \begin_layout Standard
 En este trabajo se procedió a medir las caracteristicas de un transformador,
- en particular, la inductancia 
+ en particular, las inductancias 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$L_1,L_2$
+$L_1$
 \end_layout
 
 \end_inset
 
-de las bobinas que lo componian, el coeficiente de acomplamiento, 
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_2$
+\end_layout
+
+\end_inset
+
+ de las bobinas que lo componen, el coeficiente de acomplamiento 
 \begin_inset ERT
 status open
 
@@ -104,7 +119,7 @@ $k$
 
 \end_inset
 
-, y el coeficiente de inductancia mutua, 
+, y el coeficiente de inductancia mutua 
 \begin_inset ERT
 status open
 
@@ -116,8 +131,8 @@ $M$
 \end_inset
 
 .
- Se estudió, además la variacion de dichos parametros probando distintos
- materias como nucleo del transformador.
+ Se estudió, además, la variacion de dichos parámetros probando distintos
+ materiales como núcleos para el transformador.
 \end_layout
 
 \begin_layout Section
@@ -247,10 +262,29 @@ circuito con fuente de continua
 \end_layout
 
 \begin_layout Standard
-Se procedió, en primer lugar a identificar el punto del trasnformador.
- Para ello se alimentó al transformador a una corriente continua, y mediante
- la medición en un breve lapso del sentido de la tensión del bobinado secundario
- se pudo deducir el sentido de la bobina.
+Para determinar el sentido de la inductancia mutua 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$M$
+\end_layout
+
+\end_inset
+
+, se conectó al transformador una fuente de tensión continua en la entrada
+ (primario), y un voltímetro digital a la salida del secundario.
+ Teniendo en cuenta el borne donde se coneta el positivo de la fuente, se
+ la enciende.
+ Se observa en ese instante la medición en el voltímetro producida por el
+ cambio de potencial en la bobina primaria (dado que luego la medición vuelve
+ a 0 el resto del tiempo ya que por ser la tensión constante su derivada
+ es nula, por la ley de Faraday la tensión inducida en el secundario será
+ 0).
+ Si la medición cambió hacia valores positivos, entonces la polaridad positiva
+ de la bobina secundaria coincide con la entrada positiva del instrumento.
+ En caso contrario, la polaridad positiva es en el borne opuesto.
  Además, se observo la diferencia de la magnitud de la tensión del bobinado
  secundario con el transformador con y sin nucleo.
 \end_layout
@@ -379,7 +413,7 @@ status open
 
 \begin_layout Plain Layout
 
-$RL2$
+$RL1$
 \end_layout
 
 \end_inset
@@ -643,12 +677,12 @@ status open
 
 \begin_layout Plain Layout
 
-$M$
+$L_2$
 \end_layout
 
 \end_inset
 
-y el 
+ y el 
 \begin_inset ERT
 status open
 
@@ -659,7 +693,14 @@ $k$
 
 \end_inset
 
- del transformador
+ del transformador, utilizando el conexionado largo.
+ Dado que la impedancia de los bobinados es muy pequeña, se hace comparable
+ con la resistencia interna del amperímetro.
+ Si se utiliza la conexión corta, la tensión que cae sobre el amperímetro
+ se hace comparable a la que cae en el bobinado donde se está midiendo,
+ lo que provocaría una medición de tensión incorrecta con el voltímetro.
+ Por ello se utiliza el conexionado largo, de forma tal de evitar este error
+ en la medición de tensión.
 \end_layout
 
 \begin_layout Standard
@@ -687,11 +728,11 @@ sqrt{(I_2R_{L2}+I_2R_d)^2 + (wL_2I_2)^2} $$
 
 \begin_layout Plain Layout
 
-$$ M = 
+$$ L_2 = 
 \backslash
-frac{ I_2
+frac{ 
 \backslash
-sqrt{(R_{L2}+R_d)^2 + (wL_2)^2} }{wI_1} 
+sqrt{(wMI_1)^2 - (I_2R_{L2} + I_2R_d)^2} }{wI_2} 
 \backslash
 ; 
 \backslash
@@ -1334,7 +1375,7 @@ status open
 
 \begin_layout Plain Layout
 
-$55 
+$25 
 \backslash
 pm 1$
 \end_layout
@@ -1429,7 +1470,7 @@ status open
 
 \begin_layout Plain Layout
 
-$67 
+$27 
 \backslash
 pm 1$
 \end_layout
@@ -1552,7 +1593,7 @@ pm 0.1$
 \end_layout
 
 \begin_layout Subsection
-Cálculo de L1, L2
+Cálculo de L1, L2, M y k
 \end_layout
 
 \begin_layout Standard
@@ -1569,7 +1610,72 @@ $R_{L1},R_{L2}$
 \end_inset
 
 , se pudo calcular L1 y L2 en vacio.
- Para conseguir L2 en los otros casos se uso una relacion lineal
+ Para conseguir L2 en los otros casos se tomo el criterio de que para el
+ mismo caso de núcleo, la autoinductancia M debe ser la misma tanto para
+ el caso con carga Rd como sin carga, dado que solo depende de los parámetros
+ del transformador.
+ Por ejemplo, en el caso de hierro sólido se calcula el M, dado que con
+ las mediciones obtenidas para ese caso si es posible obtener 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_2$
+\end_layout
+
+\end_inset
+
+.
+ Luego, este valor debe ser el mismo para el caso donde se conecta la resistenci
+a de carga 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Rd$
+\end_layout
+
+\end_inset
+
+.
+ Se obtiene el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_2$
+\end_layout
+
+\end_inset
+
+ correspondiente para este caso y el coeficiente de acoplamiento 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+.
+ En el caso sin núcleo, dado que no se solicitaba repetir el experimento
+ con la carga Rd, no se calculó 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_2$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1671,7 +1777,7 @@ status open
 
 $2.12 
 \backslash
-pm 0.32$
+pm 0.07$
 \end_layout
 
 \end_inset
@@ -1722,9 +1828,9 @@ status open
 
 \begin_layout Plain Layout
 
-$2.28 
+$2.26 
 \backslash
-pm 0.33$
+pm 0.14$
 \end_layout
 
 \end_inset
@@ -1770,19 +1876,7 @@ pm 0.023$
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$1.08 
-\backslash
-pm 0.31$
-\end_layout
-
-\end_inset
-
-
+-
 \end_layout
 
 \end_inset
@@ -1793,10 +1887,6 @@ pm 0.31$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Cálculo de M y de k
 \end_layout
 
 \begin_layout Standard
@@ -1986,7 +2076,7 @@ status open
 
 \begin_layout Plain Layout
 
-$0.0581 
+$0.058
 \backslash
 pm 0.0015$
 \end_layout
@@ -2002,19 +2092,7 @@ pm 0.0015$
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$0.0529 
-\backslash
-pm 0.022$
-\end_layout
-
-\end_inset
-
-
+-
 \end_layout
 
 \end_inset
@@ -2039,7 +2117,7 @@ status open
 
 \begin_layout Plain Layout
 
-$0.87 
+$0.39 
 \backslash
 pm 0.04$
 \end_layout
@@ -2060,7 +2138,7 @@ status open
 
 \begin_layout Plain Layout
 
-$0.402 
+$0.181 
 \backslash
 pm 0.018$
 \end_layout
@@ -2092,7 +2170,7 @@ status open
 
 \begin_layout Plain Layout
 
-$1.09 
+$0.435 
 \backslash
 pm 0.07$
 \end_layout
@@ -2113,7 +2191,7 @@ status open
 
 \begin_layout Plain Layout
 
-$0.469 
+$0.188 
 \backslash
 pm 0.019$
 \end_layout
