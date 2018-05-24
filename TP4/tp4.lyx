@@ -1628,9 +1628,9 @@ status open
 
 \begin_layout Plain Layout
 
-$2.12091 
+$2.120 
 \backslash
-pm$
+pm 0.007$
 \end_layout
 
 \end_inset
@@ -1649,9 +1649,9 @@ status open
 
 \begin_layout Plain Layout
 
-$2.185498  
+$2.185 
 \backslash
-pm$
+pm 0.007$
 \end_layout
 
 \end_inset
@@ -1754,7 +1754,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.39$
+$0.39 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1773,7 +1775,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.18$
+$0.18 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1803,7 +1807,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.48$
+$0.48 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1822,7 +1828,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.22$
+$0.22 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1852,7 +1860,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.058$
+$0.058 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1871,7 +1881,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.026$
+$0.026 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1901,7 +1913,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.88$
+$0.88 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1920,7 +1934,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.409$
+$0.409 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1950,7 +1966,9 @@ status open
 
 \begin_layout Plain Layout
 
-$1.04$
+$1.04 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1969,7 +1987,9 @@ status open
 
 \begin_layout Plain Layout
 
-$0.485$
+$0.485 
+\backslash
+pm$
 \end_layout
 
 \end_inset
@@ -1981,6 +2001,47 @@ $0.485$
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Anexo: Formulas para la propagaci de errores utilizadas
+\end_layout
+
+\begin_layout Standard
+Para conseguir el error de L
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$ 
+\backslash
+Delta L ^2= 
+\backslash
+Delta U^2 
+\backslash
+frac{U^2}{w^2I_1^2(U^2+I_1^2R_1^2)} + 
+\backslash
+Delta I_1^2 
+\backslash
+frac{U^4}{w^2I_1^4(U^2+I_1^2R_1^2)} + 
+\backslash
+Delta R_1^2
+\backslash
+frac{I_1^2R_1^2}{w^2}$$
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

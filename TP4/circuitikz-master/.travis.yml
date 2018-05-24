@@ -1,0 +1,19 @@
+language: r
+
+sudo: false
+cache: packages
+warnings_are_errors: false
+
+
+before_install:
+  - tlmgr install standalone showexpl imakeidx xpatch
+
+install: echo Installation step #do not remove this line!
+
+script: make manual-git
+
+after_success: tools/deploy.sh
+
+notifications:
+  email: false
+
