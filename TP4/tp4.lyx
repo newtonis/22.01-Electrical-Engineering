@@ -91,8 +91,8 @@ Introdución Teórica
 \end_layout
 
 \begin_layout Standard
-En este trabajo se procedió a medir las caracteristicas de un transformador
- construido a partir de dos bobinas separadas.
+En este trabajo se procedió a medir las características de un transformador
+ construído a partir de dos bobinas separadas.
  En particular, las inductancias 
 \begin_inset ERT
 status open
@@ -138,12 +138,12 @@ $M$
 \end_inset
 
 .
- Se estudió, además, la variacion de dichos parámetros probando distintos
+ Se estudió, además, la variación de dichos parámetros probando distintos
  materiales como núcleos para el transformador.
 \end_layout
 
 \begin_layout Section
-Metodo experimental
+Método experimental
 \end_layout
 
 \begin_layout Subsection
@@ -293,13 +293,13 @@ $M$
  de la bobina secundaria coincide con la entrada positiva del instrumento.
  En caso contrario, la polaridad positiva es en el borne opuesto.
  Además, se observo la diferencia de la magnitud de la tensión del bobinado
- secundario con el transformador con y sin nucleo.
+ secundario con el transformador con y sin núcleo.
 \end_layout
 
 \begin_layout Standard
 En la siguiente figura se muestra como se construyó el transformador con
- las bobinas provistas, donde del lado izquierdo se tomó como primario (bobina
- clara), y el derecho como secundario (bobina oscura).
+ las bobinas provistas por el laboratorio, donde del lado izquierdo se tomó
+ como primario (bobina clara), y el derecho como secundario (bobina oscura).
 \end_layout
 
 \begin_layout Standard
@@ -466,7 +466,7 @@ Circuito en vacio
 \end_layout
 
 \begin_layout Standard
-Se procedió a medir, en vacio la tensión y la corrientes del circuito de
+Se procedió a medir, en vacío la tensión y la corrientes del circuito de
  la figura 2 con las dos bobinas, y luego invirtiendo sus roles.
  Midiendo además 
 \begin_inset ERT
@@ -490,7 +490,7 @@ $RL2$
 
 \end_inset
 
- se pudó despejar el valor de las inductancias.
+ se pudo despejar el valor de las inductancias.
  
 \end_layout
 
@@ -540,8 +540,8 @@ tiny{(1)}$$
 \end_layout
 
 \begin_layout Standard
-Además, con las mediciones de la tension en el bobinado secundario se pudo
- determinar M
+Además, con las mediciones de la tensión en el bobinado secundario se pudo
+ determinar M.
 \end_layout
 
 \begin_layout Standard
@@ -731,7 +731,7 @@ Omega$
 
 \end_inset
 
- y, con distintos nucleos mediante las mediciones de las tensiones y las
+ y, con distintos núcleos mediante las mediciones de las tensiones y las
  corrientes se pudo calcular el 
 \begin_inset ERT
 status open
@@ -868,7 +868,7 @@ $L2$
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -973,7 +973,7 @@ $I_2 (mA)$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hierro solido, vacio, trafo invertido
+Hierro sólido, vacío, trafo invertido
 \end_layout
 
 \end_inset
@@ -1068,7 +1068,7 @@ varnothing$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hierro solido, vacio
+Hierro sólido, vacío
 \end_layout
 
 \end_inset
@@ -1163,7 +1163,7 @@ varnothing$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nucleo laminado, vacio
+Núcleo laminado, vacío
 \end_layout
 
 \end_inset
@@ -1258,7 +1258,7 @@ varnothing$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sin nucleo, vacio
+Sin núcleo, vacío
 \end_layout
 
 \end_inset
@@ -1353,7 +1353,7 @@ varnothing$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hierro solido, carga conectada
+Hierro sólido, carga conectada
 \end_layout
 
 \end_inset
@@ -1448,7 +1448,7 @@ pm 1$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nucleo laminado, carga conectada
+Núcleo laminado, carga conectada
 \end_layout
 
 \end_inset
@@ -1546,7 +1546,8 @@ pm 1$
 \end_layout
 
 \begin_layout Standard
-Ademas, midiendo la resistencia interna de las bobinas se obtuvo.
+Además, midiendo la resistencia interna de las bobinas se obtuvieron los
+ siguientes valores.
 \end_layout
 
 \begin_layout Standard
@@ -1652,7 +1653,7 @@ Cálculo de L1, L2, M y k
 \end_layout
 
 \begin_layout Standard
-Utilizando la expresion (1), con los resultados de las primeras dos mediciones
+Utilizando la expresión (1), con los resultados de las primeras dos mediciones
  y los valores de 
 \begin_inset ERT
 status open
@@ -1664,7 +1665,7 @@ $R_{L1},R_{L2}$
 
 \end_inset
 
-, se pudo calcular L1 y L2 en vacio.
+, se pudo calcular L1 y L2 en vacío.
  
 \end_layout
 
@@ -1730,7 +1731,7 @@ $L_2 (H)$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hierro solido
+Hierro sólido
 \end_layout
 
 \end_inset
@@ -1783,7 +1784,7 @@ pm 0.07$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nucleo laminado
+Núcleo laminado
 \end_layout
 
 \end_inset
@@ -1836,7 +1837,7 @@ pm 0.14$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sin nucleo
+Sin núcleo
 \end_layout
 
 \end_inset
@@ -1881,7 +1882,8 @@ pm 0.023$
 
 \begin_layout Standard
 Utilizando las expresiones (3) y (4), con los resultados de todas las mediciones
-, excepto la primera, se pudo determinar M y k del transformador
+, excepto la primera, se pudo determinar M y k del transformador para los
+ diversos casos.
 \end_layout
 
 \begin_layout Standard
@@ -1946,7 +1948,7 @@ $k$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hierro solido, vacio
+Hierro sólido, vacío
 \end_layout
 
 \end_inset
@@ -1999,7 +2001,7 @@ pm 0.008$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nucleo laminado, vacio
+Núcleo laminado, vacío
 \end_layout
 
 \end_inset
@@ -2052,7 +2054,7 @@ pm 0.011$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sin nucleo, vacio
+Sin núcleo, vacío
 \end_layout
 
 \end_inset
@@ -2093,7 +2095,7 @@ pm 0.0015$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Hierro solido, carga conectada
+Hierro sólido, carga conectada
 \end_layout
 
 \end_inset
@@ -2146,7 +2148,7 @@ pm 0.018$
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nucleo laminado, carga conectada
+Núcleo laminado, carga conectada
 \end_layout
 
 \end_inset
@@ -2206,24 +2208,39 @@ Conclusiones generales
 \end_layout
 
 \begin_layout Standard
+Al armar el transformador y conectarlo a la fuente tanto desde el primario
+ como desde el secundario, se observó que en ambos sentidos la tensión de
+ entrada se muestra reducida en el otro bobinado (en lugar de lo que se
+ espera que ocurra, que es que en un sentido la tensión se vea reducida,
+ y en el otro aumentada).
+ Esto se debe a que hay una diferencia considerable entre las resistencias
+ de ambas bobinas para los órdenes en los que se trabaja 
+\begin_inset Formula $(<100\varOmega)$
+\end_inset
+
+, por lo que el transformador no resulta comportarse de la forma esperada.
+\end_layout
+
+\begin_layout Standard
 Teniendo armado el transformador e identificado el sentido de la inductancia
- mutua, se procedio a verificar que efectos producía cambiar el núcleo por
+ mutua, se procedió a verificar que efectos producía cambiar el núcleo por
  materiales diferentes.
- El caso sin núcleo (es decir al vacío) es en el que el flujo magnético
- se dispersa más, por lo que la corriente medida en el primario es la mayor
- comparada al resto de los casos, aunque no tiene pérdidas por Foucault.
+ El caso sin núcleo (es decir al vacío) es en el que las líneas de campo
+ magnético se dispersan más, por lo que la corriente medida en el primario
+ es la mayor comparada al resto de los casos, aunque no tiene pérdidas por
+ Foucault.
  Es el caso donde las inductancias toman los valores más pequeños.
  
 \end_layout
 
 \begin_layout Standard
 En los casos con núcleo no vacío, el valor de la corriente disminuye considerabl
-emente, al mantener el flujo magnético mejor direccionado.
- Dentro de estos, estan las pruebas con núcleo de hierro sólido y laminado.
+emente, al estar las líneas de campo magnético más concentradas.
+ Dentro de éstos, están las pruebas con núcleo de hierro sólido y laminado.
  En el caso de hierro sólido se observó que esta hipótesis se verifica,
  obteniendo una corriente en el primario menor y además se ven aumentados
  los valores de las inductancias, dado que las mismas dependen sólo de las
- características del material.
+ características del transformador.
  Respecto al caso con núcleo vacío, además, se ve que el valor que la inductanci
 a mutua 
 \begin_inset ERT
@@ -2280,12 +2297,55 @@ $k$
 \end_layout
 
 \begin_layout Standard
-Para conseguir L2 en el caso de núcleo laminado se tomo el criterio de que
- con un mismo núcleo, la autoinductancia M debe ser la misma tanto para
- el caso con impedancia de carga Rd en el secundario como sin carga, dado
- que la misma solo depende de los parámetros del transformador.
+Para conseguir 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_2$
+\end_layout
+
+\end_inset
+
+ en el caso de núcleo laminado se tomo el criterio de que con un mismo núcleo,
+ la autoinductancia 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$M$
+\end_layout
+
+\end_inset
+
+ debe ser la misma tanto para el caso con impedancia de carga 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Rd$
+\end_layout
+
+\end_inset
+
+ en el secundario como sin carga, dado que la misma sólo depende de los
+ parámetros del transformador.
  En el caso sin núcleo, dado que no se solicitaba repetir el experimento
- con la carga Rd, no se calculó 
+ con la carga 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Rd$
+\end_layout
+
+\end_inset
+
+, no se calculó 
 \begin_inset ERT
 status open
 
