@@ -8,6 +8,12 @@
 \begin_preamble
 \usepackage[american]{circuitikz}
 \usepackage{amssymb}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Electrotecnia I - 22.02}
+\chead{Acoplamiento Magnético}
+\rhead{ITBA}
+\renewcommand{\headrulewidth}{1pt}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -59,8 +65,8 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2.5cm
-\topmargin 2cm
+\leftmargin 3cm
+\topmargin 2.5cm
 \rightmargin 2cm
 \bottommargin 2cm
 \secnumdepth 3
@@ -85,8 +91,9 @@ Introdución Teórica
 \end_layout
 
 \begin_layout Standard
-En este trabajo se procedió a medir las caracteristicas de un transformador,
- en particular, las inductancias 
+En este trabajo se procedió a medir las caracteristicas de un transformador
+ construido a partir de dos bobinas separadas.
+ En particular, las inductancias 
 \begin_inset ERT
 status open
 
@@ -108,7 +115,7 @@ $L_2$
 
 \end_inset
 
- de las bobinas que lo componen, el coeficiente de acomplamiento 
+ de dichas bobinas, el coeficiente de acomplamiento 
 \begin_inset ERT
 status open
 
@@ -119,7 +126,7 @@ $k$
 
 \end_inset
 
-, y el coeficiente de inductancia mutua 
+, y la inductancia mutua 
 \begin_inset ERT
 status open
 
@@ -287,6 +294,60 @@ $M$
  En caso contrario, la polaridad positiva es en el borne opuesto.
  Además, se observo la diferencia de la magnitud de la tensión del bobinado
  secundario con el transformador con y sin nucleo.
+\end_layout
+
+\begin_layout Standard
+En la siguiente figura se muestra como se construyó el transformador con
+ las bobinas provistas, donde del lado izquierdo se tomó como primario (bobina
+ clara), y el derecho como secundario (bobina oscura).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcelo/Downloads/WhatsApp Image 2018-05-24 at 23.15.07.jpeg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Bobinas utilizadas para armar el trafo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -694,13 +755,7 @@ $k$
 \end_inset
 
  del transformador, utilizando el conexionado largo.
- Dado que la impedancia de los bobinados es muy pequeña, se hace comparable
- con la resistencia interna del amperímetro.
- Si se utiliza la conexión corta, la tensión que cae sobre el amperímetro
- se hace comparable a la que cae en el bobinado donde se está midiendo,
- lo que provocaría una medición de tensión incorrecta con el voltímetro.
- Por ello se utiliza el conexionado largo, de forma tal de evitar este error
- en la medición de tensión.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1610,83 +1665,7 @@ $R_{L1},R_{L2}$
 \end_inset
 
 , se pudo calcular L1 y L2 en vacio.
- Para conseguir L2 en los otros casos se tomo el criterio de que para el
- mismo caso de núcleo, la autoinductancia M debe ser la misma tanto para
- el caso con carga Rd como sin carga, dado que solo depende de los parámetros
- del transformador.
- Por ejemplo, en el caso de hierro sólido se calcula el M, dado que con
- las mediciones obtenidas para ese caso si es posible obtener 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$L_2$
-\end_layout
-
-\end_inset
-
-.
- Luego, este valor debe ser el mismo para el caso donde se conecta la resistenci
-a de carga 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$Rd$
-\end_layout
-
-\end_inset
-
-.
- Se obtiene el 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$L_2$
-\end_layout
-
-\end_inset
-
- correspondiente para este caso y el coeficiente de acoplamiento 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$k$
-\end_layout
-
-\end_inset
-
-.
- En el caso sin núcleo, dado que no se solicitaba repetir el experimento
- con la carga Rd, no se calculó 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$L_2$
-\end_layout
-
-\end_inset
-
-, y por ende tampoco el coeficiente de acoplamiento 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$k$
-\end_layout
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2220,6 +2199,125 @@ pm 0.019$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Conclusiones generales
+\end_layout
+
+\begin_layout Standard
+Teniendo armado el transformador e identificado el sentido de la inductancia
+ mutua, se procedio a verificar que efectos producía cambiar el núcleo por
+ materiales diferentes.
+ El caso sin núcleo (es decir al vacío) es en el que el flujo magnético
+ se dispersa más, por lo que la corriente medida en el primario es la mayor
+ comparada al resto de los casos, aunque no tiene pérdidas por Foucault.
+ Es el caso donde las inductancias toman los valores más pequeños.
+ 
+\end_layout
+
+\begin_layout Standard
+En los casos con núcleo no vacío, el valor de la corriente disminuye considerabl
+emente, al mantener el flujo magnético mejor direccionado.
+ Dentro de estos, estan las pruebas con núcleo de hierro sólido y laminado.
+ En el caso de hierro sólido se observó que esta hipótesis se verifica,
+ obteniendo una corriente en el primario menor y además se ven aumentados
+ los valores de las inductancias, dado que las mismas dependen sólo de las
+ características del material.
+ Respecto al caso con núcleo vacío, además, se ve que el valor que la inductanci
+a mutua 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$M$
+\end_layout
+
+\end_inset
+
+ también aumenta considerablemente.
+ Luego, en el caso con núcleo laminado, se observa también un aumento en
+ los valores de las inductancias y una disminución en las corrientes medidas
+ (en primario y secundario) con la impedancia de carga 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Rd$
+\end_layout
+
+\end_inset
+
+ conectada.
+ Se observa, además, una aumento en el valor de la inductancia mutua 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$M$
+\end_layout
+
+\end_inset
+
+ y una leve mejoría en el coeficiente de acoplamiento 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+ respecto al caso con núcleo sólido.
+ Esto es debido a que, al estar el hierro en láminas en lugar de ser un
+ sólo sólido, se reducen las pérdidas por Foucault, mejorando un poco el
+ rendimiento.
+\end_layout
+
+\begin_layout Standard
+Para conseguir L2 en el caso de núcleo laminado se tomo el criterio de que
+ con un mismo núcleo, la autoinductancia M debe ser la misma tanto para
+ el caso con impedancia de carga Rd en el secundario como sin carga, dado
+ que la misma solo depende de los parámetros del transformador.
+ En el caso sin núcleo, dado que no se solicitaba repetir el experimento
+ con la carga Rd, no se calculó 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_2$
+\end_layout
+
+\end_inset
+
+, y por ende tampoco el coeficiente de acoplamiento 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$k$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dado que la impedancia de los bobinados es muy pequeña, se hace comparable
+ con la resistencia interna del amperímetro.
+ Si se utiliza la conexión corta, la tensión que cae sobre el amperímetro
+ se hace comparable a la que cae en el bobinado donde se está midiendo,
+ lo que provocaría una medición de tensión incorrecta con el voltímetro.
+ Por ello se utiliza el conexionado largo, de forma tal de evitar este error
+ en la medición de tensión.
 \end_layout
 
 \end_body
