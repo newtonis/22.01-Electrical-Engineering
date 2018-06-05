@@ -331,6 +331,7 @@ Diagrama de bode:
 \begin_layout Standard
 \begin_inset Graphics
 	filename Problema6.jpg
+	scale 50
 
 \end_inset
 
@@ -339,7 +340,8 @@ Diagrama de bode:
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename Problema6zoomout.jpg
+	filename problema6asymptotic.jpg
+	scale 50
 
 \end_inset
 

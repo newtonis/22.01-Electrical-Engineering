@@ -331,6 +331,7 @@ Diagrama de bode:
 \begin_layout Standard
 \begin_inset Graphics
 	filename Problema6.jpg
+	scale 50
 
 \end_inset
 
@@ -338,8 +339,15 @@ Diagrama de bode:
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+Curva asintótica vs Real:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Graphics
 	filename problema6asymptotic.jpg
+	scale 50
 
 \end_inset
 
