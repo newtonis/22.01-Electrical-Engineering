@@ -215,6 +215,8 @@ Valores medidos
 \begin_layout Standard
 En las siguientes tablas se muestran los valores medidos para las diferentes
  configuraciones mencionadas.
+ Para la realización de las mediciones se ajustó la fuente de alimentación
+ a un valor de 10V.
 \end_layout
 
 \begin_layout Standard
@@ -2184,11 +2186,1047 @@ Análisis de máxima transferencia de potencia
 \end_layout
 
 \begin_layout Standard
-el punto 4 del orto
+Para el análisis de máxima transferencia de potencia hacia una carga resistiva,
+ se eligió usar el cuadripolo tipo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Pi$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Midiendo los parámetros 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ a circuito abierto e 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ en cortocircuito se obtuvo:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cuadripolo 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+ - 9606 (
+\begin_inset Formula $\Pi$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{2}(V_{TH})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{2}(I_{N})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{TH=\frac{V_{2}}{I_{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.28V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80.4mA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90.55
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se conectó el cuadripolo como se indica en la figura, con un potenciómetro
+ a la salida, para poder determiar en forma experimental dicho valor de
+ 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+ para el que se da la máxima transferencia de potencia.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ej4.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir de las mediciones realizadas, se obtubieron los siguientes valores
+ de potencia al variar 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="15" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{2}$
+\end_inset
+
+[V]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{2}$
+\end_inset
+
+[mA]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{L}$
+\end_inset
+
+[
+\begin_inset Formula $\Omega$
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P$
+\end_inset
+
+[mW]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+208
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+130
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+174.55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+132
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+135
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+129.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+136.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+114.29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+104
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+146.25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+92.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+148
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+82.35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+148.75
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80.23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+146.62
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+71.11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+144
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+47.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+63.16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+142.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+52.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+47.62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+131.25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se realizó luego, la curva de transferencia de potencia en función de 
+\begin_inset Formula $R_{L}$
+\end_inset
+
+ para dichos valores:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ej4CurvaMTP.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De los datos obtenidos se extrajo que, experimentalmente el valor de la
+ resistencia que permite la máxima transferencia de potencia es 
+\begin_inset Formula $R_{L}=82.35$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
 Conclusiones y observaciones
+\end_layout
+
+\begin_layout Standard
+Para la primer parte, en base a la equivalencia de parámetros calculada,
+ se comparó con los valores calculados por mediciones.
+ De esto resultó que, para los parámetros 
+\begin_inset Formula $Z$
+\end_inset
+
+, la inversa de sus respectivos parámetros 
+\begin_inset Formula $Y$
+\end_inset
+
+ resultó aproximadamente igual para el cuadripolo 
+\begin_inset Quotes eld
+\end_inset
+
+ T 
+\begin_inset Quotes erd
+\end_inset
+
+, no así con el cuadripolo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Pi$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+, donde surgen diferencias considerables en los cuatro valores de la matriz.
+ Se supone que esto puede deberse a algún error en los ensayos realizados
+ para dicho cuadripolo, o que para ese tipo de cuaripolo por los valores
+ que poseen sus resistencias, los ensayos se vean afectados por un aporte
+ de caída de tensión considerable en la resistencia interna de la fuente
+ de alimentación.
+ Esto también se ve reflejado en los casos siguientes:
+\end_layout
+
+\begin_layout Standard
+En la equivalencia de parámetros 
+\begin_inset Formula $T$
+\end_inset
+
+, se observa una situación similar a la anterior, donde el cálculo de los
+ parámetros 
+\begin_inset Formula $T$
+\end_inset
+
+ a partir de las ecuaciones de conversión con los parámetros 
+\begin_inset Formula $Z$
+\end_inset
+
+, resulta aproximadamente igual para el cuadripolo 
+\begin_inset Quotes eld
+\end_inset
+
+ T 
+\begin_inset Quotes erd
+\end_inset
+
+, no así con el cuadripolo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Pi$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+, donde se observan diferencias considerables en los valores de B y D, mientras
+ que A y C muestran valores que son aproximadamente iguales a los que resultan
+ de las mediciones.
+\end_layout
+
+\begin_layout Standard
+En la equivalencia del caso serie, a partir de la suma de las matrices de
+ parámetros 
+\begin_inset Formula $Z$
+\end_inset
+
+ de ambos cuadripolos, en la resultante se observa que dicha matriz 
+\begin_inset Formula $[Z_{A}]+[Z_{B}]$
+\end_inset
+
+, es diferente a la 
+\begin_inset Formula $[Z_{SERIE}]_{MEDIDO}$
+\end_inset
+
+, en particular se observa que los cuatro valores muestran una misma diferencia
+ cada uno con los de la matriz resultante de la suma.
+ 
+\end_layout
+
+\begin_layout Standard
+En la equivalencia del caso paralelo, a partir de sumar las matrices de
+ parámetros 
+\begin_inset Formula $Y$
+\end_inset
+
+ de ambos cuadripolos, se observa también una diferencia entre los valores
+ que surgen de hacer 
+\begin_inset Formula $[Y_{A}]+[Y_{B}]$
+\end_inset
+
+ y la 
+\begin_inset Formula $[Y_{PARALELO}]_{MEDIDO}$
+\end_inset
+
+.
+ Para este caso se observan diferencias considerables en un factor de aproximada
+mente 0.5 en los valores de la diagonal, es decir en la 
+\begin_inset Formula $Y_{11}$
+\end_inset
+
+ y la 
+\begin_inset Formula $Y_{22}$
+\end_inset
+
+ resultantes, mientras que los 
+\begin_inset Formula $Y_{12}$
+\end_inset
+
+ y 
+\begin_inset Formula $Y_{21}$
+\end_inset
+
+ muestran valores aproximadamente idénticos a los que surgen de las mediciones
+ del paralelo.
+ 
+\end_layout
+
+\begin_layout Standard
+Finalmente, en el caso de los cuadripolos en cascada, se observan situaciones
+ un poco diferentes.
+ En el caso cascada 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Pi-T$
+\end_inset
+
+ 
+\begin_inset Quotes erd
+\end_inset
+
+, resultan similares los valores de 
+\begin_inset Formula $[T_{A-B}]_{MEDIDO}$
+\end_inset
+
+ de la primer columna (A y B) a los obtenidos en la primer columna de realizar
+ el producto matricial 
+\begin_inset Formula $[T_{A}]\times[T_{B}]$
+\end_inset
+
+, mientras que los de la segunda columna (C y D) muestran diferencias en
+ un factor de aproximadamente 0.5.
+ En el caso cascada 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $T-\Pi$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+, se observa que son ahora todos los valores de la matriz 
+\begin_inset Formula $[T_{B-A}]_{MEDIDO}$
+\end_inset
+
+ los que difieren en un factor de 0.5 respecto de los resultantes del producto
+ matricial 
+\begin_inset Formula $[T_{B}]\times[T_{A}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para el análisis de máxima transferencia de potencia, se eligió (como se
+ mencionó en la sección correspondiente) utilizar el cuadripolo tipo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Pi$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Esto se debe a que es el que, midiendo 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ con la salida a circuito abierto y midiendo 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+con la salida en cortocircuito resulta una 
+\begin_inset Formula $R_{TH}$
+\end_inset
+
+ menor, dado que este es el valor de carga a conectar para el cual la fuente
+ transfiere la máxima potencia.
+ De comparar los valores de 
+\begin_inset Formula $R_{TH}$
+\end_inset
+
+ medido y estimado con la curva de potencia, se observa que los resultados
+ son similares, donde surge que el obtenido por observación de la curva
+ es un poco menor.
+ Esto último puede deberse a que se requerirían tomar mayores valores cercanos
+ al punto de máxima transferencia para conseguir una mejor aproximación
+ al valor calculado por el cociente de 
+\begin_inset Formula $\frac{V_{2}}{I_{2}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -2196,7 +3234,201 @@ Anexo: cálculos teóricos
 \end_layout
 
 \begin_layout Standard
-lo que subio joaco del coso
+Aquí se desarrollan las expresiones de cálculo de los parámetros correspondiente
+s a cada cuadripolo
+\end_layout
+
+\begin_layout Standard
+Cuadripolo tipo 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\Pi$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename pi.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por cuestiones de simplicidad (al pasivar 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ o 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ se elimina una resistencia), para este cuadripolo conviene calcular sus
+ parámetros 
+\begin_inset Formula $[Y]$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Como el cuadripolo es recíproco (sólo se compone de componentes pasivos)
+ 
+\begin_inset Formula $Y_{12}=Y_{21}$
+\end_inset
+
+.
+ Entonces se tiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{11}=\frac{I_{1}}{V_{1}}|_{V_{2}=0}=Y_{1}+Y_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{21}=Y_{12}=\frac{I_{2}}{V_{1}}|_{V_{2}=0}=-Y_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{22}=\frac{I_{2}}{V_{2}}|_{V_{1}=0}=Y_{2}+Y_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ende:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[Y]=\left[\begin{array}{cc}
+Y_{1}+Y_{2} & -Y_{2}\\
+-Y_{2} & Y_{2}+Y_{3}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuadripolo tipo 
+\begin_inset Quotes eld
+\end_inset
+
+ T 
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename t.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para este cuadripolo, desde el análisis teórico conviene calcular los parámetros
+ 
+\begin_inset Formula $Z$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+Como es recíproco 
+\begin_inset Formula $Z_{12}=Z_{21}$
+\end_inset
+
+.
+ Entonces se tiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{11}=\frac{V_{1}}{I_{1}}|_{I_{2}=0}=R_{1}+R_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{12}=Z_{21}=\frac{V_{1}}{I_{2}}|_{I_{1}=0}=R_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{22}=\frac{V_{2}}{I_{2}}|_{I_{1}=0}=R_{2}+R_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[Z]=\left[\begin{array}{cc}
+R_{1}+R_{2} & R_{2}\\
+R_{2} & R_{2}+R_{3}
+\end{array}\right]
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body

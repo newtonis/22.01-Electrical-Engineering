@@ -1722,7 +1722,8 @@ Por cuestiones de simplicidad, para este cuadripolo conviene calcular sus
 \end_layout
 
 \begin_layout Standard
-Como el cuadripolo es recíproco Y
+Como el cuadripolo es recíproco (sólo se compone de componentes pasivos)
+ Y
 \begin_inset Formula $_{12}$
 \end_inset
 
