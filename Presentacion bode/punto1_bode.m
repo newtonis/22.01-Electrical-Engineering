@@ -10,7 +10,6 @@ x_ =[0.1 , 0.2 ,0.3 ,0.5 , 0.7 ,1.0];
 % el primer argumento es el numerador y el segundo el denominador
 
 H=tf(zeros(1,1,length(x_))); 
-figure;
 
 asympcurv = false;
 %nota: con la curva asintotica no tiene la restriccion de w

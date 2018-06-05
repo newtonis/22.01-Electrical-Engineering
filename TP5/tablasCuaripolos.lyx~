@@ -232,7 +232,7 @@ A
 \begin_inset Text
 
 \begin_layout Plain Layout
-75
+-75
 \end_layout
 
 \end_inset
@@ -1900,6 +1900,17 @@ R
 
 +R
 \begin_inset Formula $_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Z=
+\begin_inset Formula $\left(\begin{array}{cc}
+R_{1}+R_{2} & R_{2}\\
+R_{2} & R_{2}+R_{3}
+\end{array}\right)$
 \end_inset
 
 
