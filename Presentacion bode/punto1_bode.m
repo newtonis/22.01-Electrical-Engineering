@@ -8,9 +8,7 @@ w={0.1*wc 10*wc};
 x_ =[0.1 , 0.2 ,0.3 ,0.5 , 0.7 ,1.0];
 %la función tf nos arma el polinomio (transfer function)
 % el primer argumento es el numerador y el segundo el denominador
-
 H=tf(zeros(1,1,length(x_))); 
-
 asympcurv = false;
 %nota: con la curva asintotica no tiene la restriccion de w
 for i =1:length(x_)
