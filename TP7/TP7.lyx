@@ -75,10 +75,6 @@ Determinación del circuito dado:
 \end_layout
 
 \begin_layout Standard
-En el laboratorio se logró comprobar que se trataba del RC.
-\end_layout
-
-\begin_layout Standard
 Se procedió de la siguiente manera:
 \end_layout
 
@@ -133,6 +129,11 @@ La primera alternativa fue desconectar todo y solamente conectar entre los
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Efectivamente, como entre A y B se midió un valor no nulo, se pudo deducir
+ que se trataba del circuito RC.
 \end_layout
 
 \begin_layout Standard
