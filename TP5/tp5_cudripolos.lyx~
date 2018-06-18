@@ -2322,6 +2322,10 @@ A
 
 \begin_layout Plain Layout
 90.55
+\begin_inset Formula $\Omega$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2353,6 +2357,11 @@ Se conectó el cuadripolo como se indica en la figura, con un potenciómetro
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+Figura 1: Conexionado del cuadripolo e instrumentos.
 \end_layout
 
 \begin_layout Standard
@@ -2988,7 +2997,7 @@ Se realizó luego, la curva de transferencia de potencia en función de
 \begin_layout Standard
 De los datos obtenidos se extrajo que, experimentalmente el valor de la
  resistencia que permite la máxima transferencia de potencia es 
-\begin_inset Formula $R_{L}=82.35$
+\begin_inset Formula $R_{L}=82.35\Omega$
 \end_inset
 
 .
@@ -3227,6 +3236,16 @@ con la salida en cortocircuito resulta una
 \end_inset
 
 .
+ Aunque, también puede surgir una diferencia por la lectura de 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+, dado que la resistencia interna del mismo tiene un valor que es del orden
+ de la 
+\begin_inset Formula $R_{TH}$
+\end_inset
+
+ que resulta del análisis de este caso.
 \end_layout
 
 \begin_layout Section
