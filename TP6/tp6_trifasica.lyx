@@ -1598,15 +1598,6 @@ Medición de potencias sobre el circuito
 
 \end_layout
 
-\begin_layout Standard
-Notar que el valor de la potencia reactiva 
-\begin_inset Formula $Q$
-\end_inset
-
- para el último caso no se puede realizar impliementando la ecuación dada
- en la sección anterior, dado que el sistema no está equilibrado.
-\end_layout
-
 \begin_layout Section
 Valores calculados
 \end_layout
@@ -2209,6 +2200,102 @@ L
 
 \begin_layout Section
 Análisis y conclusiones
+\end_layout
+
+\begin_layout Standard
+A partir de las mediciones y cálculos equivalentes realizados, se pueden
+ observar algunas cuestiones:
+\end_layout
+
+\begin_layout Standard
+En el primer caso se conectaron lámparas de filamento iguales en cada rama
+ en triángulo, por lo que el circuito resulta aproximadamente equilibrado.
+ Se nota en los valores de corriente medidos, los cuales resultan similares
+ entre sí.
+ Las pequeñas diferencias pueden deberse a que las lámparas, naturalmente,
+ no se comportan exactamente igual, o a que los amperímetros no están bien
+ calibrados.
+ Por otra parte, al estar el circuito aproximadamente equilibrado, los valores
+ calculados usando las relaciones de la sección 2 y las fases mencionadas,
+ en módulo resultan prácticamente idénticos a los medidos.
+ Además, como la carga es resistiva, casi toda la potencia consumida resulta
+ activa, con muy poca reactiva.
+\end_layout
+
+\begin_layout Standard
+En el segundo caso se conectaron bobinas de impedancia similar en cada ráma
+ en triángulo, por lo que en este caso el circuito también resulta aproximadamen
+te equilibrado.
+ Al igual que antes, puede notarse en los valores de corriente medidos,
+ similares entre sí y sustancialmente mayores al caso anterior, dado que
+ la impedancia de las bobinas es mucho menor al de las lámparas de filamento
+ cuando están en funcionamiento.
+ En este caso las diferencias entre los valores medidos también son apreciables
+ dado que las bobinas no son idénticas entre sí.
+ Por otro lado, se observa al igual que en el caso anterior, que los valores
+ calculados coinciden muy bien en módulo con los medidos, por estar el circuito
+ aproximadamente equilibrado.
+ Además, en este caso resulta que hay una mayor potencia reactiva respecto
+ al caso anterior, dada la prescencia de elementos inductivos.
+ Como las bobinas poseen una cierta resistencia, esto se observa en la potencia
+ activa medida.
+ Notar además que la potencia medida por el vatímetro 
+\begin_inset Formula $W_{ST}$
+\end_inset
+
+ es negativa, lo que nos indica que el factor de potencia es menor a 
+\begin_inset Formula $0.5$
+\end_inset
+
+.
+ Esto resulta consistente dado que en el circuito solamente hay bobinas,
+ las cuales introducen una fase de aproximadamente 
+\begin_inset Formula $90\text{°}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el tercer caso, se combinan en paralelo una bobina con cada lámpara para
+ cada rama, por lo que el circuito continúa siendo equilibrado.
+ La diferencia que surge es en que circula una intensidad de corriente mayor
+ en cada línea, dado que se combinan cargas en paralelo, por eso los valores
+ medido resultan incluso mayores al caso con sólo bobinas conectadas.
+ Se comprueba nuevamente, que los valores calculados coinciden muy bien
+ en módulo con los medidos, por ser el circuito aproximadamente equilibrado.
+ Además, en este caso tenemos también potencia reactiva considerable dado
+ que se tienen conectadas las bobinas, pero también aumenta la potencia
+ activa respecto al caso anterior dado que también se conectaron las lámparas.
+ Notar que, además, la potencia medida por el vatímetro 
+\begin_inset Formula $W_{ST}$
+\end_inset
+
+ es también negativa en este caso, pero con un valor más cercano a cero,
+ dado que al introducir más parte resistiva (por las lámparas), compensa
+ un poco la fase introducida por las bobinas.
+\end_layout
+
+\begin_layout Standard
+En el último caso, se conecta en cada rama del triángulo una configuración
+ distinta, por lo que el circuito resulta desequilibrado.
+ Esto se observa además en los valores de corriente medidos, que muestran
+ valores diferentes en cada línea.
+ Al comparar con los valores calculados, surgen diferencias con los valores
+ medidos: como en dos ramas se tienen bobinas y en la restante no, surge
+ una diferencia en la fase de las corrientes, por lo que no vale asumir
+ las fases mencionadas al principio para los cálculos.
+ Si se conociera la fase de cada carga para este caso, se podría realizar
+ el cálculo en forma más exacta.
+ Además, se observa una menor potencia activa, dado que a diferencia de
+ antes, en este caso se tiene una bobina de menos, que como se vió anteriormente
+ en el segundo caso, introducen un cosumo de potencia activa apreciable.
+ Notar que el valor de la potencia reactiva 
+\begin_inset Formula $Q$
+\end_inset
+
+ no se puede realizar implementando la ecuación dada en la sección 2, dado
+ que el sistema no está equilibrado.
 \end_layout
 
 \end_body
