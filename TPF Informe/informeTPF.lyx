@@ -826,7 +826,113 @@ Con dichas funciones se obtuvieron los siguientes gráficos.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaVCzoomout.jpg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaVCzoomin.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+VC(t) - Descarga, original (derecha) y ampliado en el intervalo de oscilación
+ (izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaILzoomout.jpg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaILzoomin.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+IL(t) - Descarga, original (derecha) y ampliado en el intervalo de oscilación
+ (izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De los gráficos obtenidos, se verifica la suposición anterior de que el
+ comportamiento tiende a ser críticamente amortiguado dado que, como se
+ calculó anteriormente, el 
+\begin_inset Formula $\xi\rightarrow1$
+\end_inset
+
+.
+ Esto se ve plasmado en el valor de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, cuyo valor al ser tan alto, provoca que en poco tiempo el comportamiento
+ exponencial anule rápidamente el comportamiento oscilatorio, por lo que
+ no se llega a apreciar la pseudo oscilación en los gráficos, tanto en los
+ obtenidos en MatLab como en LTSpice.
 \end_layout
 
 \begin_layout Section
@@ -853,7 +959,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename esquematicoLTSpice.png
-	scale 60
+	scale 40
 
 \end_inset
 
