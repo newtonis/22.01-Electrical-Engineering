@@ -67,7 +67,6 @@ set(handles.figure1, 'currentaxes', handles.output_graphics);
 % Update handles structure
 handles.a0val = 0;
 handles.a1val = 0;
-handles.a2val = 0;
 handles.b0val = 0;
 handles.b1val = 0;
 handles.b2val = 0;
@@ -238,29 +237,6 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
 end
 
 
-
-function a2_Callback(hObject, eventdata, handles)
-% hObject    handle to a2 (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    structure with handles and user data (see GUIDATA)
-
-% Hints: get(hObject,'String') returns contents of a2 as text
-%        str2double(get(hObject,'String')) returns contents of a2 as a double
-update_all_inputs(hObject,handles);
-
-% --- Executes during object creation, after setting all properties.
-function a2_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to a2 (see GCBO)
-% eventdata  reserved - to be defined in a future version of MATLAB
-% handles    empty - handles not created until after all CreateFcns called
-
-% Hint: edit controls usually have a white background on Windows.
-%       See ISPC and COMPUTER.
-if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
-    set(hObject,'BackgroundColor','white');
-end
-
-
 % --- Executes on selection change in listbox1.
 function listbox1_Callback(hObject, eventdata, handles)
 % hObject    handle to listbox1 (see GCBO)
@@ -394,20 +370,51 @@ handles.b0val = str2double(get(handles.b0,'String'));
 handles.b1val = str2double(get(handles.b1,'String'));
 handles.b2val = str2double(get(handles.b2,'String'));
 
-handles.a0val = str2double(get(handles.a2,'String'));
+handles.a0val = str2double(get(handles.a0,'String'));
 handles.a1val = str2double(get(handles.a1,'String'));
-handles.a2val = str2double(get(handles.a2,'String'));
 
-handles.ok = ~isnan(handles.kval) && ~isnan(handles.b0val) && ~isnan(handles.b1val) && ~isnan(handles.b2val) && ~isnan(handles.a0val) && ~isnan(handles.a1val) && ~isnan(handles.a2val);
-if handles.a0val == 0 && handles.a1val == 0 && handles.a2val == 0
+handles.ok = ~isnan(handles.kval) && ~isnan(handles.b0val) && ~isnan(handles.b1val) && ~isnan(handles.b2val) && ~isnan(handles.a0val) && ~isnan(handles.a1val);
+if handles.a1val == 0 && handles.a0val == 0
     handles.ok = 0;
 end
 
 if ~handles.ok
     handles.msg.String = 'La entrada no es valida';
 else
-    handles.msg.String = 'La entrada es valida';
+    [polos,ceros] = get_polos_ceros(handles);
+    det = 0;
+    
+    if handles.b1val == 0 && handles.b0val == 0
+         handles.msg.String = 'Pasa altos';
+         det = 1;
+    elseif handles.b2val == 0 && handles.b0val == 0
+        handles.msg.String = 'Pasa bandas';
+        det = 1;
+    elseif handles.b2val == 0 && handles.b1val == 0
+        handles.msg.String = 'Pasa bajos';
+        det = 1;
+    elseif (handles.a0val > 0 && handles.b1val == 0)
+        w0 = sqrt(handles.a0val);
+        if handles.b0val/handles.b2val == w0^2
+            handles.msg.String = 'Notch';
+            det = 1;
+        end 
+    end
+    
+    if handles.a0val > 0
+        w0 = sqrt(handles.a0val);
+        q = w0 / handles.a1val;
+        handles.Qtext.String = ['q = ' , num2str(q,4) ];
+        handles.WoText.String = ['w0 = ',num2str(w0,4) ];
+    end
+    
+    %handles.Qtext.String = 
+    if ~det
+        handles.msg.String = 'La entrada es valida pero no se puede detectar el filtro';
+    end
+    
 end
+
 
 guidata(hObject, handles);
     
@@ -415,7 +422,6 @@ function [mag_,pha_,w] = get_content(handles,invert)
 
 a0 = handles.a0val;
 a1 = handles.a1val;
-a2 = handles.a2val;
 
 k = handles.kval;
 b0 = handles.b0val;
@@ -424,7 +430,7 @@ b2 = handles.b2val;
 
 s = tf('s');
 
-H = k* (s^2*b0+s*b1+s^2*b2) / (s^2*a0+s*a1+a2); 
+H = k* (s^2*b2+s*b1+b0) / (s^2+s*a1+a0); 
 if (invert)
     H = 1/H;
 end
@@ -437,12 +443,11 @@ pha_ = squeeze(pha);
 function [polos,ceros] = get_polos_ceros(handles)
 a0 = handles.a0val;
 a1 = handles.a1val;
-a2 = handles.a2val;
 
 k = handles.kval;
 b0 = handles.b0val;
 b1 = handles.b1val;
 b2 = handles.b2val;
 
-ceros = roots([b0,b1,b2]);
-polos = roots([a0,a1,a2]);
+ceros = roots([b2,b1,b0]);
+polos = roots([1,a1,a0]);
