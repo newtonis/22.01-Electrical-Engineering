@@ -5,9 +5,9 @@ L=5.2e-3;
 R1=18;
 R2=12;
 syms s;
-F=V/(s^2+R2*s);
+F=V/(s*(s*L+R2));
 ans=ilaplace(F);
 ans
-time=[0:0.01:0.7];
-ansvec=5.0/12 - (5.0*exp(-12*time))/12;
-plot(time,ansvec);s
+time=[0:0.0001:0.003];
+ansvec=5/12 - (5*exp(-(30000*time)/13))/12;
+plot(time,ansvec);
