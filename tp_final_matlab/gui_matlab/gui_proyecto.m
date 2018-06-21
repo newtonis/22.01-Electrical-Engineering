@@ -22,7 +22,7 @@ function varargout = gui_proyecto(varargin)
 
 % Edit the above text to modify the response to help gui_proyecto
 
-% Last Modified by GUIDE v2.5 21-Jun-2018 01:34:30
+% Last Modified by GUIDE v2.5 21-Jun-2018 12:07:30
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -70,9 +70,11 @@ handles.a1val = 0;
 handles.a2val = 0;
 handles.b0val = 0;
 handles.b1val = 0;
+handles.b2val = 0;
+
 handles.kval = 0;
 handles.ok = 0;
-handles.status = 'default';
+handles.status = 'Modulo en DB, ganancia';
 
 
 update_all_inputs(hObject,handles);
@@ -166,6 +168,29 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
     set(hObject,'BackgroundColor','white');
 end
 
+
+
+
+function b2_Callback(hObject, eventdata, handles)
+% hObject    handle to b2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of b2 as text
+%        str2double(get(hObject,'String')) returns contents of b2 as a double
+update_all_inputs(hObject,handles);
+
+% --- Executes during object creation, after setting all properties.
+function b2_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to b2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
 
 
 function a0_Callback(hObject, eventdata, handles)
@@ -278,22 +303,32 @@ if handles.ok
         cla reset;
         [mag,pha,w] = get_content(handles,0);
         semilogx(w , 20 * log10(mag) );
+        xlabel('freq (1/s)');
+        ylabel('|H(s)| (db)');
     elseif strcmp(handles.status,'Modulo en DB, atenuacion');
         cla reset;
         [mag,pha,w] = get_content(handles,1);
-        semilogx(w , 20 * log10(mag) );    
+        semilogx(w , 20 * log10(mag) ); 
+        xlabel('freq (1/s)');
+        ylabel('|1/H(s)| (db)');
     elseif strcmp(handles.status,'Modulo en veces, ganancia');
         cla reset;
         [mag,pha,w] = get_content(handles,0);
         semilogx(w , mag ); 
+        xlabel('freq (1/s)');
+        ylabel('|H(s)|');
     elseif strcmp(handles.status,'Modulo en veces, atenuacion');
         cla reset;
         [mag,pha,w] = get_content(handles,1);
         semilogx(w , mag ); 
+        xlabel('freq (1/s)');
+        ylabel('|1/H(s)| ');
     elseif strcmp(handles.status,'Fase');
         cla reset;
         [mag,pha,w] = get_content(handles,0);
         semilogx(w , pha ); 
+        xlabel('freq (1/s)');
+        ylabel('<H(s)');
     elseif strcmp(handles.status,'Diagrama de polos y ceros');
         cla reset;
         [polos,ceros] = get_polos_ceros(handles);
@@ -357,12 +392,22 @@ function update_all_inputs(hObject,handles)
 handles.kval = str2double(get(handles.k,'String'));
 handles.b0val = str2double(get(handles.b0,'String'));
 handles.b1val = str2double(get(handles.b1,'String'));
+handles.b2val = str2double(get(handles.b2,'String'));
 
 handles.a0val = str2double(get(handles.a2,'String'));
 handles.a1val = str2double(get(handles.a1,'String'));
 handles.a2val = str2double(get(handles.a2,'String'));
 
-handles.ok = ~isnan(handles.kval) && ~isnan(handles.b0val) && ~isnan(handles.b1val) && ~isnan(handles.a0val) && ~isnan(handles.a1val) && ~isnan(handles.a2val);
+handles.ok = ~isnan(handles.kval) && ~isnan(handles.b0val) && ~isnan(handles.b1val) && ~isnan(handles.b2val) && ~isnan(handles.a0val) && ~isnan(handles.a1val) && ~isnan(handles.a2val);
+if handles.a0val == 0 && handles.a1val == 0 && handles.a2val == 0
+    handles.ok = 0;
+end
+
+if ~handles.ok
+    handles.msg.String = 'La entrada no es valida';
+else
+    handles.msg.String = 'La entrada es valida';
+end
 
 guidata(hObject, handles);
     
@@ -375,10 +420,11 @@ a2 = handles.a2val;
 k = handles.kval;
 b0 = handles.b0val;
 b1 = handles.b1val;
+b2 = handles.b2val;
 
 s = tf('s');
 
-H = k* (s^2+s*b0+s^2*b1) / (s^2*a0+s*a1+a2); 
+H = k* (s^2*b0+s*b1+s^2*b2) / (s^2*a0+s*a1+a2); 
 if (invert)
     H = 1/H;
 end
@@ -396,6 +442,7 @@ a2 = handles.a2val;
 k = handles.kval;
 b0 = handles.b0val;
 b1 = handles.b1val;
+b2 = handles.b2val;
 
-ceros = roots([1,b0,b1]);
+ceros = roots([b0,b1,b2]);
 polos = roots([a0,a1,a2]);
