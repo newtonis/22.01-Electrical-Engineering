@@ -107,7 +107,68 @@ Simulación LTSpice
 \end_layout
 
 \begin_layout Standard
-la parte 2
+Para el circuito RLC dado, como el número de grupo es 2, los valores de
+ los componentes a utilizar son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{1}=18\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{2}=12\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C=22\mu F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L=(2*2.6)mH=5.2mH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito esquemático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
