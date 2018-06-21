@@ -87,10 +87,10 @@ En primera instacia se alimentó el circuito por medio de un generador de
 \end_layout
 
 \begin_layout Standard
-Se pudo observar que en un intervalo entre 100Hz y 40KHz no había ningún
+Se pudo observar que en un intervalo entre 100Hz y 4,8KHz no había ningún
  cambio en la salida, la función transferencia (medida en dB) se mantenía
  en 0.
- A medida que nos acercábamos a los 47-48kHz se empezaba a atenuar la salida.
+ A medida que nos acercábamos a los 4,8KHz se empezaba a atenuar la salida.
  A continuación seguimos aumentando la frecuencia y la salida se seguía
  viendo atenuada pero con un patron bien determinado.
 \end_layout
@@ -132,14 +132,61 @@ La primera alternativa fue desconectar todo y solamente conectar entre los
 \end_layout
 
 \begin_layout Standard
-Efectivamente, como entre A y B se midió un valor no nulo, se pudo deducir
- que se trataba del circuito RC.
+Efectivamente, entre A y B se midió un valor no nulo.
+ El valor medido fue de aproximadamente 220
+\begin_inset Formula $\Omega$
+\end_inset
+
+, el cual está normalizado y entonces se pudo deducir que se trataba del
+ circuito RC.
 \end_layout
 
 \begin_layout Standard
+La función transferencia queda definida por:
+\end_layout
 
-\series bold
-Había otra forma pero no me acuerdo bien
+\begin_layout Standard
+\begin_inset Formula $H(\$)=\frac{V_{C}(\$)}{V_{i}(\$)}=\frac{1}{\$RC+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La frecuencia de corte medida es 4,8KHz.
+ En base a este valor se pudo determinar indirectamente el valor del capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{0}=\frac{1}{RC}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{0}=2\pi f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=\frac{1}{2\pi fR}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=150nf$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para los esos valores de R y C se obtuvo el siguiente diagrama de bode:
 \end_layout
 
 \end_body
