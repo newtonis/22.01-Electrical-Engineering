@@ -1,15 +1,17 @@
 clc;
-s=tf('s');
-r=10;
-c=50;
-%H= (1/(r*s*c+1));
-%bode(H);
-%[num,den]=tfdata(H);
-%bode_as(cell2mat(num),cell2mat(den));
-%hold on
-%freq=log(freq);
-%semilogx(freq,db);
-%semilogx(db)
 
+radfq=2*pi*freq;
 phase=(-atan(freq/4800.0))*180/pi;
-semilogx(freq,phase);
+figure
+ax1 = subplot(2,1,1);
+y1=semilogx(radfq,db);
+title(ax1,'LAB Bode diagram');
+ylabel(ax1,'Magnitude(dB)');
+xlim([10e2 10e4]);
+ylim([-15 0]);
+ax2 = subplot(2,1,2);
+y2=semilogx(radfq,phase);
+ylabel(ax2,'Phase(deg)');
+xlabel('Frequency(rad/s)');
+xlim([10e2 10e4]);
+ylim([-90 0]);

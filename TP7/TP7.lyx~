@@ -87,10 +87,10 @@ En primera instacia se alimentó el circuito por medio de un generador de
 \end_layout
 
 \begin_layout Standard
-Se pudo observar que en un intervalo entre 100Hz y 40KHz no había ningún
+Se pudo observar que en un intervalo entre 100Hz y 4,8KHz no había ningún
  cambio en la salida, la función transferencia (medida en dB) se mantenía
  en 0.
- A medida que nos acercábamos a los 47-48kHz se empezaba a atenuar la salida.
+ A medida que nos acercábamos a los 4,8KHz se empezaba a atenuar la salida.
  A continuación seguimos aumentando la frecuencia y la salida se seguía
  viendo atenuada pero con un patron bien determinado.
 \end_layout
@@ -132,14 +132,200 @@ La primera alternativa fue desconectar todo y solamente conectar entre los
 \end_layout
 
 \begin_layout Standard
+Efectivamente, entre A y B se midió un valor no nulo.
+ El valor medido fue de aproximadamente 220
+\begin_inset Formula $\Omega$
+\end_inset
 
-\series bold
-Había otra forma pero no me acuerdo bien
+, el cual está normalizado y entonces se pudo deducir que se trataba del
+ circuito RC.
 \end_layout
 
 \begin_layout Standard
-Efectivamente, como entre A y B se midió un valor no nulo, se pudo deducir
- que se trataba del circuito RC.
+La función transferencia queda definida por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H(\$)=\frac{V_{C}(\$)}{V_{i}(\$)}=\frac{1}{\$RC+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La frecuencia de corte medida es 4,8KHz.
+ En base a este valor se pudo determinar indirectamente el valor del capacitor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{0}=\frac{1}{RC}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{0}=2\pi f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=\frac{1}{2\pi fR}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=150nf$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para los esos valores de R y C se obtuvo el siguiente diagrama de bode:
+\end_layout
+
+\begin_layout Standard
+—————————————-
+\end_layout
+
+\begin_layout Standard
+Punto 2:
+\end_layout
+
+\begin_layout Standard
+Pasa bajos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H(\$)=\frac{H_{0}}{(\frac{\$}{\omega_{0}})^{2}+2\frac{\xi}{\omega_{0}}+1}$
+\end_inset
+
+ con H
+\begin_inset Formula $_{0}$
+\end_inset
+
+ cte.
+\end_layout
+
+\begin_layout Standard
+Para obtener el máximo del módulo 
+\end_layout
+
+\begin_layout Standard
+|
+\begin_inset Formula $\frac{H(\$)}{H_{0}}$
+\end_inset
+
+|=
+\begin_inset Formula $\frac{1}{\sqrt{(\omega_{0}^{2}-\omega^{2})^{2}+(2\xi\omega_{0}\omega)^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Derivamos el denominador y obtenemos su mínimo.
+ Como la raíz cuadrada es biyectiva entonces solo basta con derivar el radicando.
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $(\omega_{0}^{2}-\omega^{2})^{2}+(2\xi\omega_{0}\omega)^{2}$
+\end_inset
+
+)' = 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\omega_{0}\sqrt{1-2\xi^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi$
+\end_inset
+
+=
+\begin_inset Formula $\frac{1}{2Q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\omega_{0}\sqrt{1-\frac{1}{2Q^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y existe sobrepico si 
+\begin_inset Formula $\xi<\frac{1}{4}$
+\end_inset
+
+ lo que es lo mismo que pedir Q>2
+\end_layout
+
+\begin_layout Standard
+Pasa altos:
+\end_layout
+
+\begin_layout Standard
+H($)=
+\begin_inset Formula $\frac{H_{0}\frac{\$^{2}}{\omega_{0}^{2}}}{\frac{\$^{2}}{\omega_{0}^{2}}+2\frac{\xi}{\omega_{0}}+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+|
+\begin_inset Formula $\frac{H(\$)}{H_{0}}$
+\end_inset
+
+|=
+\begin_inset Formula $\frac{1}{\sqrt{(1-\left(\frac{\omega_{0}}{\omega}\right)^{2})^{2}+(\frac{1}{Q}\frac{\omega_{0}}{\omega})^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+aplicamos el mismo criterio que antes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\left(1-\left(\frac{\omega_{_{0}}}{\omega}\right)^{2}\right)^{2}+(\frac{1}{Q}\frac{\omega_{0}}{\omega})^{2}\right)$
+\end_inset
+
+
+\begin_inset Formula $^{'}$
+\end_inset
+
+=0
+\end_layout
+
+\begin_layout Standard
+nos queda
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\omega_{0}\sqrt{\frac{1}{2+(\frac{\omega_{0}}{Q^{2}})^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
