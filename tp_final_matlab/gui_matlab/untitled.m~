@@ -1,0 +1,11 @@
+classdef ClaseGUI < handles 
+    properties
+         
+    end
+    methods
+        function self = ClaseGUI ()
+             hfig v=
+        end
+    end
+    
+end

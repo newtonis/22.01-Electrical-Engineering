@@ -127,7 +127,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename circuito.png
-	scale 60
+	scale 55
 
 \end_inset
 
@@ -1616,7 +1616,7 @@ A partir de las relaciones de la sección 2, se calculan las corrientes
 \end_inset
 
 , para compararlas con los valores medidos.
- Para los cálculos se considera:
+ Para los cálculos en los primeros tres casos se considera:
 \end_layout
 
 \begin_layout Standard
@@ -1659,6 +1659,76 @@ Con fase
 \end_layout
 
 \begin_layout Standard
+Para el cuarto caso, al estar desbalanceado, no necesariamente tienen ese
+ desfasaje entre sí.
+ Como no se tienen datos suficientes medidos para calcularla en cada caso,
+ según el tipo de elemento en cada rama se aproxima la fase solamente a
+ fines de poder realizar los cálculos, para luego verificar que tan acertada
+ fue esta aproximación.
+ Dado que solo se tienen inductancias en dos ramas, y la restante es puramente
+ resistiva, se agrega una fase adicional de 
+\begin_inset Formula $-90\text{°}$
+\end_inset
+
+ a las corrientes 
+\begin_inset Formula $I_{ST}$
+\end_inset
+
+ e 
+\begin_inset Formula $I_{TR}$
+\end_inset
+
+ (que son las que tienen bobinas), dado que la rama resistiva pura no aporta
+ fase respecto a estas dos últimas.
+ Por lo tanto, para el útlimo caso se considera que:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{cases}
+I_{RS}\end{cases}$
+\end_inset
+
+Con fase 
+\begin_inset Formula $\varphi=0\text{°}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{cases}
+I_{ST}\end{cases}$
+\end_inset
+
+Con fase 
+\begin_inset Formula $\varphi=-210\text{°}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\begin{cases}
+I_{TR}\end{cases}$
+\end_inset
+
+Con fase 
+\begin_inset Formula $\varphi=-330\text{°}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="9">
@@ -2149,7 +2219,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.45
+0.9
 \end_layout
 
 \end_inset
@@ -2192,6 +2262,189 @@ L
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparación de valores medidos y calculados de corrientes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagramas fasoriales
+\end_layout
+
+\begin_layout Standard
+Para cada caso se realizaron los diagramas fasoriales de corrientes de línea
+ y de fase.
+ Se muestra un solo diagrama de tensiones de fase (dado que son todos idénticos).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename diagramas/U.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama fasorial de tensiones de fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename diagramas/R_R_R.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama fasorial de corrientes de linea/fase - Caso R-R-R
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename diagramas/L_L_L.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama fasorial de corrientes de linea/fase - Caso L-L-L
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename diagramas/RL_RL_RL.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama fasorial de corrientes de linea/fase - Caso R/L-R/L-R/L
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -2281,12 +2534,9 @@ En el último caso, se conecta en cada rama del triángulo una configuración
  distinta, por lo que el circuito resulta desequilibrado.
  Esto se observa además en los valores de corriente medidos, que muestran
  valores diferentes en cada línea.
- Al comparar con los valores calculados, surgen diferencias con los valores
- medidos: como en dos ramas se tienen bobinas y en la restante no, surge
- una diferencia en la fase de las corrientes, por lo que no vale asumir
- las fases mencionadas al principio para los cálculos.
- Si se conociera la fase de cada carga para este caso, se podría realizar
- el cálculo en forma más exacta.
+ Al comparar con los valores calculados, se comprueba que la aproximación
+ de fase para los cálculos es bastante acertada, dado que los valores muestran
+ mínimas diferencias.
  Además, se observa una menor potencia activa, dado que a diferencia de
  antes, en este caso se tiene una bobina de menos, que como se vió anteriormente
  en el segundo caso, introducen un cosumo de potencia activa apreciable.
