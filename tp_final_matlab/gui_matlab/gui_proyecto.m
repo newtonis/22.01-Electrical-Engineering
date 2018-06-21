@@ -22,7 +22,7 @@ function varargout = gui_proyecto(varargin)
 
 % Edit the above text to modify the response to help gui_proyecto
 
-% Last Modified by GUIDE v2.5 21-Jun-2018 01:22:12
+% Last Modified by GUIDE v2.5 21-Jun-2018 01:34:30
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -272,6 +272,7 @@ function graficar_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
+set(handles.figure1, 'currentaxes', handles.output_graphics);
 if handles.ok
     if strcmp(handles.status,'Modulo en DB, ganancia');
         cla reset;
