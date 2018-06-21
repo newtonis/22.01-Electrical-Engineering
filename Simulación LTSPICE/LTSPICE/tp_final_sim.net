@@ -1,0 +1,9 @@
+* C:\Users\joa-m\InformesElectro\TP Final Simulations\tp_final_sim.asc
+L1 N001 N003 5.2m
+C1 N001 N002 22µ
+R1 N002 0 18
+R2 N003 0 12
+V1 N001 0 PULSE(0 5 1m 1p 1p 2m 4m 5)
+.tran 0 0.01 0
+.backanno
+.end

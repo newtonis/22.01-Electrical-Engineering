@@ -2322,6 +2322,10 @@ A
 
 \begin_layout Plain Layout
 90.55
+\begin_inset Formula $\Omega$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2353,6 +2357,11 @@ Se conectó el cuadripolo como se indica en la figura, con un potenciómetro
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+Figura 1: Conexionado del cuadripolo e instrumentos.
 \end_layout
 
 \begin_layout Standard
@@ -2986,9 +2995,15 @@ Se realizó luego, la curva de transferencia de potencia en función de
 \end_layout
 
 \begin_layout Standard
+\align center
+Figura 2: Curva de potencia obtenida, tomando las ordenadas a partir del
+ mínimo valor para mayor claridad.
+\end_layout
+
+\begin_layout Standard
 De los datos obtenidos se extrajo que, experimentalmente el valor de la
  resistencia que permite la máxima transferencia de potencia es 
-\begin_inset Formula $R_{L}=82.35$
+\begin_inset Formula $R_{L}=82.35\Omega$
 \end_inset
 
 .
