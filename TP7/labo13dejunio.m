@@ -8,8 +8,8 @@ c=50;
 %bode_as(cell2mat(num),cell2mat(den));
 %hold on
 %freq=log(freq);
-%semilogx(freq,db);
-%semilogx(db)
+semilogx(freq,db)
+semilogx(db)
 
-phase=(-atan(freq/4800.0))*180/pi;
-semilogx(freq,phase);
+%phase=(-atan(freq/4800.0))*180/pi;
+%semilogx(freq,phase);
