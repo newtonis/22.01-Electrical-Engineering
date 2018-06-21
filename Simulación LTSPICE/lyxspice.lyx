@@ -309,51 +309,7 @@ Defino R=R
 \end_layout
 
 \begin_layout Standard
-i
-\begin_inset Formula $_{C}$
-\end_inset
-
-R+V
-\begin_inset Formula $_{C}$
-\end_inset
-
-+L
-\begin_inset Formula $_{1}$
-\end_inset
-
-
-\begin_inset Formula $\frac{di_{L}}{dt}$
-\end_inset
-
-=0
-\end_layout
-
-\begin_layout Standard
-C
-\begin_inset Formula $\frac{dV_{C}}{dt}$
-\end_inset
-
-R+V
-\begin_inset Formula $_{C}$
-\end_inset
-
-+L
-\begin_inset Formula $_{1}$
-\end_inset
-
-C
-\begin_inset Formula $_{1}$
-\end_inset
-
-
-\begin_inset Formula $\frac{d^{2}V_{C}}{dt^{2}}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{d^{2}V_{C}}{dt^{2}}+\frac{dV_{C}}{dt}\frac{R}{L_{1}}+\frac{V_{C}}{L_{1}C_{1}}=0$
+\begin_inset Formula $\frac{d^{2}i_{L}}{dt^{2}}+\frac{di_{L}}{dt}\frac{R}{L}+(i_{L})\frac{1}{LC}=0$
 \end_inset
 
 
@@ -429,206 +385,6 @@ Como
 \end_inset
 
  entonces el circuito tiende a comportarse como un críticamente amortiguado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $V_{C}(t)=Ae^{-\alpha t}cos(\omega_{d}t-\delta)$
-\end_inset
-
-V
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $A$
-\end_inset
-
- y 
-\begin_inset Formula $\delta$
-\end_inset
-
- estan dadas por las condiciones iniciales.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $V_{C}(0)=Acos(\delta)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{dV_{C}}{dt}(t)=Ae^{-\alpha t}[-\alpha cos(\omega_{d}t-\delta)-\omega_{d}sin(\omega_{d}t-\delta)]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{dV_{C}}{dt}(0)=A[-\alpha cos(\delta)+\omega_{d}sin(\delta)]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{\frac{dV_{C}}{dt}(0)+\alpha V_{C}(0)}{\omega_{d}}=Asin(\delta)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $A=\sqrt{\left(\frac{\frac{dV_{C}}{dt}(0)+\alpha V_{C}(0)}{\omega_{d}}\right)^{2}+(V_{C}(0))^{2}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Vc(0)=5V 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{\frac{dV_{C}}{dt}(0)+\alpha V_{C}(0)}{\omega_{d}}=$
-\end_inset
-
-51.46388922
-\end_layout
-
-\begin_layout Standard
-i
-\begin_inset Formula $_{C}$
-\end_inset
-
-=C
-\begin_inset Formula $_{1}$
-\end_inset
-
-
-\begin_inset Formula $\frac{dV_{C}}{dt}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-i
-\begin_inset Formula $_{C}$
-\end_inset
-
-(0)=
-\begin_inset Formula $\frac{V}{R_{2}}$
-\end_inset
-
-=4166667mA
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{dV_{C}}{dt}$
-\end_inset
-
-(0)=18939.394
-\begin_inset Formula $\frac{V}{s}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-A=51.7062075
-\end_layout
-
-\begin_layout Standard
-sin
-\begin_inset Formula $\delta$
-\end_inset
-
-=0.99531355
-\end_layout
-
-\begin_layout Standard
-cos
-\begin_inset Formula $\delta$
-\end_inset
-
-=0.096700
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\delta=$
-\end_inset
-
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.473944749 (en radianes)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $V_{C}(t)=8.5753e^{-2884.61t}cos(648.269t-1.473944749)$
-\end_inset
-
-V
-\end_layout
-
-\begin_layout Standard
-Con ese argumento, el coseno cambia de signo en t
-\begin_inset Formula $_{0}$
-\end_inset
-
-=4.6967mS
-\end_layout
-
-\begin_layout Standard
-Pero la constante que acompaña al coseno en t
-\begin_inset Formula $_{0}$
-\end_inset
-
- vale 11.20x10
-\begin_inset Formula $^{-6}$
-\end_inset
-
-V, lo que resulta prácticamente incomparable frente a los datos que nos
- pueda proporcionar el gráfico.
-\end_layout
-
-\begin_layout Standard
-Por todo esto en los gráficos sólo se puede apreciar el decrecimiento por
- parte de la exponencial.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename MATLAB/Coseno.jpg
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La corriente i
-\begin_inset Formula $_{L}$
-\end_inset
-
- esta dada por 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{d^{2}i_{L}}{dt^{2}}+\frac{di_{L}}{dt}\frac{R}{L}+(i_{L})\frac{1}{LC}=0$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -735,6 +491,77 @@ s y en ese t la parte que acompaña el coseno vale 15.92x10
 
 \begin_layout Standard
 Por esto, en los gráficos influye más la exponencial que el coseno.
+\end_layout
+
+\begin_layout Standard
+Para la tensión en el capacitor
+\end_layout
+
+\begin_layout Standard
+V
+\begin_inset Formula $_{C}$
+\end_inset
+
+=L
+\begin_inset Formula $\frac{di_{L}}{dt}$
+\end_inset
+
++i
+\begin_inset Formula $_{L}$
+\end_inset
+
+R
+\end_layout
+
+\begin_layout Standard
+V
+\begin_inset Formula $_{C}$
+\end_inset
+
+=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+e
+\begin_inset Formula $^{-\alpha t}$
+\end_inset
+
+[(-
+\begin_inset Formula $\omega'$
+\end_inset
+
+L)sin(
+\begin_inset Formula $\omega\text{'}t+\phi$
+\end_inset
+
+)]+
+\begin_inset Formula $(-\alpha L+R$
+\end_inset
+
+)cos(
+\begin_inset Formula $\omega'$
+\end_inset
+
+t+
+\begin_inset Formula $\phi$
+\end_inset
+
+)]
+\end_layout
+
+\begin_layout Standard
+Utilizando identidades trigonométricas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[V_{C}(t)=8.57515e^{-\alpha t}cos(\omega't+0.948283)V\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body

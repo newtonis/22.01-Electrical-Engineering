@@ -607,16 +607,6 @@ Por todo esto en los gráficos sólo se puede apreciar el decrecimiento por
 \end_layout
 
 \begin_layout Standard
-\begin_inset Graphics
-	filename MATLAB/Coseno.jpg
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 La corriente i
 \begin_inset Formula $_{L}$
 \end_inset
@@ -640,7 +630,101 @@ con las condiciones iniciales i
 \begin_inset Formula $_{L}$
 \end_inset
 
-=
+(0)=-7.5V entonces 
+\begin_inset Formula $\frac{di_{L}}{dt}(0)=-1442.3077$
+\end_inset
+
+A
+\end_layout
+
+\begin_layout Standard
+i
+\begin_inset Formula $_{L}(0)=A_{0}cos(\phi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+-[
+\begin_inset Formula $\frac{\frac{di_{L}}{dt}(0)+i_{L}(0)\alpha}{\omega_{d}}$
+\end_inset
+
+]=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+sen(
+\begin_inset Formula $\phi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+0.3708=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+sen(
+\begin_inset Formula $\phi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+0.41666=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+cos(
+\begin_inset Formula $\phi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+A
+\begin_inset Formula $_{0}$
+\end_inset
+
+=0.557766
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{\phi}$
+\end_inset
+
+=0.727218rad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{L}(t)=0.557766e^{-2884.61t}cos(684.284t\text{+0.727218})A\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i
+\begin_inset Formula $_{L}(t)$
+\end_inset
+
+ no cambia de signo si t=1.23278x10
+\begin_inset Formula $^{-3}$
+\end_inset
+
+s y en ese t la parte que acompaña el coseno vale 15.92x10
+\begin_inset Formula $^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por esto, en los gráficos influye más la exponencial que el coseno.
 \end_layout
 
 \end_body
