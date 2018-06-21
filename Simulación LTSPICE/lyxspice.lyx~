@@ -1,0 +1,564 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Simulación en MATLAB
+\end_layout
+
+\begin_layout Subsection*
+Transitorio con excitación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename circuit-marcado.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se resolvió aplicando la transformada de Laplace tomando V1=Vu(t) y condiciones
+ iniciales nulas
+\end_layout
+
+\begin_layout Standard
+Datos: V=5.0V; C
+\begin_inset Formula $_{1}$
+\end_inset
+
+=22
+\begin_inset Formula $\mu$
+\end_inset
+
+f; L
+\begin_inset Formula $_{1}$
+\end_inset
+
+=5.2mHy; R1=18
+\begin_inset Formula $\Omega$
+\end_inset
+
+; R2=12
+\begin_inset Formula $\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V1= V
+\begin_inset Formula $_{L}$
+\end_inset
+
++i
+\begin_inset Formula $_{L}$
+\end_inset
+
+R
+\begin_inset Formula $_{2}$
+\end_inset
+
+=L
+\begin_inset Formula $_{1}$
+\end_inset
+
+
+\begin_inset Formula $\frac{di_{L}}{dt}$
+\end_inset
+
++i
+\begin_inset Formula $_{L}$
+\end_inset
+
+R
+\begin_inset Formula $_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{V}{\$}$
+\end_inset
+
+=($L
+\begin_inset Formula $_{1}$
+\end_inset
+
++R
+\begin_inset Formula $_{2}$
+\end_inset
+
+)i
+\begin_inset Formula $_{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{V}{\$(\$L_{1}+R_{2})}=i_{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se utilizó MATLAB para antitransformar
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{L}(t)=\frac{5}{12}(1-e^{-2307.7(\frac{1}{s})t})A\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\tau_{i_{L}}=0.4333mS\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[5\tau_{i_{L}}=2.16mS\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V1=V
+\begin_inset Formula $_{C}$
+\end_inset
+
++i
+\begin_inset Formula $_{C}$
+\end_inset
+
+R
+\begin_inset Formula $_{1}$
+\end_inset
+
+=V
+\begin_inset Formula $_{C}$
+\end_inset
+
++C
+\begin_inset Formula $_{1}$
+\end_inset
+
+R
+\begin_inset Formula $_{1}$
+\end_inset
+
+
+\begin_inset Formula $\frac{dV_{C}}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{V}{\$}=V_{C}(1+\$C_{1}R_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{V}{\$(1+\$C_{1}R_{1})}=V_{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[Vc(t)=5(1-e^{-2525.3(\frac{1}{s})t})V\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\tau_{V_{C}}=0.396mS\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[5\tau_{V_{C}}=1.98mS\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se obtuvieron los siguientes gráficos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename MATLAB/transitorioIL.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename MATLAB/transitorioVC.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Transitorio sin excitación
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename circuit-sinexc.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Defino R=R
+\begin_inset Formula $_{1}$
+\end_inset
+
++R
+\begin_inset Formula $_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{d^{2}i_{L}}{dt^{2}}+\frac{di_{L}}{dt}\frac{R}{L}+(i_{L})\frac{1}{LC}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{L_{1}C_{1}}}$
+\end_inset
+
+=2956.56 
+\begin_inset Formula $\frac{rad}{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha_{s}=\frac{R}{2L_{1}}$
+\end_inset
+
+= 2884.61
+\begin_inset Formula $\frac{rad}{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+como 
+\begin_inset Formula $\omega_{0}>\alpha_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{1,2}=-\alpha_{s}\pm\sqrt{\alpha_{s}^{2}-\omega_{0}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+S
+\begin_inset Formula $_{1,2}$
+\end_inset
+
+=
+\begin_inset Formula $-\alpha_{s}\pm j\sqrt{\omega_{0}^{2}-\alpha_{s}^{2}}$
+\end_inset
+
+=
+\begin_inset Formula $-\alpha_{s}\pm j\omega_{d}$
+\end_inset
+
+=-2884.61
+\begin_inset Formula $\pm$
+\end_inset
+
+j648.269
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi$
+\end_inset
+
+=0.97566 
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\xi\rightarrow1$
+\end_inset
+
+ entonces el circuito tiende a comportarse como un críticamente amortiguado.
+\end_layout
+
+\begin_layout Standard
+con las condiciones iniciales i
+\begin_inset Formula $_{L}(0)$
+\end_inset
+
+=0.416666A y V
+\begin_inset Formula $_{L}$
+\end_inset
+
+(0)=-7.5V entonces 
+\begin_inset Formula $\frac{di_{L}}{dt}(0)=-1442.3077$
+\end_inset
+
+A
+\end_layout
+
+\begin_layout Standard
+i
+\begin_inset Formula $_{L}(0)=A_{0}cos(\phi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+-[
+\begin_inset Formula $\frac{\frac{di_{L}}{dt}(0)+i_{L}(0)\alpha}{\omega_{d}}$
+\end_inset
+
+]=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+sen(
+\begin_inset Formula $\phi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+0.3708=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+sen(
+\begin_inset Formula $\phi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+0.41666=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+cos(
+\begin_inset Formula $\phi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+A
+\begin_inset Formula $_{0}$
+\end_inset
+
+=0.557766
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{\phi}$
+\end_inset
+
+=0.727218rad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[i_{L}(t)=0.557766e^{-2884.61t}cos(684.284t\text{+0.727218})A\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+i
+\begin_inset Formula $_{L}(t)$
+\end_inset
+
+ no cambia de signo si t=1.23278x10
+\begin_inset Formula $^{-3}$
+\end_inset
+
+s y en ese t la parte que acompaña el coseno vale 15.92x10
+\begin_inset Formula $^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por esto, en los gráficos influye más la exponencial que el coseno.
+\end_layout
+
+\begin_layout Standard
+Para la tensión en el capacitor
+\end_layout
+
+\begin_layout Standard
+V
+\begin_inset Formula $_{C}$
+\end_inset
+
+=L
+\begin_inset Formula $\frac{di_{L}}{dt}$
+\end_inset
+
++i
+\begin_inset Formula $_{L}$
+\end_inset
+
+R
+\end_layout
+
+\begin_layout Standard
+V
+\begin_inset Formula $_{C}$
+\end_inset
+
+=A
+\begin_inset Formula $_{0}$
+\end_inset
+
+e
+\begin_inset Formula $^{-\alpha t}$
+\end_inset
+
+[(-
+\begin_inset Formula $\omega'$
+\end_inset
+
+L)sin(
+\begin_inset Formula $\omega\text{'}t+\phi$
+\end_inset
+
+)]+
+\begin_inset Formula $(-\alpha L+R$
+\end_inset
+
+)cos(
+\begin_inset Formula $\omega'$
+\end_inset
+
+t+
+\begin_inset Formula $\phi$
+\end_inset
+
+)]
+\end_layout
+
+\begin_layout Standard
+Utilizando identidades trigonométricas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left[V_{C}(t)=8.57515e^{-\alpha t}cos(\omega't+0.948283)V\right]$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

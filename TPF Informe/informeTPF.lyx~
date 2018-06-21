@@ -107,7 +107,73 @@ Simulación LTSpice
 \end_layout
 
 \begin_layout Standard
-la parte 2
+Para el circuito RLC dado, como el número de grupo es 2, los valores de
+ los componentes a utilizar son:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{1}=18\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{2}=12\varOmega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C=22\mu F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L=(2*2.6)mH=5.2mH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename esquematicoRLC.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito esquemático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -287,7 +353,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Respuesta en frecuencia
+Respuesta en frecuencia.
+ La línea continua representa el módulo, y la punteada la fase.
 \end_layout
 
 \end_inset
@@ -304,12 +371,194 @@ Respuesta en frecuencia
 
 \end_layout
 
+\begin_layout Standard
+A partir de la respuesta en frecuencia obtenida, se concluye que se trata
+ de un filtro pasabanda, del rango 30Hz - 10MHz.
+ Se observa además que, teniendo en cuenta todo el espectro, la fase cambia
+ 
+\begin_inset Formula $180\text{°}$
+\end_inset
+
+ respecto de bajas frecuencias (cercanas a 1Hz) contra altas frecuencias
+ (desde los 100MHz).
+\end_layout
+
 \begin_layout Subsection
 Análisis de montecarlo
 \end_layout
 
+\begin_layout Standard
+Para el análisis de montecarlo, se utilizó una tolerancia del 5% para las
+ resistencias y 10% para los capacitores.
+ Para darle esta característica a cada componente, se cambia el valor del
+ mismo por:
+\end_layout
+
+\begin_layout Standard
+\align center
+{mc(Valor,Tolerancia)}
+\end_layout
+
+\begin_layout Standard
+Donde en 
+\begin_inset Formula $'Valor'$
+\end_inset
+
+ se coloca el valor original del componente, y en 
+\begin_inset Formula $'Tolerancia'$
+\end_inset
+
+, el nombre que se le desee dar a ese parámetro, en lo posible representativo.
+ Para asignar el valor de la tolerancia se usa la directiva (sin las llaves):
+\end_layout
+
+\begin_layout Standard
+\align center
+.param Tolerancia={Valor de la tolerancia entre 0 y 1}
+\end_layout
+
+\begin_layout Standard
+Por último se indica con la directiva (sin las llaves):
+\end_layout
+
+\begin_layout Standard
+\align center
+.step param run {iniciando en...} {cuantas veces se realiza...} {en pasos de a...}
+\end_layout
+
+\begin_layout Standard
+Con estas configuraciones, se realizó el análisis de montecarlo al filtro
+ dado, obteniendo la siguiente respuesta:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename SimFiltroMC.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis de montecarlo - Respuesta en frecuencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir del analisis realizado, se puede observar que, para las tolerancias
+ especificadas, no se produce una variación muy apreciable en general en
+ la respuesta en frecuencia.
+ La mayor desviación en el módulo se observa en las frecuencias comprendidas
+ entre 0.1Hz y 1MHz, y a partir de esa frecuencia no muestra una varación
+ apreciable, hasta llegar a valores del orden de los 100MHz, donde se vuelve
+ a desviar en forma apreciable.
+ La fase presenta mayor variabilidad entre las frecuencias de 0.1Hz y 10KHz,
+ y para frecuencias mayores a dicho valor prácticamente no se desvía.
+\end_layout
+
 \begin_layout Subsection
 PCB en Altium
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PCBCobre.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB lado cobre
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PCBComponentes.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB lado componentes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
