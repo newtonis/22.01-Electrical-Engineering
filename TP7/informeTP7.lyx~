@@ -283,7 +283,7 @@ Determinación de tipo de filtro y componentes
 Se pudo observar que en un intervalo [100Hz ; 4.8KHz] no había cambios en
  la amplitud de la salida, la función transferencia (el ratio medido en
  dB) se mantenía en 0.
- A medida que se llevava la frecuencuia a la de corte (4.8KHz), se empezaba
+ A medida que se llevaba la frecuencuia a la de corte (4.8KHz), se empezaba
  a atenuar la salida.
  A continuación se siguió aumentando la frecuencia y la salida continuó
  atenuándose pero con un patrón bien determinado.
@@ -2073,6 +2073,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename casoPunto2_altos.jpeg
 	scale 45

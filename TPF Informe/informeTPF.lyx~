@@ -100,7 +100,9 @@ GUI Matlab
 \end_layout
 
 \begin_layout Standard
-El uso del GUI se intentó de ser realizado de la manera más sencilla posible
+Las funcionalidades del GUI fueron realizadas con el objetivo de que sean
+ lo más sencillas de usar posibles.
+ Para su uso se deben realizar las siguientes dos cosas:
 \end_layout
 
 \begin_layout Enumerate
@@ -716,6 +718,12 @@ A partir del analisis realizado, se puede observar que, para las tolerancias
 
 \begin_layout Subsection
 PCB en Altium
+\end_layout
+
+\begin_layout Standard
+Para el circuito en general, se agregaró una bornera de tres entradas para
+ el conexionado de la fuente de alimentación y una de dos entradas para
+ la entrada de señal.
 \end_layout
 
 \begin_layout Standard
