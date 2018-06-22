@@ -173,10 +173,6 @@ Cálcular el factor de calidad y la frecuencia de corte del sistema
 Realizar el diagrama de polos y ceros de la función transferencia
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Section
 Simulación LTSpice
 \end_layout

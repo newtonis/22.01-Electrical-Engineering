@@ -100,7 +100,9 @@ GUI Matlab
 \end_layout
 
 \begin_layout Standard
-El uso del GUI se intentó de ser realizado de la manera más sencilla posible
+Las funcionalidades del GUI fueron realizadas con el objetivo de que sean
+ lo más sencillas de usar posibles.
+ Para su uso se deben realizar las siguientes dos cosas:
 \end_layout
 
 \begin_layout Enumerate
