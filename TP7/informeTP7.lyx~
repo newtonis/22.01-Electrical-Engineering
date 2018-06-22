@@ -2070,5 +2070,65 @@ Casos de sobrepico - MatLab
 Conclusiones
 \end_layout
 
+\begin_layout Standard
+En base a los resultados obtenidos, se pueden realizar las siguientes observacio
+nes:
+\end_layout
+
+\begin_layout Standard
+Para obtener la frecuencia de corte, tomando de guía la función transferencia,
+ se buscó que la fase entre la entrada y la salida sea de 45°, dado que
+ en ese valor coinciden tanto el gráfico asintótico como el real.
+ Con este criterio, el gráfico continuo realizado utilizando la función
+ de transferencia, tanto el módulo como la fase, coinciden muy bien con
+ el obtenido a partir del muestreo de los valores discretos tomados en la
+ tabla, lo cual indica que la frecuencia de corte elegida es muy cercana
+ a la real.
+ Se observa un decaimiento de aproximadamente 20dB entre una década y otra
+ pasada la frecuencia de corte, lo cual se ajusta bien a la aproximación
+ que se realiza en los diagramas asintóticos.
+ 
+\end_layout
+
+\begin_layout Standard
+En relación a la fase, una década antes de la frecuencia de corte toma un
+ valor de 5° aproximadamente, que se acerca a los casi 6° que se obtienen
+ de hacer el cálculo teórico con la función 
+\begin_inset Formula $\arctan(\frac{0.1\omega_{0}}{\omega_{0}})$
+\end_inset
+
+.
+ Una década después de la frecuencia de corte, la fase toma un valor de
+ aproximadamente 83°, bastante cercanos a los 84° que se obtienen del cálculo
+ teórico con 
+\begin_inset Formula $\arctan(\frac{10\omega_{0}}{\omega_{0}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el análisis de sobrepico para filtros pasivos de segundo orden se observa
+ que, al modificar la selectividad del circuito (equivalente a modificar
+ el amortiguamiento en este caso), se modifican el módulo y la fase de la
+ respuesta en frecuencia:
+\end_layout
+
+\begin_layout Standard
+El módulo, para valores de 
+\begin_inset Formula $Q$
+\end_inset
+
+ muy altos, tiende a rechazar la frecuencia de corte en forma muy notoria.
+ Al aumentar más la frecuencia, se va alejando del sobrepico pero se empiezan
+ a atenuar debido al comportamiento como pasa bajos.
+ Con valores de 
+\begin_inset Formula $Q$
+\end_inset
+
+ más bajos, el efecto del sobrepico no es tan abrupto, pero se vuelve más
+ ancho, como se vió en las simulaciones con MatLab.
+\end_layout
+
 \end_body
 \end_document
