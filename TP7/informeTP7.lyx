@@ -2037,7 +2037,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename casosPunto2.jpg
+	filename casoPunto2_bajos.jpg
 	scale 45
 
 \end_inset
@@ -2049,7 +2049,45 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Casos de sobrepico - MatLab
+Casos de sobrepico en pasa bajos - MatLab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename casoPunto2_altos.jpeg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Casos de sobrepico en pasa altos - MatLab
 \end_layout
 
 \end_inset

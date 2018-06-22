@@ -2037,7 +2037,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename casosPunto2.jpg
+	filename casoPunto2_bajos.jpg
 	scale 45
 
 \end_inset
@@ -2049,7 +2049,44 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Casos de sobrepico - MatLab
+Casos de sobrepico en pasa bajos - MatLab
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename casoPunto2_altos.jpeg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Casos de sobrepico en pasa altos - MatLab
 \end_layout
 
 \end_inset
@@ -2119,15 +2156,42 @@ El módulo, para valores de
 \begin_inset Formula $Q$
 \end_inset
 
- muy altos, tiende a rechazar la frecuencia de corte en forma muy notoria.
+ muy altos, los polos están muy cerca del eje 
+\begin_inset Formula $j\omega$
+\end_inset
+
+, por lo que tiende a rechazar la frecuencia de corte en forma muy notoria.
  Al aumentar más la frecuencia, se va alejando del sobrepico pero se empiezan
  a atenuar debido al comportamiento como pasa bajos.
  Con valores de 
 \begin_inset Formula $Q$
 \end_inset
 
- más bajos, el efecto del sobrepico no es tan abrupto, pero se vuelve más
- ancho, como se vió en las simulaciones con MatLab.
+ más bajos, el efecto del sobrepico no es tan abrupto, dado que los polos
+ están más alejados del eje, pero se vuelve más ancho, como se ve en las
+ simulaciones con MatLab.
+\end_layout
+
+\begin_layout Standard
+La fase muestra un comportamiento más notorio.
+ Al tomar un valor de 
+\begin_inset Formula $Q$
+\end_inset
+
+ muy alto, los polos se acercan mucho al eje 
+\begin_inset Formula $j\omega$
+\end_inset
+
+, por lo que al pasar por el entorno de frecuencias cercanas a la de corte,
+ el cambio de fase es muy abrupto, como se observa en las simulaciones de
+ MatLab.
+ Y para valores más bajos de 
+\begin_inset Formula $Q$
+\end_inset
+
+, los polos están más alejados del eje, por lo que el cambio de fase en
+ el entorno de frecuencias mencionado resulta más suave.
+ 
 \end_layout
 
 \end_body
