@@ -393,7 +393,7 @@ else
     elseif handles.b2val == 0 && handles.b1val == 0
         handles.msg.String = 'Pasa bajos';
         det = 1;
-    elseif (handles.a0val > 0)
+    elseif (handles.a0val > 0 && handles.b1val == 0)
         w0 = sqrt(handles.a0val);
         if handles.b0val/handles.b2val == w0^2
             handles.msg.String = 'Notch';
@@ -401,7 +401,12 @@ else
         end 
     end
     
-    
+    if handles.a0val > 0
+        w0 = sqrt(handles.a0val);
+        q = w0 / handles.a1val;
+        handles.Qtext.String = ['q = ' , num2str(q,4) ];
+        handles.WoText.String = ['w0 = ',num2str(w0,4) ];
+    end
     
     %handles.Qtext.String = 
     if ~det
@@ -446,3 +451,20 @@ b2 = handles.b2val;
 
 ceros = roots([b2,b1,b0]);
 polos = roots([1,a1,a0]);
+
+function ok = formato_okey(handles)
+
+a0 = handles.a0val;
+a1 = handles.a1val;
+
+k = handles.kval;
+b0 = handles.b0val;
+b1 = handles.b1val;
+b2 = handles.b2val;
+
+ok = 0;
+if a0 > 0 && a1 > 0
+    ok = 1;
+elseif a0 < 0 && a1 < 0:
+    ok = 1;
+    
