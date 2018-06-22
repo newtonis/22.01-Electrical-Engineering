@@ -374,9 +374,6 @@ handles.a0val = str2double(get(handles.a0,'String'));
 handles.a1val = str2double(get(handles.a1,'String'));
 
 handles.ok = ~isnan(handles.kval) && ~isnan(handles.b0val) && ~isnan(handles.b1val) && ~isnan(handles.b2val) && ~isnan(handles.a0val) && ~isnan(handles.a1val);
-if handles.a1val == 0 && handles.a0val == 0
-    handles.ok = 0;
-end
 
 if ~handles.ok
     handles.msg.String = 'La entrada no es valida';
@@ -384,21 +381,25 @@ else
     [polos,ceros] = get_polos_ceros(handles);
     det = 0;
     
-    if handles.b1val == 0 && handles.b0val == 0
-         handles.msg.String = 'Pasa altos';
-         det = 1;
-    elseif handles.b2val == 0 && handles.b0val == 0
-        handles.msg.String = 'Pasa bandas';
-        det = 1;
-    elseif handles.b2val == 0 && handles.b1val == 0
-        handles.msg.String = 'Pasa bajos';
-        det = 1;
-    elseif (handles.a0val > 0 && handles.b1val == 0)
-        w0 = sqrt(handles.a0val);
-        if handles.b0val/handles.b2val == w0^2
-            handles.msg.String = 'Notch';
+    ok = formato_okey(handles);
+    
+    if ok
+        if handles.b1val == 0 && handles.b0val == 0
+             handles.msg.String = 'Pasa altos';
+             det = 1;
+        elseif handles.b2val == 0 && handles.b0val == 0
+            handles.msg.String = 'Pasa bandas';
             det = 1;
-        end 
+        elseif handles.b2val == 0 && handles.b1val == 0
+            handles.msg.String = 'Pasa bajos';
+            det = 1;
+        elseif (handles.a0val > 0 && handles.b1val == 0)
+            w0 = sqrt(handles.a0val);
+            if handles.b0val/handles.b2val == w0^2
+                handles.msg.String = 'Notch';
+                det = 1;
+            end 
+        end
     end
     
     if handles.a0val > 0
@@ -451,3 +452,19 @@ b2 = handles.b2val;
 
 ceros = roots([b2,b1,b0]);
 polos = roots([1,a1,a0]);
+
+function ok = formato_okey(handles)
+
+a0 = handles.a0val;
+a1 = handles.a1val;
+
+k = handles.kval;
+b0 = handles.b0val;
+b1 = handles.b1val;
+b2 = handles.b2val;
+
+ok = 0;
+if a0 > 0 && a1 > 0
+    ok = 1;
+end
+    
