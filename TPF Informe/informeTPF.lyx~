@@ -100,7 +100,9 @@ GUI Matlab
 \end_layout
 
 \begin_layout Standard
-El uso del GUI se intentó de ser realizado de la manera más sencilla posible
+Las funcionalidades del GUI fueron realizadas con el objetivo de que sean
+ lo más sencillas de usar posibles.
+ Para su uso se deben realizar las siguientes dos cosas:
 \end_layout
 
 \begin_layout Enumerate
@@ -407,6 +409,588 @@ IL(t) - Descarga
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Simulaciones de carga y descarga - MatLab
+\end_layout
+
+\begin_layout Standard
+Se resolvió aplicando la transformada de Laplace tomando 
+\begin_inset Formula $V1=5u(t)$
+\end_inset
+
+ y condiciones iniciales nulas para la carga, analizando cada rama como
+ un RC y un RL, respectivamente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{1}=V_{L}+i_{L}R_{2}=L_{1}\frac{di_{L}}{dt}+i_{L}R_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{V}{S}=(SL_{1}+R_{2})i_{L}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{V}{S(SL_{1}+R_{2})}=i_{L}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Antitransformando se obtiene:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\left[i_{L}(t)=\frac{5}{12}(1-e^{-2307.7(\frac{1}{s})t})A\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\tau_{i_{L}}=0.4333mS\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[5\tau_{i_{L}}=2.16mS\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{1}=V_{C}+i_{C}R_{1}=V_{C}+C_{1}R_{1}\frac{dV_{C}}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{V}{S}=V_{C}(1+SC_{1}R_{1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{V}{S(1+SC_{1}R_{1})}=V_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\left[Vc(t)=5(1-e^{-2525.3(\frac{1}{s})t})V\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[\tau_{V_{C}}=0.396mS\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\left[5\tau_{V_{C}}=1.98mS\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se obtuvieron los siguientes gráficos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MATLAB_Graficos/transitorioVC.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+VC(t) - Carga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MATLAB_Graficos/transitorioIL.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+IL(t) - Carga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para analizar la descarga, el circuito adopta el formato de un RLC serie:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circuit-sinexc.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito esquemático - Descarga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se define 
+\begin_inset Formula $R=R_{1}+R_{2}$
+\end_inset
+
+.
+ Planteando la ecuación característica del circuito:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d^{2}i_{L}}{dt^{2}}+\frac{di_{L}}{dt}\frac{R}{L}+(i_{L})\frac{1}{LC}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega_{0}=\frac{1}{\sqrt{L_{1}C_{1}}}=2956.56[\frac{rad}{s}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{s}=\frac{R}{2L_{1}}=2884.61[\frac{rad}{s}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\omega_{0}>\alpha_{s}$
+\end_inset
+
+, el circuito se encuentra en régime subamortiguado:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{1,2}=-\alpha_{s}\pm\sqrt{\alpha_{s}^{2}-\omega_{0}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{1,2}=-\alpha_{s}\pm j\sqrt{\omega_{0}^{2}-\alpha_{s}^{2}}=-\alpha_{s}\pm j\omega_{d}=-2884.61\pm j648.269
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\xi=0.97566
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula $\xi\rightarrow1$
+\end_inset
+
+ entonces el circuito tenderá a comportarse como un críticamente amortiguado.
+ 
+\end_layout
+
+\begin_layout Standard
+Aplicando las condiciones iniciales
+\begin_inset Formula $i_{L}(0)=0.416666A$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{L}(0)=-7.5V$
+\end_inset
+
+ , surge que 
+\begin_inset Formula $\frac{di_{L}}{dt}(0)=-1442.3077[\frac{A}{t}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i_{L}(0)=A_{0}cos(\phi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-[\frac{\frac{di_{L}}{dt}(0)+i_{L}(0)\alpha}{\omega_{d}}]=A_{0}sen(\phi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0.3708=A_{0}sen(\phi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0.41666=A_{0}cos(\phi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{0}=0.557766
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{\ensuremath{\phi}}=0.727218[rad]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[i_{L}(t)=0.557766e^{-2884.61t}cos(684.284t+0.727218)A\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notar que 
+\begin_inset Formula $i_{L}(t)$
+\end_inset
+
+ cambia de signo si 
+\begin_inset Formula $t=1.23278*10^{-3}s$
+\end_inset
+
+ y a ese tiempio el argumento del coseno vale 
+\begin_inset Formula $15.92x10^{-3}[rad]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por esto, en los gráficos influye más la exponencial que el coseno, lo cual
+ también se ve reforzado por el hecho de que
+\begin_inset Formula $\xi\rightarrow1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para la tensión en el capacitor:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{C}=L\frac{di_{L}}{dt}+i_{L}R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{C}=A_{0}e^{-\alpha t}[(-\omega'L)sin(\omega\text{'}t+\phi)]+(-\alpha L+R)cos(\omega't+\phi)]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando identidades trigonométricas se junta en una sola expresión:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[V_{C}(t)=8.57515e^{-\alpha t}cos(\omega_{d}t+0.948283)V\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con dichas funciones se obtuvieron los siguientes gráficos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaVCzoomout.jpg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaVCzoomin.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+VC(t) - Descarga, original (derecha) y ampliado en el intervalo de oscilación
+ (izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaILzoomout.jpg
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename MATLAB_Graficos/descargaILzoomin.jpg
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+IL(t) - Descarga, original (derecha) y ampliado en el intervalo de oscilación
+ (izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De los gráficos obtenidos, se verifica la suposición anterior de que el
+ comportamiento tiende a ser críticamente amortiguado dado que, como se
+ calculó anteriormente, el 
+\begin_inset Formula $\xi\rightarrow1$
+\end_inset
+
+.
+ Esto se ve plasmado en el valor de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, cuyo valor al ser tan alto, provoca que en poco tiempo el comportamiento
+ exponencial anule rápidamente el comportamiento oscilatorio, por lo que
+ no se llega a apreciar la pseudo oscilación en los gráficos, tanto en los
+ obtenidos en MatLab como en LTSpice.
 \end_layout
 
 \begin_layout Section
