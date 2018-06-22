@@ -22,7 +22,7 @@ function varargout = gui_proyecto(varargin)
 
 % Edit the above text to modify the response to help gui_proyecto
 
-% Last Modified by GUIDE v2.5 22-Jun-2018 02:00:10
+% Last Modified by GUIDE v2.5 21-Jun-2018 12:07:30
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -406,8 +406,10 @@ else
         w0 = sqrt(handles.a0val);
         q = w0 / handles.a1val;
         handles.Qtext.String = ['q = ' , num2str(q,4) ];
-        handles.omegatext.String = ['w0 = ',num2str(w0,4) ];
+        handles.WoText.String = ['w0 = ',num2str(w0,4) ];
     end
+    
+    %handles.Qtext.String = 
     if ~det
         handles.msg.String = 'La entrada es valida pero no se puede detectar el filtro';
     end
