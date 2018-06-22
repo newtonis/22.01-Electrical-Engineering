@@ -125,7 +125,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename gui.png
 
@@ -149,27 +148,6 @@ Ejemplo de uso
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Las funcionalidades del programa son
-\end_layout
-
-\begin_layout Enumerate
-Detectar el tipo de filtro: Pasa altos, pasa bajos, pasa bandas y notch
-\end_layout
-
-\begin_layout Enumerate
-Graficar en módulo y fase la función transferencia, tanto en veces como
- en decibeles
-\end_layout
-
-\begin_layout Enumerate
-Cálcular el factor de calidad y la frecuencia de corte del sistema
-\end_layout
-
-\begin_layout Enumerate
-Realizar el diagrama de polos y ceros de la función transferencia
 \end_layout
 
 \begin_layout Section
