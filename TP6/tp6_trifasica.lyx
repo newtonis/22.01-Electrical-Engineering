@@ -2294,47 +2294,10 @@ Diagramas fasoriales
 \end_layout
 
 \begin_layout Standard
-Para cada caso se realizaron los diagramas fasoriales de corrientes de línea
- y de fase.
- Se muestra un solo diagrama de tensiones de fase (dado que son todos idénticos).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename diagramas/U.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Diagrama fasorial de tensiones de fase
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+Para cada caso se realizaron los diagramas fasoriales U-I correspondientes.
+ En todos los casos se ajustó la escala de la tensión para que pueda apreciarse
+ el defasaje con las corrientes, por lo que no corresponden al valor original
+ de 146V cada una.
 \end_layout
 
 \begin_layout Standard
