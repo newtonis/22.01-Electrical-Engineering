@@ -1292,7 +1292,7 @@ R
 \begin_inset Text
 
 \begin_layout Plain Layout
-8
+13.8
 \end_layout
 
 \end_inset
@@ -1384,7 +1384,7 @@ L
 \begin_inset Text
 
 \begin_layout Plain Layout
-340
+588.9
 \end_layout
 
 \end_inset
@@ -1476,7 +1476,7 @@ R/L
 \begin_inset Text
 
 \begin_layout Plain Layout
-332
+575
 \end_layout
 
 \end_inset
@@ -2297,7 +2297,7 @@ Diagramas fasoriales
 Para cada caso se realizaron los diagramas fasoriales U-I correspondientes.
  En todos los casos se ajustó la escala de la tensión para que pueda apreciarse
  el defasaje con las corrientes, por lo que no corresponden al valor original
- de 146 V cada una.
+ de 146V cada una.
 \end_layout
 
 \begin_layout Standard
@@ -2310,7 +2310,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/R_R_R.png
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -2348,7 +2348,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/L_L_L.png
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -2386,7 +2386,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/RL_RL_RL.png
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -2424,7 +2424,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/R_RL_L.png
-	scale 60
+	scale 50
 
 \end_inset
 
