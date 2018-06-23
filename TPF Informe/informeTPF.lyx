@@ -864,7 +864,7 @@ V_{C}=L\frac{di_{L}}{dt}+i_{L}R
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{C}=A_{0}e^{-\alpha t}[(-\omega'L)sin(\omega\text{'}t+\phi)]+(-\alpha L+R)cos(\omega't+\phi)]
+V_{C}=A_{0}e^{-\alpha t}[(-\omega_{d}L)sin(\omega_{d}t+\phi)]+(-\alpha L+R)cos(\omega_{d}t+\phi)]
 \]
 
 \end_inset
@@ -879,7 +879,7 @@ Utilizando identidades trigonométricas se junta en una sola expresión:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left[V_{C}(t)=8.57515e^{-\alpha t}cos(\omega't+0.948283)V\right]
+\left[V_{C}(t)=8.57515e^{-\alpha t}cos(\omega_{d}t+0.948283)V\right]
 \]
 
 \end_inset
