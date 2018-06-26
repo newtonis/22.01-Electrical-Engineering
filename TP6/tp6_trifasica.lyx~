@@ -2310,7 +2310,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/R_R_R.png
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -2321,7 +2321,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama fasorial de corrientes de linea/fase - Caso R-R-R
+Diagrama fasorial U-V - Caso R-R-R
 \end_layout
 
 \end_inset
@@ -2348,7 +2348,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/L_L_L.png
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -2359,7 +2359,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama fasorial de corrientes de linea/fase - Caso L-L-L
+Diagrama fasorial U-V - Caso L-L-L
 \end_layout
 
 \end_inset
@@ -2386,7 +2386,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/RL_RL_RL.png
-	scale 50
+	scale 55
 
 \end_inset
 
@@ -2397,7 +2397,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama fasorial de corrientes de linea/fase - Caso R/L-R/L-R/L
+Diagrama fasorial U-V - Caso R/L-R/L-R/L
 \end_layout
 
 \end_inset
@@ -2424,7 +2424,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename diagramas/R_RL_L.png
-	scale 50
+	scale 55
 
 \end_inset
 
